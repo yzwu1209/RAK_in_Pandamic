@@ -1,0 +1,26 @@
+StartDate,EndDate,Status,IPAddress,Progress,Duration (in seconds),Finished,RecordedDate,ResponseId,RecipientLastName,RecipientFirstName,RecipientEmail,ExternalReference,LocationLatitude,LocationLongitude,DistributionChannel,UserLanguage,Q2_1,Q4_1,Q5
+Start Date,End Date,Response Type,IP Address,Progress,Duration (in seconds),Finished,Recorded Date,Response ID,Recipient Last Name,Recipient First Name,Recipient Email,External Data Reference,Location Latitude,Location Longitude,Distribution Channel,User Language,"Before we give you today's task, indicate your current mood by clicking the appropriate radio button below.
+
+	-5 means extremely negative
+	0 means neutral, and
+	+5 means extremely positive. - Your mood BEFORE","Now that you are done, click on the radio button below to describe your mood immediately after completing the task. 
+
+	-5 means extremely negative
+	0 means neutral, and
+	+5 means extremely positive. - Your mood AFTER",OPTIONAL: Please share any comments about today's mindfulness practice.
+"{""ImportId"":""startDate"",""timeZone"":""America/Denver""}","{""ImportId"":""endDate"",""timeZone"":""America/Denver""}","{""ImportId"":""status""}","{""ImportId"":""ipAddress""}","{""ImportId"":""progress""}","{""ImportId"":""duration""}","{""ImportId"":""finished""}","{""ImportId"":""recordedDate"",""timeZone"":""America/Denver""}","{""ImportId"":""_recordId""}","{""ImportId"":""recipientLastName""}","{""ImportId"":""recipientFirstName""}","{""ImportId"":""recipientEmail""}","{""ImportId"":""externalDataReference""}","{""ImportId"":""locationLatitude""}","{""ImportId"":""locationLongitude""}","{""ImportId"":""distributionChannel""}","{""ImportId"":""userLanguage""}","{""ImportId"":""QID3_1""}","{""ImportId"":""QID5_1""}","{""ImportId"":""QID6_TEXT""}"
+2020-03-18 16:29:42,2020-03-18 16:30:03,IP Address,98.228.64.223,100,20,True,2020-03-18 16:30:03,R_31vGCEa1SKQMCvh,Email 5,Rad,radsatapathy@berkeley.edu,sub-3,41.7057037353515625,-88.19460296630859375,email,EN,-3,-2,-99
+2020-03-19 01:04:38,2020-03-19 01:05:16,IP Address,73.93.148.68,100,37,True,2020-03-19 01:05:17,R_vOyCDfoKhQQpOuJ,Mysore,Priya,ppmysore@yahoo.com,0,37.29949951171875,-121.7577972412109375,email,EN,4,0,-99
+2020-03-19 12:21:15,2020-03-19 12:21:40,IP Address,216.228.112.22,100,25,True,2020-03-19 12:21:41,R_RCy7s3wTEnXdPrP,Khandelwal,Devesh,deveshkhandelwal@ischool.berkeley.edu,1,37.30279541015625,-121.998199462890625,email,EN,0,-1,-99
+2020-03-19 13:51:55,2020-03-19 13:54:46,IP Address,148.87.23.9,100,170,True,2020-03-19 13:54:46,R_1NySLN1SjeNw44Y,Kumaresan,Dhileeban,dkumares@ischool.berkeley.edu,1,37.347900390625,-122.03509521484375,email,EN,-3,0,-99
+2020-03-19 14:20:45,2020-03-19 14:21:44,IP Address,73.202.19.197,100,59,True,2020-03-19 14:21:45,R_UN13qjd5T5hrHNf,Nikhil,Smita,gsmitajune@gmail.com,0,37.6873016357421875,-121.89569854736328125,email,EN,0,0,-99
+2020-03-19 14:44:01,2020-03-19 14:47:26,IP Address,71.172.149.196,100,204,True,2020-03-19 14:47:26,R_3UiMO4Uj9o8Z9oB,Xie,Sheng,xiesheng428@gmail.com,1,40.7467041015625,-74.057403564453125,email,EN,-3,-1,-99
+2020-03-19 17:10:00,2020-03-19 17:10:51,IP Address,75.158.111.252,100,50,True,2020-03-19 17:10:52,R_3JshZ6arraoqXVY,Chutny,Laura,lchutny@berkeley.edu,0,51.045501708984375,-114.19879913330078125,email,EN,0,2,-99
+2020-03-19 18:07:50,2020-03-19 18:11:35,IP Address,72.79.50.86,100,224,True,2020-03-19 18:11:35,R_es76vuZ597tEa7D,Chen,Shaojie,Schen.jhu@gmail.com,1,40.699798583984375,-74.31909942626953125,email,EN,-1,-1,-99
+2020-03-19 11:35:01,2020-03-19 18:59:57,IP Address,68.191.240.153,100,26695,True,2020-03-19 18:59:57,R_sZpRkPGUi17S11f,Nori,Sangeeta,nori.sangeeta@gmail.com,0,34.019500732421875,-84.31060028076171875,email,EN,0,0,-99
+2020-03-19 19:22:31,2020-03-19 19:23:07,IP Address,184.170.166.207,100,35,True,2020-03-19 19:23:08,R_1JJx0pnHVOwamx8,Sundaramoorthy,Amanda,musicalamanda79@gmail.com,0,41.88470458984375,-88.30280303955078125,email,EN,1,4,-99
+2020-03-20 00:03:01,2020-03-20 00:05:45,IP Address,14.203.252.65,100,163,True,2020-03-20 00:05:46,R_yDAHbvI0yI4j8I1,Mather,Stephanie,stephanie.mather@ischool.berkeley.edu,0,-31.902801513671875,115.855010986328125,email,EN,-1,-1,-99
+2020-03-20 07:36:58,2020-03-20 07:37:25,IP Address,137.254.7.166,100,27,True,2020-03-20 07:37:26,R_3je7qCDXFoJ32gS,Vattem,Phani,mvattem@gmail.com,0,30.5045013427734375,-97.82089996337890625,email,EN,5,2,-99
+2020-03-19 07:50:07,2020-03-20 22:56:20,IP Address,76.116.172.16,100,140773,True,2020-03-20 22:56:21,R_3qQLmafnVtm6SP3,Zheng,Kong,kxz4235@gmail.com,1,40.7158050537109375,-74.35900115966796875,email,EN,1,0,-99
+2020-03-19 04:15:17,2020-03-19 04:15:30,IP Address,67.184.45.66,40,12,False,2020-03-26 04:15:34,R_3J8VNqNVKRj7c1X,Davis,Aruna,arunadavis@yahoo.com,0,,,email,EN,0,,
+2020-03-19 15:23:45,2020-03-19 15:24:16,IP Address,184.170.166.207,20,31,False,2020-03-26 15:24:24,R_3Jk1VPb3aBwajBH,Sundaramoorthy,Amanda,musicalamanda79@gmail.com,0,,,email,EN,1,,

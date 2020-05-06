@@ -1,0 +1,429 @@
+RecipientEmail,mood_before,mood_after,tau,day,group.x,task,activity_type,intensity,beneficiary,Gender,comments
+37,-2,4,6,1,2a,think_list_song,0,1,0,0,-99
+37,-3,-99,0,2,2a,achieve_goal,1,1,0,0,""
+37,1,-99,0,3,2a,make_bed,1,0,0,0,""
+37,1,3,2,4,2a,clean_up,1,0,1,0,-99
+34,0,2,2,1,1b,wash_cup,1,0,1,0,""
+34,1,2,1,2,1b,list_song,1,1,0,0,-99
+34,2,3,1,3,1b,make_tea,1,0,0,0,-99
+34,2,-99,0,4,1b,think_achieve_goal,0,1,0,0,""
+34,-1,-1,0,5,1b,share_book,1,1,1,0,-99
+34,1,3,2,6,1b,think_catch_friend,0,1,1,0,-99
+34,1,3,2,7,1b,think_make_bed,0,0,0,0,-99
+34,0,3,3,8,1b,think_clean_up,0,0,1,0,-99
+67,-2,-1,1,1,2a,think_list_song,0,1,0,0,"The list of things to pay attention to is long and difficult to remember. As a result, I felt distracted when listening to the song and felt paying more attention to """"I know I'm trying to do this mindfulness practice"""" than to the list of things to pay attention to."
+67,0,1,1,2,2a,achieve_goal,1,1,0,0,-99
+67,-1,0,1,3,2a,make_bed,1,0,0,0,-99
+67,0,0,0,4,2a,clean_up,1,0,1,0,-99
+67,0,0,0,5,2a,think_make_tea,0,0,0,0,-99
+67,-1,0,1,6,2a,catch_friend,1,1,1,0,-99
+67,0,1,1,7,2a,think_wash_cup,0,0,1,0,-99
+67,0,0,0,8,2a,think_share_book,0,1,1,0,-99
+49,1,2,1,1,1a,think_make_bed,0,0,0,1,-99
+49,3,4,1,2,1a,think_clean_up,0,0,1,1,-99
+49,3,4,1,3,1a,share_book,1,1,1,1,-99
+49,3,3,0,4,1a,think_catch_friend,0,1,1,1,-99
+49,3,4,1,5,1a,make_tea,1,0,0,1,-99
+49,0,2,2,6,1a,list_song,1,1,0,1,-99
+49,3,3,0,7,1a,wash_cup,1,0,1,1,-99
+40,1,2,1,1,2b,clean_up,1,0,1,1,-99
+40,0,1,1,2,2b,think_make_tea,0,0,0,1,-99
+40,-1,0,1,3,2b,catch_friend,1,1,1,1,-99
+40,-1,-1,0,4,2b,make_bed,1,0,0,1,-99
+40,0,0,0,5,2b,think_list_song,0,1,0,1,-99
+40,0,1,1,6,2b,think_wash_cup,0,0,1,1,-99
+40,0,0,0,7,2b,think_share_book,0,1,1,1,-99
+40,0,1,1,8,2b,achieve_goal,1,1,0,1,-99
+25,-1,1,2,1,1a,think_make_bed,0,0,0,0,I felt like I accomplished something and felt less cluttered 
+41,3,2,-1,1,1b,wash_cup,1,0,1,1,"i try to do this stuff on a regular basis.  i am glad that it is a more talked about thing in the world.
+
+my favorite daily mindfulness practice is to """"listen"""" to the grinding of the coffee beans for 30 sec each morning rather than go off and do something else in that moment.  
+
+"
+41,-3,0,3,2,1b,list_song,1,1,0,1,"music is interesting because a """"good mood"""" song transports you to a good place often.  and then it is interesting to bring yourself back to the moment of sounds and sensations"
+41,-5,-5,0,3,1b,make_tea,1,0,0,1,mindfulness only helps when you want it to
+41,-2,0,2,4,1b,think_achieve_goal,0,1,0,1,-99
+41,2,5,3,5,1b,share_book,1,1,1,1,books are my favorite thing to recommend.  definitely puts me in a good mood just thinking about it 
+41,2,5,3,6,1b,think_catch_friend,0,1,1,1,-99
+41,1,1,0,7,1b,think_make_bed,0,0,0,1,making my bed is not exciting in any way
+41,0,4,4,8,1b,think_clean_up,0,0,1,1,i like the sound of water
+55,2,5,3,2,1b,list_song,1,1,0,0,"I turned on an upbeat song that always puts me in a good mood, no matter what mood I started with. It’s a very nostalgic song for me that reminds me of my life as a teenager! "
+55,-2,0,2,4,1b,think_achieve_goal,0,1,0,0,"I was in a bad mood due to a mistake I made at work. By writing down what I needed to do in order to correct myself, it made me feel better that I was taking action. "
+55,0,3,3,5,1b,share_book,1,1,1,0,The book I recommended is one of my favorite books and I sincerely enjoy talking about it. This is most likely why my mood was improved!
+55,2,3,1,6,1b,think_catch_friend,0,1,1,0,"I just spoke with one of my friends tonight via FaceTime. This friend is always very positive, and just what I needed to boost my mood! Especially in this time of crisis, I feel better after talking with her "
+55,-1,1,2,8,1b,think_clean_up,0,0,1,0,Cleaning always makes me feel better. Especially because the smell of the soap smells so good!
+46,2,-99,0,1,1b,wash_cup,1,0,1,0,""
+46,3,4,1,2,1b,list_song,1,1,0,0,-99
+46,4,4,0,3,1b,make_tea,1,0,0,0,-99
+46,4,-99,0,4,1b,think_achieve_goal,0,1,0,0,""
+46,4,5,1,6,1b,think_catch_friend,0,1,1,0,-99
+46,2,-99,0,7,1b,think_make_bed,0,0,0,0,""
+32,0,1,1,1,1b,wash_cup,1,0,1,0,"The water was warm and the dish soap scent is something that I am used to.  It is not a feeling of accomplishment or joy.  It is rather that I am """"done with one more task"""" for the day as I prefer that the sink is clean.  "
+32,2,4,2,2,1b,list_song,1,1,0,0,I listened to one of many favorite Indian classical music songs sung by one of my favorite singers.  I loved it - as I have every time I have listened to it.  Thank you for assigning this activity today.  
+32,2,3,1,3,1b,make_tea,1,0,0,0,Had a nice warm herbal tea with added lemon and honey.  Feel energized.
+32,3,2,-1,4,1b,think_achieve_goal,0,1,0,0,I have my steps identified and am feeling optimistic towards my goal.  But I also feel that I will be doing a lot of troubleshooting as I start coding the functionality.
+32,2,-99,0,5,1b,share_book,1,1,1,0,""
+32,2,3,1,6,1b,think_catch_friend,0,1,1,0,-99
+32,3,3,0,7,1b,think_make_bed,0,0,0,0,"Interestingly, I had just changed the linens and pillow covers.  Gives a clean, fresh look, fresh scent in the room.  "
+32,1,1,0,8,1b,think_clean_up,0,0,1,0,"I was thinking of spring cleaning the windows and the doors.  I could visualize myself cleaning and feeling good about it but could also feel the pain radiating through my arm because of the cubital tunnel syndrome I have been experiencing the past few weeks.  So, I am not thrilled by the idea of cleaning."
+5,0,5,5,1,2b,clean_up,1,0,1,0,Cleaning always provides a sense of calm and balance in me. Good mindful practice. 
+5,0,5,5,2,2b,think_make_tea,0,0,0,0,-99
+5,0,-99,0,3,2b,catch_friend,1,1,1,0,""
+5,0,-99,0,4,2b,make_bed,1,0,0,0,""
+70,-5,5,10,1,1b,wash_cup,1,0,1,1,"By washing dish for family, it really put away bad feeling and feel wonderful to be with my family. "
+70,0,3,3,2,1b,list_song,1,1,0,1,Music make me feel relax from stress. 
+70,0,5,5,3,1b,make_tea,1,0,0,1,"By making a latte and slowly taste it , it make me feel wonderful afterwards. "
+70,0,0,0,4,1b,think_achieve_goal,0,1,0,1,The current goals are hard to achieve during coronavirus outbreak.
+70,0,1,1,5,1b,share_book,1,1,1,1,-99
+70,0,-1,-1,6,1b,think_catch_friend,0,1,1,1,"Due to coronavirus, it is almost impossible to catch up with friends. "
+70,0,5,5,7,1b,think_make_bed,0,0,0,1,-99
+70,0,5,5,8,1b,think_clean_up,0,0,1,1,-99
+66,0,3,3,1,2a,think_list_song,0,1,0,0,-99
+66,-2,2,4,2,2a,achieve_goal,1,1,0,0,I loved paying attention to all the details but it didn't really elevate or change my mood.
+66,3,4,1,3,2a,make_bed,1,0,0,0,It's nice to know you're coming back to a serene looking room and the added bonus for me is that I get extra time with my 16 year old cat and know I made it more comfortable for him for his day ♥️
+66,-1,3,4,4,2a,clean_up,1,0,1,0,It feels great to look at a part of the house that is super clean! Makes me feel relaxed and accomplished. Paying added attention to the details of smell and touch got my mind away from the stress of the current situation and made it more interesting!
+66,3,3,0,5,2a,think_make_tea,0,0,0,0,-99
+66,2,3,1,6,2a,catch_friend,1,1,1,0,I actually did that yesterday with a good friend I hadn't seen in a couple weeks and now I realize I was much more in the moment than I would have normally been. 
+66,2,2,0,7,2a,think_wash_cup,0,0,1,0,Feel like I've been doing nothing but washing during this covid crisis )-:
+66,-1,1,2,8,2a,think_share_book,0,1,1,0,-99
+29,2,3,1,2,1a,think_clean_up,0,0,1,1,-99
+29,-1,0,1,3,1a,share_book,1,1,1,1,-99
+39,0,0,0,1,1a,think_make_bed,0,0,0,1,"I don't feel like my mood has changed much if at all, but I enjoyed the mindfulness practice, and it made me want to go make my bed."
+39,-1,1,2,2,1a,think_clean_up,0,0,1,1,-99
+39,0,1,1,3,1a,share_book,1,1,1,1,"I felt like I was going through the actions a bit and my recommendation felt a little fake and forced, but it made for a fun conversation anyway."
+39,-1,-1,0,4,1a,think_catch_friend,0,1,1,1,-99
+39,0,0,0,5,1a,make_tea,1,0,0,1,-99
+39,0,-99,0,6,1a,list_song,1,1,0,1,""
+39,0,-99,0,7,1a,wash_cup,1,0,1,1,""
+39,0,0,0,8,1a,think_achieve_goal,0,1,0,1,-99
+56,0,2,2,1,2a,think_list_song,0,1,0,0,I listened to an encouraging song. The mood was on level 5 while I was listening. But after the song it came to 2
+56,0,4,4,2,2a,achieve_goal,1,1,0,0,By merely writing the steps to achieve my goal made me feel that the goal is achievable 
+56,1,0,-1,3,2a,make_bed,1,0,0,0,-99
+56,0,4,4,4,2a,clean_up,1,0,1,0,I cleaned up my daughter’s desk for eschooling. Felt really charged up. She was also very thankful. 
+56,0,2,2,5,2a,think_make_tea,0,0,0,0,-99
+56,0,5,5,6,2a,catch_friend,1,1,1,0,-99
+56,0,3,3,7,2a,think_wash_cup,0,0,1,0,-99
+56,0,0,0,8,2a,think_share_book,0,1,1,0,-99
+64,-2,-99,0,2,2b,think_make_tea,0,0,0,1,""
+64,0,-1,-1,4,2b,make_bed,1,0,0,1,-99
+64,-1,0,1,7,2b,think_share_book,0,1,1,1,-99
+17,0,1,1,1,1a,think_make_bed,0,0,0,1,Please share the time for how long you'd like us to do the activity
+17,1,0,-1,2,1a,think_clean_up,0,0,1,1,-99
+17,1,3,2,3,1a,share_book,1,1,1,1,-99
+17,1,3,2,4,1a,think_catch_friend,0,1,1,1,-99
+17,-1,-1,0,5,1a,make_tea,1,0,0,1,-99
+17,0,1,1,6,1a,list_song,1,1,0,1,-99
+17,0,1,1,7,1a,wash_cup,1,0,1,1,-99
+17,-1,0,1,8,1a,think_achieve_goal,0,1,0,1,-99
+35,0,2,2,1,1b,wash_cup,1,0,1,0,I love the bowl and the sound the edge makes when I touch it. I like the scrubby thing too I got it because it’s texture makes me happy. 
+35,0,-2,-2,2,1b,list_song,1,1,0,0,I found it mildly distracting and annoying to try to attend to volume and silence during a song that I find one of the most elegant integrations of craft and music known to me. 
+35,-1,4,5,3,1b,make_tea,1,0,0,0,The glass was really too cold for a red
+35,0,0,0,4,1b,think_achieve_goal,0,1,0,0,Roller balls and fountain pens sound different
+35,0,1,1,5,1b,share_book,1,1,1,0,"my books are all audible, but I thought about the narrators voice, the authors message, my person's shared values and joy in reading. "
+35,-2,-1,1,6,1b,think_catch_friend,0,1,1,0,-99
+35,0,2,2,7,1b,think_make_bed,0,0,0,0,Linen texture is lovely 
+35,0,2,2,8,1b,think_clean_up,0,0,1,0,Should have been cleaning all weekend 
+3,1,3,2,1,2a,think_list_song,0,1,0,0,"I found myself immediately gravitate to a song that I love to salsa dance to, which got me """"head dancing"""" along to the song in my head and picturing myself dancing (as I was sitting during this session). I did find myself think about something that bothered me at work at one point, and then thinking about a friend of mine, which distracted me from the """"dancing"""" I was doing, although I was able to correct myself once I realized this. "
+3,3,3,0,2,2a,achieve_goal,1,1,0,0,It was hard to be mindful of the physical world while I was doing this thinking task in my opinion. 
+3,2,2,0,3,2a,make_bed,1,0,0,0,"Started working on this right after I got into bed--so I messed up my bed, made my bed, and now will mess it up again :) "
+3,2,3,1,4,2a,clean_up,1,0,1,0,I struggled to be mindful while cleaning because I'm used to thinking or listening to music when I clean.
+3,3,3,0,5,2a,think_make_tea,0,0,0,0,Thought about making some tea--I feel like it might be easier for me to be mindful when I'm thinking about calming things than when I am also doing something.... 
+3,3,4,1,6,2a,catch_friend,1,1,1,0,-99
+3,2,2,0,7,2a,think_wash_cup,0,0,1,0,-99
+3,3,3,0,8,2a,think_share_book,0,1,1,0,-99
+43,2,5,3,1,1a,think_make_bed,0,0,0,0,Feel good to look at a clean bed.
+43,2,2,0,2,1a,think_clean_up,0,0,1,0,-99
+43,2,4,2,3,1a,share_book,1,1,1,0,-99
+43,3,5,2,4,1a,think_catch_friend,0,1,1,0,-99
+43,3,5,2,5,1a,make_tea,1,0,0,0,-99
+43,3,4,1,7,1a,wash_cup,1,0,1,0,-99
+43,3,3,0,8,1a,think_achieve_goal,0,1,0,0,-99
+44,0,0,0,1,2b,clean_up,1,0,1,1,-99
+44,-1,2,3,2,2b,think_make_tea,0,0,0,1,-99
+44,0,0,0,3,2b,catch_friend,1,1,1,1,-99
+44,-3,0,3,4,2b,make_bed,1,0,0,1,-99
+44,1,1,0,5,2b,think_list_song,0,1,0,1,-99
+44,0,1,1,6,2b,think_wash_cup,0,0,1,1,-99
+44,0,1,1,7,2b,think_share_book,0,1,1,1,-99
+44,0,1,1,8,2b,achieve_goal,1,1,0,1,-99
+23,2,4,2,1,2a,think_list_song,0,1,0,0,"Thinking about the song i would listen to quickly put a smile on my face. I've been feeling a bit down recently with the events of covid-19 and i don't know, this exercise just helped put a smile on my face for a few minutes."
+23,2,3,1,2,2a,achieve_goal,1,1,0,0,-99
+23,1,3,2,3,2a,make_bed,1,0,0,0,-99
+23,0,3,3,4,2a,clean_up,1,0,1,0,-99
+23,1,2,1,5,2a,think_make_tea,0,0,0,0,-99
+23,-1,3,4,6,2a,catch_friend,1,1,1,0,With what’s happening I couldn’t exactly meet a friend but I FaceTimed then and it felt good to reconnect for a bit. With all that’s going on with the quarantine these daily tasks have been helpful in distracting from what’s happening outside 
+23,1,3,2,7,2a,think_wash_cup,0,0,1,0,-99
+23,0,2,2,8,2a,think_share_book,0,1,1,0,-99
+63,-1,0,1,1,2a,think_list_song,0,1,0,1,I liked the exercise and the focus it brought to a song I've probably heard a hundred times.
+63,0,0,0,2,2a,achieve_goal,1,1,0,1,"By having to think more about the activity (e.g. """"What steps did I take?""""), it was harder to focus on the act of writing itself. "
+63,1,3,2,3,2a,make_bed,1,0,0,1,-99
+63,1,2,1,4,2a,clean_up,1,0,1,1,"Living alone during social distancing made this a little tough. Closest I could get was washing my dogs' food dishes. :)
+
+Be safe :)"
+63,1,2,1,6,2a,catch_friend,1,1,1,1,-99
+52,-2,4,6,1,2b,clean_up,1,0,1,0,-99
+52,-2,3,5,2,2b,think_make_tea,0,0,0,0,-99
+52,0,2,2,3,2b,catch_friend,1,1,1,0,"Since I am very social person , caching up with a friend always uplifts my mood ."
+52,0,0,0,4,2b,make_bed,1,0,0,0,-99
+52,0,3,3,5,2b,think_list_song,0,1,0,0,-99
+52,-1,0,1,6,2b,think_wash_cup,0,0,1,0,"Whenever I am focused on the current activity while performing a task , that helps me to distract myself from the worries and lets me focus on the present moment . It definitely uplifts my mood a little bit if not a whole lot ."
+52,2,2,0,7,2b,think_share_book,0,1,1,0,-99
+52,-1,1,2,8,2b,achieve_goal,1,1,0,0,-99
+59,1,4,3,2,2a,achieve_goal,1,1,0,0,-99
+59,-2,1,3,3,2a,make_bed,1,0,0,0,-99
+59,-1,3,4,4,2a,clean_up,1,0,1,0,-99
+71,3,0,-3,1,1a,think_make_bed,0,0,0,0,I tried to stay in the moment but mind tend to wonder around 
+71,0,2,2,2,1a,think_clean_up,0,0,1,0,-99
+71,1,2,1,3,1a,share_book,1,1,1,0,-99
+71,2,3,1,4,1a,think_catch_friend,0,1,1,0,-99
+71,0,1,1,5,1a,make_tea,1,0,0,0,-99
+71,1,3,2,6,1a,list_song,1,1,0,0,-99
+71,2,2,0,7,1a,wash_cup,1,0,1,0,-99
+71,2,2,0,8,1a,think_achieve_goal,0,1,0,0,-99
+45,2,2,0,1,1a,think_make_bed,0,0,0,0,-99
+45,0,1,1,2,1a,think_clean_up,0,0,1,0,-99
+45,1,2,1,3,1a,share_book,1,1,1,0,"Not physical book, but digital one"
+45,1,1,0,4,1a,think_catch_friend,0,1,1,0,-99
+45,1,3,2,5,1a,make_tea,1,0,0,0,-99
+45,0,2,2,6,1a,list_song,1,1,0,0,-99
+45,1,2,1,7,1a,wash_cup,1,0,1,0,-99
+45,1,2,1,8,1a,think_achieve_goal,0,1,0,0,-99
+65,3,3,0,1,1b,wash_cup,1,0,1,0,"Today, I think I felt more anxious after the mindfulness task, but that was because there were many more dishes to wash, than just one.  And, I was getting distracted by my kids and trying to hurry.
+
+I do think it is good though, bc if I thought of it as washing a dish ‘for’ someone else, then there was more compassion in it."
+65,2,4,2,2,1b,list_song,1,1,0,0,Beautiful.  A song really can lift moods.  I don’t often though Bc some songs make me sad.
+65,4,5,1,3,1b,make_tea,1,0,0,0,"Mmm, something I would not think of- to slow down and appreciate the drink.  And itself, just pouring it into the glass.  Made me think, ooh, it would be fun to have colorful unique glasses."
+65,2,4,2,4,1b,think_achieve_goal,0,1,0,0,"As I was thinking about a goal completed, it inspired me to actually write down a future goal.  So, caused me to be more positive, because I realized I had actually accomplished a goal before when I planned for it and followed through with it.  I just did the same thing, to write down, and thus, know in my head what I need to do to accomplish it.  Thanks!"
+65,5,5,0,5,1b,share_book,1,1,1,0,-99
+65,4,3,-1,6,1b,think_catch_friend,0,1,1,0,"I felt sad after, because I knew I had not been proactive in catching up with this friend.  "
+65,3,4,1,7,1b,think_make_bed,0,0,0,0,-99
+65,4,5,1,8,1b,think_clean_up,0,0,1,0,Feels so good to organize something for someone else.  
+18,0,1,1,1,1a,think_make_bed,0,0,0,0,-99
+18,1,3,2,2,1a,think_clean_up,0,0,1,0,-99
+18,2,3,1,3,1a,share_book,1,1,1,0,-99
+18,2,3,1,4,1a,think_catch_friend,0,1,1,0,-99
+18,3,4,1,5,1a,make_tea,1,0,0,0,-99
+18,1,4,3,6,1a,list_song,1,1,0,0,-99
+18,2,3,1,7,1a,wash_cup,1,0,1,0,-99
+18,1,2,1,8,1a,think_achieve_goal,0,1,0,0,-99
+53,-2,-2,0,1,2b,clean_up,1,0,1,1,-99
+53,0,2,2,2,2b,think_make_tea,0,0,0,1,-99
+53,-2,4,6,3,2b,catch_friend,1,1,1,1,-99
+53,1,0,-1,4,2b,make_bed,1,0,0,1,-99
+53,0,0,0,5,2b,think_list_song,0,1,0,1,-99
+57,1,2,1,1,2b,clean_up,1,0,1,0,"I think I actually did a better job of cleaning up than normal, i had more focus on the detail than normally when i'm thinking about something else."
+57,-1,2,3,2,2b,think_make_tea,0,0,0,0,man the coffee also tasted better when i was mindful about preparation!
+57,1,2,1,3,2b,catch_friend,1,1,1,0,-99
+57,0,2,2,4,2b,make_bed,1,0,0,0,-99
+57,-2,0,2,5,2b,think_list_song,0,1,0,0,I was somewhat unclear - was I supposed to just think about listening to the song (that is what I did) or was I actually supposed to be mindful while listening to the song? (I did not do that).
+57,1,1,0,6,2b,think_wash_cup,0,0,1,0,-99
+57,2,2,0,7,2b,think_share_book,0,1,1,0,-99
+57,1,2,1,8,2b,achieve_goal,1,1,0,0,-99
+38,-3,-3,0,1,1a,think_make_bed,0,0,0,0,"Bear in mind that I'm hunkered down at home with my 3 kids for at least 4 weeks due to coronavirus, and today was the first day of school closure. My stress level is pretty high at the moment."
+38,-1,-1,0,2,1a,think_clean_up,0,0,1,0,-99
+38,-1,0,1,3,1a,share_book,1,1,1,0,-99
+38,1,1,0,4,1a,think_catch_friend,0,1,1,0,-99
+38,0,0,0,5,1a,make_tea,1,0,0,0,-99
+38,1,1,0,6,1a,list_song,1,1,0,0,-99
+38,1,0,-1,7,1a,wash_cup,1,0,1,0,-99
+38,0,0,0,8,1a,think_achieve_goal,0,1,0,0,-99
+4,0,2,2,1,1a,think_make_bed,0,0,0,0,-99
+4,3,3,0,2,1a,think_clean_up,0,0,1,0,-99
+4,2,2,0,3,1a,share_book,1,1,1,0,-99
+4,1,-99,0,4,1a,think_catch_friend,0,1,1,0,""
+4,0,0,0,5,1a,make_tea,1,0,0,0,-99
+4,0,0,0,6,1a,list_song,1,1,0,0,-99
+4,0,1,1,7,1a,wash_cup,1,0,1,0,-99
+4,-1,1,2,8,1a,think_achieve_goal,0,1,0,0,-99
+27,0,0,0,1,1a,think_make_bed,0,0,0,0,Never make bed. So sad
+27,2,0,-2,2,1a,think_clean_up,0,0,1,0,-99
+27,0,0,0,3,1a,share_book,1,1,1,0,-99
+27,2,3,1,4,1a,think_catch_friend,0,1,1,0,-99
+27,1,4,3,5,1a,make_tea,1,0,0,0,-99
+27,1,2,1,6,1a,list_song,1,1,0,0,-99
+27,0,2,2,7,1a,wash_cup,1,0,1,0,-99
+27,-2,-99,0,8,1a,think_achieve_goal,0,1,0,0,""
+13,0,4,4,1,2a,think_list_song,0,1,0,0,Music does make a difference :)
+13,3,5,2,2,2a,achieve_goal,1,1,0,0,I completed a beautiful painting i had been putting off with a multitude of excuses 
+13,3,5,2,3,2a,make_bed,1,0,0,0,I love to see things perfectly organized!!
+13,3,5,2,4,2a,clean_up,1,0,1,0,My husband was blown away to see his car sparkling clean😂😂😂😂... he cooked dinner for me! I did not realize that something so simple would mean so much to him :)
+60,2,-99,0,1,2b,clean_up,1,0,1,0,""
+20,4,4,0,1,1b,wash_cup,1,0,1,0,I like the temperature of the water on my hands and the softness of the soap. 
+20,5,5,0,2,1b,list_song,1,1,0,0,-99
+20,0,4,4,3,1b,make_tea,1,0,0,0,I made tea. The fresh scent of ginger uplifted my mood. 
+20,4,4,0,4,1b,think_achieve_goal,0,1,0,0,-99
+20,0,3,3,5,1b,share_book,1,1,1,0,-99
+20,0,5,5,6,1b,think_catch_friend,0,1,1,0," I did a FaceTime , saw this friend after a long time . Thanks to ‘stay at home ‘ time. The conversation bought back many memories and gossips was never ending. Love the color she was wearing . Overall chat left me smiling and feeling happy! "
+20,5,5,0,7,1b,think_make_bed,0,0,0,0,-99
+20,-1,2,3,8,1b,think_clean_up,0,0,1,0,-99
+21,-1,3,4,1,2a,think_list_song,0,1,0,0,"Not sure I did this one right or that it was fair, per se, because
+1. Today was full coronavirus anxiety from everywhere
+2. Lizzo will fix almost anything
+3. It's impossible to listen to Lizzo and not dance, so while that is a full-attention activity, I don't know if it counts for what you guys had in mind.
+If it does though, all the better :)
+"
+21,2,2,0,2,2a,achieve_goal,1,1,0,0,"This one felt disjointed. The practice of listing literal steps/actions/whatever in response to an abstract but personal question feels very americanocentric and a bit alien in my way of thinking. The experience (and certainly pleasure) of good paper and nice writing implement can be a nice focus but the forcing of """"I did X about Y"""" (especially when having to define both a random X and the purported, but equally arbitrary Ys) kinda messed it up"
+21,2,2,0,3,2a,make_bed,1,0,0,0,"No particular mood shift after the task, even though it is satisfying both in sensory terms (smell good, feel good, that kind of thing), and in terms of having accomplished a small but distinct task that brings order to the environment. While I explicitly tried to concentrate on aspects like the ones you suggested, it also was interesting to note that perhaps I do that normally anyway. It didn't seem different."
+21,2,3,1,4,2a,clean_up,1,0,1,0,"I indicated one point higher in the mood scale but that is not necessarily accurate. This simple kind of task is always nice in terms of accomplishing something small, which however brings order to the environment and facilitates other things inordinately. It was just *interesting* to contemplate the task a little differently, hence the point increase."
+21,2,2,0,5,2a,think_make_tea,0,0,0,0,-99
+21,2,3,1,6,2a,catch_friend,1,1,1,0,-99
+21,2,3,1,7,2a,think_wash_cup,0,0,1,0,-99
+21,-1,0,1,8,2a,think_share_book,0,1,1,0,"The """"think about"""" activities are weird. Is this about making an imaginary scene WITHIN which you imagine focusing on aspects of objects or tasks WHILE you accomplish the actual task? "
+47,-2,-2,0,1,1b,wash_cup,1,0,1,1,""
+47,-3,-1,2,2,1b,list_song,1,1,0,1,-99
+47,-4,-3,1,3,1b,make_tea,1,0,0,1,-99
+47,-3,-3,0,4,1b,think_achieve_goal,0,1,0,1,-99
+47,-4,-4,0,5,1b,share_book,1,1,1,1,-99
+47,-4,-3,1,6,1b,think_catch_friend,0,1,1,1,-99
+47,-4,-4,0,7,1b,think_make_bed,0,0,0,1,-99
+47,-4,-4,0,8,1b,think_clean_up,0,0,1,1,-99
+68,0,1,1,1,2b,clean_up,1,0,1,0,-99
+68,0,2,2,2,2b,think_make_tea,0,0,0,0,-99
+68,0,4,4,3,2b,catch_friend,1,1,1,0,-99
+68,1,4,3,4,2b,make_bed,1,0,0,0,-99
+68,1,3,2,5,2b,think_list_song,0,1,0,0,-99
+68,1,2,1,6,2b,think_wash_cup,0,0,1,0,-99
+68,1,1,0,7,2b,think_share_book,0,1,1,0,-99
+68,1,2,1,8,2b,achieve_goal,1,1,0,0,-99
+19,1,-99,0,1,1b,wash_cup,1,0,1,0,""
+19,1,2,1,2,1b,list_song,1,1,0,0,-99
+19,2,2,0,3,1b,make_tea,1,0,0,0,-99
+19,1,1,0,4,1b,think_achieve_goal,0,1,0,0,-99
+19,2,2,0,5,1b,share_book,1,1,1,0,-99
+19,2,2,0,6,1b,think_catch_friend,0,1,1,0,-99
+19,2,3,1,7,1b,think_make_bed,0,0,0,0,-99
+19,2,2,0,8,1b,think_clean_up,0,0,1,0,-99
+30,5,0,-5,1,2b,clean_up,1,0,1,0,-99
+30,4,4,0,2,2b,think_make_tea,0,0,0,0,-99
+30,4,5,1,3,2b,catch_friend,1,1,1,0,-99
+30,5,2,-3,4,2b,make_bed,1,0,0,0,-99
+30,4,5,1,5,2b,think_list_song,0,1,0,0,-99
+30,5,1,-4,6,2b,think_wash_cup,0,0,1,0,-99
+30,4,5,1,7,2b,think_share_book,0,1,1,0,-99
+30,5,5,0,8,2b,achieve_goal,1,1,0,0,-99
+8,3,4,1,1,1a,think_make_bed,0,0,0,1,-99
+8,3,3,0,2,1a,think_clean_up,0,0,1,1,-99
+8,3,0,-3,3,1a,share_book,1,1,1,1,-99
+8,3,2,-1,4,1a,think_catch_friend,0,1,1,1,-99
+8,3,4,1,5,1a,make_tea,1,0,0,1,-99
+8,3,3,0,6,1a,list_song,1,1,0,1,-99
+8,2,4,2,7,1a,wash_cup,1,0,1,1,-99
+8,3,3,0,8,1a,think_achieve_goal,0,1,0,1,-99
+54,0,1,1,1,2b,clean_up,1,0,1,0,-99
+54,0,2,2,2,2b,think_make_tea,0,0,0,0,-99
+54,0,2,2,3,2b,catch_friend,1,1,1,0,-99
+54,0,0,0,4,2b,make_bed,1,0,0,0,-99
+54,0,2,2,5,2b,think_list_song,0,1,0,0,-99
+54,0,0,0,6,2b,think_wash_cup,0,0,1,0,-99
+54,0,2,2,7,2b,think_share_book,0,1,1,0,-99
+54,0,2,2,8,2b,achieve_goal,1,1,0,0,-99
+69,3,4,1,1,2b,clean_up,1,0,1,0,-99
+69,5,5,0,2,2b,think_make_tea,0,0,0,0,-99
+69,3,4,1,3,2b,catch_friend,1,1,1,0,-99
+69,4,0,-4,4,2b,make_bed,1,0,0,0,-99
+69,3,5,2,5,2b,think_list_song,0,1,0,0,-99
+69,3,3,0,7,2b,think_share_book,0,1,1,0,-99
+31,2,-1,-3,1,2b,clean_up,1,0,1,0,I did not want to start my day cleaning but it was a necessity.
+31,-2,4,6,2,2b,think_make_tea,0,0,0,0,I got up and craved for a cup of tea.
+31,0,4,4,3,2b,catch_friend,1,1,1,0,I am at home as all schools and workplace shut down due to corona virus. So chatting with a friend even through video chat is an absolute mood booster.
+31,3,5,2,5,2b,think_list_song,0,1,0,0,"Love music
+It is a natural mood healer"
+31,-2,1,3,6,2b,think_wash_cup,0,0,1,0,Washing dishes more with stay home policy. Hence decrease in mood
+31,0,4,4,7,2b,think_share_book,0,1,1,0,Love reading 
+31,-2,3,5,8,2b,achieve_goal,1,1,0,0,Started to write more and realizing the interesting cursive that comes to play
+24,0,0,0,8,2a,think_share_book,0,1,1,0,-99
+73,3,3,0,1,1b,wash_cup,1,0,1,0,"It's nice to be able to pay attention to these details that you never otherwise think about.  Keeping the mind from wandering continues to be a challenge, even if it's just for a split second. "
+73,3,4,1,2,1b,list_song,1,1,0,0,-99
+73,1,1,0,3,1b,make_tea,1,0,0,0,-99
+73,1,1,0,4,1b,think_achieve_goal,0,1,0,0,it's easy to take things for granted. The feeling of gratitude arises when thinking about the paper and writing utensil with such emotions.
+73,3,3,0,5,1b,share_book,1,1,1,0,Sorry for thr delay in completing this. Email got buried and this day was a busy day
+73,2,2,0,6,1b,think_catch_friend,0,1,1,0,"accomplished by video call since we're all quarantined
+"
+73,1,1,0,7,1b,think_make_bed,0,0,0,0,-99
+73,2,3,1,8,1b,think_clean_up,0,0,1,0,-99
+36,-1,0,1,1,2a,think_list_song,0,1,0,1,-99
+36,-2,-1,1,2,2a,achieve_goal,1,1,0,1,-99
+36,-1,0,1,3,2a,make_bed,1,0,0,1,-99
+36,0,0,0,4,2a,clean_up,1,0,1,1,-99
+36,-1,0,1,5,2a,think_make_tea,0,0,0,1,-99
+62,0,3,3,1,1a,think_make_bed,0,0,0,0,-99
+9,-1,1,2,1,2b,clean_up,1,0,1,0,"Hard to do in isolation and already did all the clean up for others yesterday, so the someone was myself :)"
+9,2,2,0,2,2b,think_make_tea,0,0,0,0,Fun
+9,-3,-1,2,3,2b,catch_friend,1,1,1,0,-99
+9,-1,-1,0,4,2b,make_bed,1,0,0,0,-99
+9,1,1,0,5,2b,think_list_song,0,1,0,0,-99
+22,3,4,1,1,1a,think_make_bed,0,0,0,0,-99
+22,4,5,1,2,1a,think_clean_up,0,0,1,0,-99
+22,3,5,2,6,1a,list_song,1,1,0,0,Music is very soothing and relaxing 
+22,3,4,1,7,1a,wash_cup,1,0,1,0,-99
+22,2,4,2,8,1a,think_achieve_goal,0,1,0,0,-99
+2,0,2,2,1,1a,think_make_bed,0,0,0,1,-99
+2,0,-2,-2,2,1a,think_clean_up,0,0,1,1,-99
+2,0,0,0,3,1a,share_book,1,1,1,1,-99
+2,0,3,3,4,1a,think_catch_friend,0,1,1,1,-99
+2,0,3,3,5,1a,make_tea,1,0,0,1,-99
+2,0,-99,0,6,1a,list_song,1,1,0,1,""
+2,-1,-1,0,7,1a,wash_cup,1,0,1,1,-99
+2,0,0,0,8,1a,think_achieve_goal,0,1,0,1,-99
+10,0,1,1,1,1a,think_make_bed,0,0,0,0,"Instead of ‘positive’, I feel more peaceful. "
+10,0,-2,-2,2,1a,think_clean_up,0,0,1,0,-99
+10,0,0,0,3,1a,share_book,1,1,1,0,-99
+10,-1,0,1,4,1a,think_catch_friend,0,1,1,0,-99
+10,2,4,2,5,1a,make_tea,1,0,0,0,-99
+10,1,4,3,6,1a,list_song,1,1,0,0,-99
+10,0,0,0,7,1a,wash_cup,1,0,1,0,-99
+10,0,0,0,8,1a,think_achieve_goal,0,1,0,0,-99
+48,-2,0,2,1,1b,wash_cup,1,0,1,0,""
+48,1,3,2,2,1b,list_song,1,1,0,0,-99
+48,1,3,2,3,1b,make_tea,1,0,0,0,-99
+48,-2,-99,0,4,1b,think_achieve_goal,0,1,0,0,""
+48,1,3,2,5,1b,share_book,1,1,1,0,-99
+48,-2,2,4,6,1b,think_catch_friend,0,1,1,0,-99
+48,2,4,2,7,1b,think_make_bed,0,0,0,0,-99
+48,0,3,3,8,1b,think_clean_up,0,0,1,0,-99
+51,0,0,0,1,1b,wash_cup,1,0,1,1,""
+51,2,2,0,2,1b,list_song,1,1,0,1,-99
+51,3,3,0,3,1b,make_tea,1,0,0,1,-99
+51,1,2,1,4,1b,think_achieve_goal,0,1,0,1,-99
+51,2,2,0,5,1b,share_book,1,1,1,1,-99
+51,3,4,1,6,1b,think_catch_friend,0,1,1,1,-99
+51,-1,0,1,7,1b,think_make_bed,0,0,0,1,-99
+51,2,2,0,8,1b,think_clean_up,0,0,1,1,-99
+26,2,3,1,1,1b,wash_cup,1,0,1,0,""
+26,0,2,2,2,1b,list_song,1,1,0,0,-99
+26,0,2,2,3,1b,make_tea,1,0,0,0,-99
+26,0,-99,0,4,1b,think_achieve_goal,0,1,0,0,""
+26,1,2,1,5,1b,share_book,1,1,1,0,-99
+26,2,2,0,6,1b,think_catch_friend,0,1,1,0,-99
+26,1,2,1,7,1b,think_make_bed,0,0,0,0,-99
+26,0,2,2,8,1b,think_clean_up,0,0,1,0,-99
+58,0,2,2,1,2b,clean_up,1,0,1,1,-99
+58,-1,0,1,2,2b,think_make_tea,0,0,0,1,-99
+58,-3,2,5,3,2b,catch_friend,1,1,1,1,-99
+58,-3,-1,2,4,2b,make_bed,1,0,0,1,-99
+58,1,3,2,5,2b,think_list_song,0,1,0,1,-99
+58,1,1,0,6,2b,think_wash_cup,0,0,1,1,-99
+58,0,0,0,7,2b,think_share_book,0,1,1,1,-99
+58,1,-1,-2,8,2b,achieve_goal,1,1,0,1,-99
+28,0,2,2,1,2a,think_list_song,0,1,0,0,-99
+28,-1,-1,0,2,2a,achieve_goal,1,1,0,0,-99
+28,-3,-2,1,3,2a,make_bed,1,0,0,0,-99
+28,-3,-2,1,4,2a,clean_up,1,0,1,0,-99
+28,0,2,2,5,2a,think_make_tea,0,0,0,0,-99
+28,0,2,2,6,2a,catch_friend,1,1,1,0,-99
+28,-1,0,1,7,2a,think_wash_cup,0,0,1,0,-99
+28,-1,0,1,8,2a,think_share_book,0,1,1,0,-99
+12,0,0,0,1,2a,think_list_song,0,1,0,1,-99
+12,0,1,1,2,2a,achieve_goal,1,1,0,1,-99
+12,1,1,0,3,2a,make_bed,1,0,0,1,-99
+12,-1,0,1,4,2a,clean_up,1,0,1,1,-99
+12,0,0,0,5,2a,think_make_tea,0,0,0,1,-99
+12,0,3,3,6,2a,catch_friend,1,1,1,1,-99
+12,0,0,0,7,2a,think_wash_cup,0,0,1,1,-99
+12,0,0,0,8,2a,think_share_book,0,1,1,1,-99
+15,2,3,1,1,1a,think_make_bed,0,0,0,1,-99
+15,2,-99,0,2,1a,think_clean_up,0,0,1,1,""
+15,1,-99,0,3,1a,share_book,1,1,1,1,""
+15,2,4,2,4,1a,think_catch_friend,0,1,1,1,-99
+15,0,1,1,5,1a,make_tea,1,0,0,1,-99
+15,0,-99,0,6,1a,list_song,1,1,0,1,""

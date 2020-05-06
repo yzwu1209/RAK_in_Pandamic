@@ -1,0 +1,26 @@
+StartDate,EndDate,Status,IPAddress,Progress,Duration (in seconds),Finished,RecordedDate,ResponseId,RecipientLastName,RecipientFirstName,RecipientEmail,ExternalReference,LocationLatitude,LocationLongitude,DistributionChannel,UserLanguage,Q2_1,Q4_1,Q5
+Start Date,End Date,Response Type,IP Address,Progress,Duration (in seconds),Finished,Recorded Date,Response ID,Recipient Last Name,Recipient First Name,Recipient Email,External Data Reference,Location Latitude,Location Longitude,Distribution Channel,User Language,"Before we give you today's task, indicate your current mood by clicking the appropriate radio button below.
+
+	-5 means extremely negative
+	0 means neutral, and
+	+5 means extremely positive. - Your mood BEFORE","Now that you are done, click on the radio button below to describe your mood immediately after completing the task. 
+
+	-5 means extremely negative
+	0 means neutral, and
+	+5 means extremely positive. - Your mood AFTER",OPTIONAL: Please share any comments about today's mindfulness practice.
+"{""ImportId"":""startDate"",""timeZone"":""America/Denver""}","{""ImportId"":""endDate"",""timeZone"":""America/Denver""}","{""ImportId"":""status""}","{""ImportId"":""ipAddress""}","{""ImportId"":""progress""}","{""ImportId"":""duration""}","{""ImportId"":""finished""}","{""ImportId"":""recordedDate"",""timeZone"":""America/Denver""}","{""ImportId"":""_recordId""}","{""ImportId"":""recipientLastName""}","{""ImportId"":""recipientFirstName""}","{""ImportId"":""recipientEmail""}","{""ImportId"":""externalDataReference""}","{""ImportId"":""locationLatitude""}","{""ImportId"":""locationLongitude""}","{""ImportId"":""distributionChannel""}","{""ImportId"":""userLanguage""}","{""ImportId"":""QID3_1""}","{""ImportId"":""QID5_1""}","{""ImportId"":""QID6_TEXT""}"
+2020-03-18 05:34:09,2020-03-18 05:37:21,IP Address,73.44.240.98,100,191,True,2020-03-18 05:37:21,R_3QKFj4fbLbO9b6p,Vangur,Padmini,pvangur@gmail.com,0,41.7516937255859375,-88.24140167236328125,email,EN,0,4,I am at home as all schools and workplace shut down due to corona virus. So chatting with a friend even through video chat is an absolute mood booster.
+2020-03-18 08:13:28,2020-03-18 08:33:27,IP Address,76.116.172.16,100,1198,True,2020-03-18 08:33:27,R_2QXNIalnfu3ulIJ,Zheng,Kong,kxz4235@gmail.com,1,40.7158050537109375,-74.35900115966796875,email,EN,-2,4,-99
+2020-03-18 09:27:12,2020-03-18 09:33:02,IP Address,72.79.50.86,100,349,True,2020-03-18 09:33:02,R_BJk1ZzinkUaBb9v,Chen,Shaojie,Schen.jhu@gmail.com,1,40.699798583984375,-74.31909942626953125,email,EN,-1,0,-99
+2020-03-18 04:00:20,2020-03-18 15:40:16,IP Address,68.191.240.153,100,41995,True,2020-03-18 15:40:16,R_24cK5eNTuLxH3Wh,Nori,Sangeeta,nori.sangeeta@gmail.com,0,34.019500732421875,-84.31060028076171875,email,EN,0,2,-99
+2020-03-18 17:12:35,2020-03-18 17:13:09,IP Address,75.158.111.252,100,34,True,2020-03-18 17:13:09,R_3HAO40vEnOwMUjb,Chutny,Laura,lchutny@berkeley.edu,0,51.045501708984375,-114.19879913330078125,email,EN,1,2,-99
+2020-03-18 18:15:02,2020-03-18 18:16:39,IP Address,73.202.19.197,100,96,True,2020-03-18 18:16:39,R_DtKUMcbjkUWsQmd,Nikhil,Smita,gsmitajune@gmail.com,0,37.6652069091796875,-121.8733978271484375,email,EN,0,2,"Since I am very social person , caching up with a friend always uplifts my mood ."
+2020-03-18 19:59:12,2020-03-18 20:00:34,IP Address,71.172.149.196,100,82,True,2020-03-18 20:00:35,R_d4ICI3NhAEKyPhT,Xie,Sheng,xiesheng428@gmail.com,1,40.7467041015625,-74.057403564453125,email,EN,-3,2,-99
+2020-03-18 14:56:09,2020-03-18 23:17:25,IP Address,148.87.23.7,100,30075,True,2020-03-18 23:17:25,R_2rAh8cnyjvxhU4c,Kumaresan,Dhileeban,dkumares@ischool.berkeley.edu,1,37.5135955810546875,-122.291595458984375,email,EN,0,0,-99
+2020-03-19 01:03:23,2020-03-19 01:04:28,IP Address,73.93.148.68,100,64,True,2020-03-19 01:04:28,R_1jUsOhNP1gBnOT3,Mysore,Priya,ppmysore@yahoo.com,0,37.29949951171875,-121.7577972412109375,email,EN,3,4,-99
+2020-03-19 06:35:24,2020-03-19 06:38:27,IP Address,184.170.166.207,100,183,True,2020-03-19 06:38:27,R_9M2uGllsA9DUHC1,Sundaramoorthy,Amanda,musicalamanda79@gmail.com,0,41.88470458984375,-88.30280303955078125,email,EN,0,4,-99
+2020-03-19 18:28:00,2020-03-19 23:58:16,IP Address,14.203.252.65,100,19815,True,2020-03-19 23:58:18,R_27JQOIgux1yPpLw,Mather,Stephanie,stephanie.mather@ischool.berkeley.edu,0,-31.902801513671875,115.855010986328125,email,EN,-3,-1,-99
+2020-03-20 07:36:18,2020-03-20 07:36:49,IP Address,137.254.7.166,100,30,True,2020-03-20 07:36:49,R_3et7KqTzGz51zuE,Vattem,Phani,mvattem@gmail.com,0,32.7787017822265625,-96.8217010498046875,email,EN,4,5,-99
+2020-03-17 16:23:40,2020-03-17 16:23:43,IP Address,98.228.64.223,40,3,False,2020-03-24 16:23:45,R_1laf5UBKWuFo1Mo,Email 5,Rad,radsatapathy@berkeley.edu,sub-3,,,email,EN,-3,,
+2020-03-18 10:04:53,2020-03-18 10:05:12,IP Address,98.220.218.2,40,18,False,2020-03-25 10:05:43,R_3j85IMLfib4TdUK,Davis,Aruna,arunadavis@yahoo.com,0,,,email,EN,0,,
+2020-03-18 18:16:45,2020-03-18 18:16:59,IP Address,73.202.19.197,40,14,False,2020-03-25 18:17:00,R_3dPMgyXYu40sVTL,Nikhil,Smita,gsmitajune@gmail.com,0,,,email,EN,0,,

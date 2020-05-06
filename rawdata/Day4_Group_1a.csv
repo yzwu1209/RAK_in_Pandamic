@@ -1,0 +1,28 @@
+StartDate,EndDate,Status,IPAddress,Progress,Duration (in seconds),Finished,RecordedDate,ResponseId,RecipientLastName,RecipientFirstName,RecipientEmail,ExternalReference,LocationLatitude,LocationLongitude,DistributionChannel,UserLanguage,Q2_1,Q4_1,Q5
+Start Date,End Date,Response Type,IP Address,Progress,Duration (in seconds),Finished,Recorded Date,Response ID,Recipient Last Name,Recipient First Name,Recipient Email,External Data Reference,Location Latitude,Location Longitude,Distribution Channel,User Language,"Before we give you today's task, indicate your current mood by clicking the appropriate radio button below.
+
+	-5 means extremely negative
+	0 means neutral, and
+	+5 means extremely positive. - Your mood BEFORE","Now that you are done, click on the radio button below to describe your mood immediately after completing the task. 
+
+	-5 means extremely negative
+	0 means neutral, and
+	+5 means extremely positive. - Your mood AFTER",OPTIONAL: Please share any comments about today's mindfulness practice.
+"{""ImportId"":""startDate"",""timeZone"":""America/Denver""}","{""ImportId"":""endDate"",""timeZone"":""America/Denver""}","{""ImportId"":""status""}","{""ImportId"":""ipAddress""}","{""ImportId"":""progress""}","{""ImportId"":""duration""}","{""ImportId"":""finished""}","{""ImportId"":""recordedDate"",""timeZone"":""America/Denver""}","{""ImportId"":""_recordId""}","{""ImportId"":""recipientLastName""}","{""ImportId"":""recipientFirstName""}","{""ImportId"":""recipientEmail""}","{""ImportId"":""externalDataReference""}","{""ImportId"":""locationLatitude""}","{""ImportId"":""locationLongitude""}","{""ImportId"":""distributionChannel""}","{""ImportId"":""userLanguage""}","{""ImportId"":""QID16_1""}","{""ImportId"":""QID18_1""}","{""ImportId"":""QID19_TEXT""}"
+2020-03-15 15:01:59,2020-03-15 15:02:16,Survey Preview,,100,17,True,2020-03-15 15:02:17,R_82gsC8LLUprAtFv,,,,,40.7295989990234375,-74.39009857177734375,preview,EN,0,0,-99
+2020-03-19 07:20:16,2020-03-19 07:21:01,IP Address,71.105.162.60,100,45,True,2020-03-19 07:21:01,R_2xWXMfq9UTZ66bF,Ma,Taylor,taylorma@berkeley.edu,1,40.7819976806640625,-73.99530029296875,email,EN,0,3,-99
+2020-03-19 07:30:40,2020-03-19 07:31:11,IP Address,107.77.207.73,100,31,True,2020-03-19 07:31:11,R_2TRxlTDX1WWJ26o,Desai,Hetal,hdesai@memesal.net,0,41.7996063232421875,-88.00659942626953125,email,EN,2,3,-99
+2020-03-19 08:30:42,2020-03-19 09:00:02,IP Address,69.246.244.251,100,1759,True,2020-03-19 09:00:03,R_2sakto875lcrMzH,Mittal,Dimpi,dimpi@suburbanchicagohomes.com,0,41.768798828125,-88.1425018310546875,email,EN,3,5,-99
+2020-03-19 09:04:40,2020-03-19 09:05:13,IP Address,98.193.108.247,100,33,True,2020-03-19 09:05:13,R_3HAp0ip41vt78gX,Dalal,Krisha,ktimbadia@gmail.com,0,41.7057037353515625,-88.19460296630859375,email,EN,2,3,-99
+2020-03-19 09:34:03,2020-03-19 09:35:28,IP Address,52.26.159.49,100,84,True,2020-03-19 09:35:28,R_dcopM3M8CdtWN3j,Rasband,Dan,danrasband@berkeley.edu,1,45.8491058349609375,-119.71429443359375,email,EN,-1,-1,-99
+2020-03-19 10:12:29,2020-03-19 10:13:31,IP Address,71.105.162.60,100,61,True,2020-03-19 10:13:32,R_3EnGdQsHlB5gFiG,Qi,Tianjiao,tqi@berkeley.edu,0,40.7819976806640625,-73.99530029296875,email,EN,-1,0,-99
+2020-03-19 06:59:41,2020-03-19 17:21:33,IP Address,76.116.172.16,100,37312,True,2020-03-19 17:21:33,R_7TIIeCvMwnm2ebv,Ma,Jane,janejma@gmail.com,0,40.7158050537109375,-74.35900115966796875,email,EN,1,1,-99
+2020-03-19 17:41:59,2020-03-19 17:42:50,IP Address,68.111.201.147,100,50,True,2020-03-19 17:42:50,R_2ayNZGqUiJBgXgG,Shulok,Liz,liz.shulok@gmail.com,0,33.1096954345703125,-117.0670013427734375,email,EN,1,1,-99
+2020-03-19 18:52:25,2020-03-19 18:52:43,IP Address,71.105.162.60,100,17,True,2020-03-19 18:52:43,R_oYpLVffsfXSEP4J,Ma,Taylor,taylorma@berkeley.edu,1,40.7819976806640625,-73.99530029296875,email,EN,0,3,-99
+2020-03-19 22:12:06,2020-03-19 22:12:24,IP Address,73.162.6.98,100,17,True,2020-03-19 22:12:24,R_3EZvynvRc5rod3i,Khandelwal,Dheeraj,dheeraj.k@berkeley.edu,1,37.865997314453125,-122.25689697265625,email,EN,1,3,-99
+2020-03-20 01:31:38,2020-03-20 01:33:43,IP Address,74.101.203.218,100,125,True,2020-03-20 01:33:44,R_UMAIi5g4Srh7mpj,Gao,John,Johngao1@gmail.com,1,40.7682952880859375,-73.98020172119140625,email,EN,3,3,-99
+2020-03-19 04:49:03,2020-03-19 04:49:09,IP Address,73.184.237.52,40,5,False,2020-03-20 04:49:22,R_2Y3bi923nxAk3Iq,Li,Shihong,lshzju@gmail.com,0,,,email,EN,1,,
+2020-03-21 08:40:01,2020-03-21 08:40:29,IP Address,100.8.92.18,100,27,True,2020-03-21 08:40:29,R_2rMce2uevVhbofj,Zhao,Zheyin,zzyfrostmourn@gmail.com,1,40.71820068359375,-74.04759979248046875,email,EN,2,4,-99
+2020-03-21 14:01:13,2020-03-21 14:01:46,IP Address,100.8.92.18,100,32,True,2020-03-21 14:01:46,R_2SH0NV0V36thZOW,Yu,Lu,luyu0426@gmail.com,0,40.71820068359375,-74.04759979248046875,email,EN,2,3,-99
+2020-03-25 21:47:49,2020-03-25 21:48:37,IP Address,98.226.171.49,100,47,True,2020-03-25 21:48:37,R_u4ckElrcDiAG2Fb,Jakher,Naren,njakher@yahoo.com,1,42.0128021240234375,-88.09670257568359375,email,EN,3,2,-99
+2020-03-25 21:53:08,2020-03-25 21:53:35,Spam,98.226.171.49,100,26,True,2020-03-25 21:53:35,R_1g5rI5N2ue2dryE,Jakher,Naren,njakher@yahoo.com,1,42.0128021240234375,-88.09670257568359375,email,EN,3,3,-99

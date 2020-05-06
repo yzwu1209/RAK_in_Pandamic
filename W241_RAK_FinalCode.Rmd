@@ -1,0 +1,1491 @@
+---
+title: 'Final Project: Random Acts of Kindness'
+author: "Chloe Wu | Radhika Satapathy | Kim Darnell"
+date: "Section 2 - Spring 2020"
+output:
+  html_document: default
+  pdf_document: default
+---
+
+### PART I: PRE-EXPERIMENT SURVEY & TREATMENT SELECTION
+
+### PART II: EXPERIMENT SURVEY & ANALYSIS OF TREATMENT EFFECTS
+#### SECTION A: DATA LOADING
+#### SECTION B: DATA SCRUBBING/CLEANSING
+#### SECTION C: EXPLORATORY DATA ANALYSIS
+#### SECTION D: PREPARING DATA FOR MODELING
+#### SECTION E: REGRESSION MODELS
+
+---
+
+#### Loading R libraries 
+```{r load_R_packages, warning=FALSE, message=FALSE, results="hide"}
+
+library(foreign)
+library(data.table)
+library(knitr)
+library(stargazer)
+library(dplyr)
+library(multiwayvcov)
+library(sandwich)
+library(lmtest)
+library(lsmeans)
+library(pastecs)
+library(purrr)
+library(ggplot2)
+library(readr)
+library(gridExtra)
+library(grid)
+library(wesanderson)
+library(janitor)
+library(tidyr)
+library(naniar)
+library(yarrr)
+library(car)
+```
+
+### PART I: PRE-EXPERIMENT SURVEY & TREATMENT SELECTION
+```{r pre_experiment_task_selection}
+
+# Load task survey data
+d <- fread("./analysis/task_survey_0308_tasks.csv")
+
+# Perform a mixed factorial ANOVA on the effect of Maleness
+# and Actitivity on survey respondents' Ratings of the 
+# activities on an 11 point scale. The goal is to determine
+# if men rated activities differently from women in order to
+# guide our treatment selection.
+
+task_model <- lm(rating~activity + male + activity:male, data = d)
+Anova(task_model,type = "II")
+
+# Examine all possible pairs of activities to determine which
+# have significantly different ratings and which are statistically
+# identical. Use a pairwise t test because all activities were
+# rated by the same people.
+
+pairwise.t.test(d$rating, d$activity, paired = TRUE)
+
+```
+
+### PART II: EXPERIMENT SURVEY & ANALYSIS OF TREATMENT EFFECTS
+
+#### SECTION A: DATA LOADING
+
+#### A1: Load Qualtrics survey data exported as .csv files into R 
+```{r load_csv_files, results="hide"}
+
+# Daily Survey Outcomes
+Day1_Group_1a <- fread("./rawdata/Day1_Group_1a.csv", header=T)[-c(1:2),]
+Day1_Group_1b <- fread("./rawdata/Day1_Group_1b.csv", header=T)[-c(1:2),]
+Day1_Group_2a <- fread("./rawdata/Day1_Group_2a.csv", header=T)[-c(1:2),]
+Day1_Group_2b <- fread("./rawdata/Day1_Group_2b.csv", header=T)[-c(1:2),]
+
+Day2_Group_1a <- fread("./rawdata/Day2_Group_1a.csv", header=T)[-c(1:2),]
+Day2_Group_1b <- fread("./rawdata/Day2_Group_1b.csv", header=T)[-c(1:2),]
+Day2_Group_2a <- fread("./rawdata/Day2_Group_2a.csv", header=T)[-c(1:2),]
+Day2_Group_2b <- fread("./rawdata/Day2_Group_2b.csv", header=T)[-c(1:2),]
+
+Day3_Group_1a <- fread("./rawdata/Day3_Group_1a.csv", header=T)[-c(1:2),]
+Day3_Group_1b <- fread("./rawdata/Day3_Group_1b.csv", header=T)[-c(1:2),]
+Day3_Group_2a <- fread("./rawdata/Day3_Group_2a.csv", header=T)[-c(1:2),]
+Day3_Group_2b <- fread("./rawdata/Day3_Group_2b.csv", header=T)[-c(1:2),]
+
+Day4_Group_1a <- fread("./rawdata/Day4_Group_1a.csv", header=T)[-c(1:2),]
+Day4_Group_1b <- fread("./rawdata/Day4_Group_1b.csv", header=T)[-c(1:2),]
+Day4_Group_2a <- fread("./rawdata/Day4_Group_2a.csv", header=T)[-c(1:2),]
+
+# rename columns (for some reason this table had different column names than all the rest)
+setnames(Day4_Group_2a, "Q3_1", "Q2_1", skip_absent=TRUE)
+setnames(Day4_Group_2a, "Q5_1", "Q4_1", skip_absent=TRUE)
+setnames(Day4_Group_2a, "Q6", "Q5", skip_absent=TRUE)
+
+Day4_Group_2b <- fread("./rawdata/Day4_Group_2b.csv", header=T)[-c(1:2),]
+
+Day5_Group_1a <- fread("./rawdata/Day5_Group_1a.csv", header=T)[-c(1:2),]
+Day5_Group_1b <- fread("./rawdata/Day5_Group_1b.csv", header=T)[-c(1:2),]
+Day5_Group_2a <- fread("./rawdata/Day5_Group_2a.csv", header=T)[-c(1:2),]
+Day5_Group_2b <- fread("./rawdata/Day5_Group_2b.csv", header=T)[-c(1:2),]
+
+Day6_Group_1a <- fread("./rawdata/Day6_Group_1a.csv", header=T)[-c(1:2),]
+Day6_Group_1b <- fread("./rawdata/Day6_Group_1b.csv", header=T)[-c(1:2),]
+Day6_Group_2a <- fread("./rawdata/Day6_Group_2a.csv", header=T)[-c(1:2),]
+Day6_Group_2b <- fread("./rawdata/Day6_Group_2b.csv", header=T)[-c(1:2),]
+
+Day7_Group_1a <- fread("./rawdata/Day7_Group_1a.csv", header=T)[-c(1:2),]
+Day7_Group_1b <- fread("./rawdata/Day7_Group_1b.csv", header=T)[-c(1:2),]
+Day7_Group_2a <- fread("./rawdata/Day7_Group_2a.csv", header=T)[-c(1:2),]
+Day7_Group_2b <- fread("./rawdata/Day7_Group_2b.csv", header=T)[-c(1:2),]
+
+Day8_Group_1a <- fread("./rawdata/Day8_Group_1a.csv", header=T)[-c(1:2),]
+Day8_Group_1b <- fread("./rawdata/Day8_Group_1b.csv", header=T)[-c(1:2),]
+Day8_Group_2a <- fread("./rawdata/Day8_Group_2a.csv", header=T)[-c(1:2),]
+Day8_Group_2b <- fread("./rawdata/Day8_Group_2b.csv", header=T)[-c(1:2),]
+
+
+# Demographic Survey Data
+demographic_survey_data <- fread("./rawdata/DemographicSurveyData.csv", header=T)[-c(1:2),]
+
+# Contacts (Subjects)
+contacts_1a <- fread("./rawdata/Group1a.csv", header=T)
+contacts_1b <- fread("./rawdata/Group1b.csv", header=T)
+contacts_2a <- fread("./rawdata/Group2a.csv", header=T)
+contacts_2b <- fread("./rawdata/Group2b.csv", header=T)
+
+```
+
+#### A2: Add columns to identify Day, Group and Task for each entry in the survey response data tables created in previous step
+```{r add_additional_columns, results="hide"}
+
+# identify each survey outcome as belonging to the corresponding group
+# days: 1:8
+# activity_type: mindful->0, kindness->1
+# intensity: High->1, Low->0
+# beneficiary: Others->1, Self->0
+
+Day1_Group_1a[, day := 1][, group := "1a"][, task := "think_make_bed"][, activity_type := 0][, intensity := 0][, beneficiary := 0][, tau :=0]
+Day1_Group_1b[, day := 1][, group := "1b"][, task := "wash_cup"][, activity_type := 1][, intensity := 0][, beneficiary := 1][, tau :=0]
+Day1_Group_2a[, day := 1][, group := "2a"][, task := "think_list_song"][, activity_type := 0][, intensity := 1][, beneficiary := 0][, tau :=0]
+Day1_Group_2b[, day := 1][, group := "2b"][, task := "clean_up"][, activity_type := 1][, intensity := 0][, beneficiary := 1][, tau :=0]
+
+Day2_Group_1a[, day := 2][, group := "1a"][, task := "think_clean_up"][, activity_type := 0][, intensity := 0][, beneficiary := 1][, tau :=0]
+Day2_Group_1b[, day := 2][, group := "1b"][, task := "list_song"][, activity_type := 1][, intensity := 1][, beneficiary := 0][, tau :=0]
+Day2_Group_2a[, day := 2][, group := "2a"][, task := "achieve_goal"][, activity_type := 1][, intensity := 1][, beneficiary := 0][, tau :=0]
+Day2_Group_2b[, day := 2][, group := "2b"][, task := "think_make_tea"][, activity_type := 0][, intensity := 0][, beneficiary := 0][, tau :=0]
+
+Day3_Group_1a[, day := 3][, group := "1a"][, task := "share_book"][, activity_type := 1][, intensity := 1][, beneficiary := 1][, tau :=0]
+Day3_Group_1b[, day := 3][, group := "1b"][, task := "make_tea"][, activity_type := 1][, intensity := 0][, beneficiary := 0][, tau :=0]
+Day3_Group_2a[, day := 3][, group := "2a"][, task := "make_bed"][, activity_type := 1][, intensity := 0][, beneficiary := 0][, tau :=0]
+Day3_Group_2b[, day := 3][, group := "2b"][, task := "catch_friend"][, activity_type := 1][, intensity := 1][, beneficiary := 1][, tau :=0]
+
+Day4_Group_1a[, day := 4][, group := "1a"][, task := "think_catch_friend"][, activity_type := 0][, intensity := 1][, beneficiary := 1][, tau :=0]
+Day4_Group_1b[, day := 4][, group := "1b"][, task := "think_achieve_goal"][, activity_type := 0][, intensity := 1][, beneficiary := 0][, tau :=0]
+Day4_Group_2a[, day := 4][, group := "2a"][, task := "clean_up"][, activity_type := 1][, intensity := 0][, beneficiary := 1][, tau :=0]
+Day4_Group_2b[, day := 4][, group := "2b"][, task := "make_bed"][, activity_type := 1][, intensity := 0][, beneficiary := 0][, tau :=0]
+
+Day5_Group_1a[, day := 5][, group := "1a"][, task := "make_tea"][, activity_type := 1][, intensity := 0][, beneficiary := 0][, tau :=0]
+Day5_Group_1b[, day := 5][, group := "1b"][, task := "share_book"][, activity_type := 1][, intensity := 1][, beneficiary := 1][, tau :=0]
+Day5_Group_2a[, day := 5][, group := "2a"][, task := "think_make_tea"][, activity_type := 0][, intensity := 0][, beneficiary := 0][, tau :=0]
+Day5_Group_2b[, day := 5][, group := "2b"][, task := "think_list_song"][, activity_type := 0][, intensity := 1][, beneficiary := 0][, tau :=0]
+
+Day6_Group_1a[, day := 6][, group := "1a"][, task := "list_song"][, activity_type := 1][, intensity := 1][, beneficiary := 0][, tau :=0]
+Day6_Group_1b[, day := 6][, group := "1b"][, task := "think_catch_friend"][, activity_type := 0][, intensity := 1][, beneficiary := 1][, tau :=0]
+Day6_Group_2a[, day := 6][, group := "2a"][, task := "catch_friend"][, activity_type := 1][, intensity := 1][, beneficiary := 1][, tau :=0]
+Day6_Group_2b[, day := 6][, group := "2b"][, task := "think_wash_cup"][, activity_type := 0][, intensity := 0][, beneficiary := 1][, tau :=0]
+
+Day7_Group_1a[, day := 7][, group := "1a"][, task := "wash_cup"][, activity_type := 1][, intensity := 0][, beneficiary := 1][, tau :=0]
+Day7_Group_1b[, day := 7][, group := "1b"][, task := "think_make_bed"][, activity_type := 0][, intensity := 0][, beneficiary := 0][, tau :=0]
+Day7_Group_2a[, day := 7][, group := "2a"][, task := "think_wash_cup"][, activity_type := 0][, intensity := 0][, beneficiary := 1][, tau :=0]
+Day7_Group_2b[, day := 7][, group := "2b"][, task := "think_share_book"][, activity_type := 0][, intensity := 1][, beneficiary := 1][, tau :=0]
+
+Day8_Group_1a[, day := 8][, group := "1a"][, task := "think_achieve_goal"][, activity_type := 0][, intensity := 1][, beneficiary := 0][, tau :=0]
+Day8_Group_1b[, day := 8][, group := "1b"][, task := "think_clean_up"][, activity_type := 0][, intensity := 0][, beneficiary := 1][, tau :=0]
+Day8_Group_2a[, day := 8][, group := "2a"][, task := "think_share_book"][, activity_type := 0][, intensity := 1][, beneficiary := 1][, tau :=0]
+Day8_Group_2b[, day := 8][, group := "2b"][, task := "achieve_goal"][, activity_type := 1][, intensity := 1][, beneficiary := 0][, tau :=0]
+
+
+# Add group identifier to contacts
+contacts_1a[, group := "1a"] 
+contacts_1b[, group := "1b"]
+contacts_2a[, group := "2a"]
+contacts_2b[, group := "2b"] 
+
+```
+
+#### A3: Create master survey responses data table and master survey contacts data table
+```{r combine_data_tables , results="hide"}
+
+# Survey data
+dt_list <- list(Day1_Group_1a, Day1_Group_1b, Day1_Group_2a, Day1_Group_2b,
+                Day2_Group_1a, Day2_Group_1b, Day2_Group_2a, Day2_Group_2b,
+                Day3_Group_1a, Day3_Group_1b, Day3_Group_2a, Day3_Group_2b,
+                Day4_Group_1a, Day4_Group_1b, Day4_Group_2a, Day4_Group_2b,
+                Day5_Group_1a, Day5_Group_1b, Day5_Group_2a, Day5_Group_2b,
+                Day6_Group_1a, Day6_Group_1b, Day6_Group_2a, Day6_Group_2b,
+                Day7_Group_1a, Day7_Group_1b, Day7_Group_2a, Day7_Group_2b,
+                Day8_Group_1a, Day8_Group_1b, Day8_Group_2a, Day8_Group_2b )
+
+dt_combined <- rbindlist(dt_list, fill=TRUE)
+nrow(dt_combined)
+
+# Contact Data
+contacts_list <- list(contacts_1a, contacts_1b, contacts_2a, contacts_2b)
+contacts <- rbindlist(contacts_list, fill=TRUE)
+nrow(contacts)
+
+```
+
+
+#### SECTION B: DATA SCRUBBING/CLEANSING
+
+#### B1: Survey Data: Rename columns of interest with more intuitive names
+```{r rename_columns , results="hide"}
+
+# Daily Survey Data
+setnames(dt_combined, "Q2_1", "mood_before", skip_absent=TRUE)
+setnames(dt_combined, "Q4_1", "mood_after", skip_absent=TRUE)
+setnames(dt_combined, "Q5", "comments", skip_absent=TRUE)
+setnames(dt_combined, "ExternalReference", "Gender", skip_absent=TRUE)
+
+# Demographic Survey Data
+setnames(demographic_survey_data, "Birth_1", "BirthYear", skip_absent=TRUE)
+setnames(demographic_survey_data, "Personality_1", "Curiosity", skip_absent=TRUE)
+setnames(demographic_survey_data, "Personality_2", "Conscientousness", skip_absent=TRUE)
+setnames(demographic_survey_data, "Personality_3", "Extraversion", skip_absent=TRUE)
+setnames(demographic_survey_data, "Personality_4", "Agreeableness", skip_absent=TRUE)
+setnames(demographic_survey_data, "Personality_5", "Confidence", skip_absent=TRUE)
+setnames(demographic_survey_data, "Nation", "Nationality", skip_absent=TRUE)
+setnames(demographic_survey_data, "Rlnship", "Relationship", skip_absent=TRUE)
+setnames(demographic_survey_data, "Num_current", "Current_HH_Size", skip_absent=TRUE)
+setnames(demographic_survey_data, "Num_grow_up", "Childhood_HH_Size", skip_absent=TRUE)
+setnames(demographic_survey_data, "Live_area", "Residential_Area_Type", skip_absent=TRUE)
+
+```
+
+#### B2: Survey Data: Filter out extraneous data
+```{r filter_daily_survey_data , results="hide"}
+
+# 1 - Eliminate entries made by test contacts, i.e. Rad, Kim, Chloe based on email addresses in 'Test Contacts' in Qualtrics
+# 2 - Eliminate survey preview entries, i.e. Status == 'Survey Preview'
+test_contacts <- c('kdarnell@berkeley.edu',
+                   'kdarnell@ischool.berkeley.edu',
+                    'yzwu1209@berkeley.edu', 
+                   'yzwu@ischool.berkeley.edu',
+                    'radsatapathy@berkeley.edu',
+                   'radsatapathy@ischool.berkeley.edu',
+                    'radsatapathy@gmail.com',
+                    'studyradhika@gmail.com',
+                    'rmsatapathy@yahoo.com',
+                    'radhikamunipalle@yahoo.com')
+
+cat("\nTotal number of outcomes from Qualtrics:", nrow(dt_combined))
+cat("\nNumber of invalid outcomes (test contacts & previews):", nrow(dt_combined[RecipientEmail %in% test_contacts | Status == 'Survey Preview']))
+dt_combined_filtered1 <- dt_combined[!(RecipientEmail %in% test_contacts | Status == 'Survey Preview')]
+cat("\nNumber of outcomes after filtering out invalid outcomes:", nrow(dt_combined_filtered1))
+
+
+# 3 - Eliminate multiple/duplicate completes (retain first completed survey entry)
+b <- data.table(dt_combined_filtered1 %>% group_by(RecipientEmail, day) %>% summarize(n = n()))
+cat("\nNumber of sets of multiple completes:", nrow(b[n>1]))
+a <- data.table(dt_combined_filtered1 %>% group_by(RecipientEmail, day) %>% summarize(RecordedDate = min(RecordedDate)))
+dt_combined_filtered2 <- data.table( left_join(a, dt_combined_filtered1, by = c("RecipientEmail"="RecipientEmail","day"="day","RecordedDate"="RecordedDate")) )
+cat("\nNumber of outcomes after eliminating multiple completes:", nrow(dt_combined_filtered2))
+
+
+# 4 - Eliminate incomplete/unattempted survey entries, i.e. mood_before == ''
+cat("\nNumber of incomplete (mood_before is null) outcomes:", nrow(dt_combined_filtered2[Finished == 'False' & mood_before == '']))
+dt_combined_filtered3 <- dt_combined_filtered2[!(Finished == 'False'& mood_before == '')]
+cat("\nNumber of outcomes after eliminating incompletes:",nrow(dt_combined_filtered3))
+
+```
+
+#### B3: Survey Data: Set mood_after values for incomplete entries to -99
+```{r update_incomplete_mood_afters, results="hide"}
+
+# Update unrecorded mood_after values to -99 - these are incompletes
+cat("\nNumber of incompletes (i.e. mood_after=unrecorded):", nrow(dt_combined_filtered3[mood_after == '']))
+
+# List of non-compliers 
+# dt_combined_filtered3[mood_after == ''] %>% group_by(RecipientEmail, day) %>% summarize(n=n())
+
+# Update unrecorded mood_after = -99
+dt_combined_filtered3$mood_after[dt_combined_filtered3$mood_after == ''] <- -99
+
+```
+
+#### B4: Survey Data: Compute and fill in values for mood change
+```{r update_tau, result="hide"}
+
+# mood change <- difference in before and after moods [zero in case mood_after = -99]
+dt_combined_filtered3[ ,tau := ifelse(dt_combined_filtered3$mood_after==-99, 0, as.numeric(dt_combined_filtered3$mood_after)-as.numeric(dt_combined_filtered3$mood_before))]
+
+```
+
+#### B5: Anonymize Email info & extract columns of interest
+```{r, results="hide"}
+contacts[,sid := sample(1:nrow(contacts), nrow(contacts))]
+contacts_dt <- contacts[, c("Email", "group", "sid")]
+t1 <- merge(dt_combined_filtered3, contacts_dt, by.x=c("RecipientEmail"), by.y=c("Email"))
+t1[, RecipientEmail := sid]
+contacts_dt2 <- contacts_dt[, c("group", "sid")]
+
+dt_combined_filtered_subset <- t1[, c("RecipientEmail", "mood_before", "mood_after", "tau", "day", "group.x", "task", "activity_type", "intensity", "beneficiary", "Gender", "comments")]
+
+setnames(dt_combined_filtered_subset, "group.x", "group", skip_absent=TRUE)
+
+cat("\nNumber of daily survey outcomes:", nrow(dt_combined_filtered_subset))
+cat("\nNumber of columns:", length(dt_combined_filtered_subset))
+
+```
+
+#### B6: Demographic Data: Filter out extraneous data
+```{r filter_demographic_data, results="hide"}
+
+# 1 - Eliminate preview entries
+cat("\nTotal number of outcomes from Qualtrics:", nrow(demographic_survey_data))
+cat("\nNumber of invalid outcomes (preview):", nrow(demographic_survey_data[RecipientEmail %in% test_contacts | Status == 'Survey Preview'] ))
+demographic_survey_data_filtered1 <- demographic_survey_data[!(RecipientEmail %in% test_contacts | Status == 'Survey Preview')]
+cat("\nNumber of outcomes after filtering out invalid outcomes:", nrow(demographic_survey_data_filtered1))
+
+# 2 - Eliminate duplicate/multiple completes
+test <- demographic_survey_data_filtered1 %>%  group_by(RecipientEmail) %>%  summarise(n=n())
+test_dt <- data.table(test)
+# test_dt[n>1]
+cat("\nNumber of sets of multiple completes:", nrow(test_dt[n>1]))
+a <- data.table(demographic_survey_data_filtered1 %>% group_by(RecipientEmail) %>% summarize(RecordedDate = min(RecordedDate)))
+demographic_survey_data_filtered2 <- left_join(a, demographic_survey_data_filtered1, by = c("RecipientEmail"="RecipientEmail","RecordedDate"="RecordedDate"))
+cat("\nNumber of outcomes after eliminating multiple completes:", nrow(demographic_survey_data_filtered2))
+
+# 3 - Anonymize email info
+t2 <- merge(data.table(demographic_survey_data_filtered2), contacts_dt, by.x=c("RecipientEmail"), by.y=c("Email"))
+t2[, RecipientEmail := sid]
+
+# 4 - Select columns of interest
+demographic_survey_data_filtered_subset <- t2[, c("RecipientEmail", "Gender", "BirthYear", "Race", "Nationality", "Relationship",
+                                                  "Childhood_HH_Size", "Current_HH_Size", "Residential_Area_Type", "Num_lang",
+                                                  "Curiosity", "Conscientousness","Extraversion", "Agreeableness", "Confidence")]
+cat("\n\nNumber of demographic survey respondents:", nrow(demographic_survey_data_filtered_subset))
+
+```
+
+#### B7: Export clean data into .csv
+```{r write_filtered_data_to_csv, results="hide"}
+
+# Daily Survey Data
+## check if file exists before writing
+chk <- file.exists("./analysis/daily_survey_data.csv")
+if (chk == TRUE){ 
+  file.remove("./analysis/daily_survey_data.csv")
+  fwrite(dt_combined_filtered_subset, "./analysis/daily_survey_data.csv")
+} else { fwrite(dt_combined_filtered_subset, "./analysis/daily_survey_data.csv") }
+
+# Demographic Survey Data
+## check if file exists before writing
+chk <- file.exists("./analysis/demo_survey_data.csv")
+if (chk == TRUE){ 
+  file.remove("./analysis/demo_survey_data.csv")
+  fwrite(demographic_survey_data_filtered_subset, "./analysis/demo_survey_data.csv")
+} else { fwrite(dt_combined_filtered_subset, "./analysis/demo_survey_data.csv") }
+
+# Contacts Data
+## check if file exists before writing
+chk <- file.exists("./analysis/contacts_data.csv")
+if (chk == TRUE){ 
+  file.remove("./analysis/contacts_data.csv")
+  fwrite(contacts_dt2, "./analysis/contacts_data.csv")
+} else { fwrite(contacts_dt2, "./analysis/contacts_data.csv") }
+
+```
+
+
+#### SECTION C: EXPLORATORY DATA ANALYSIS
+
+#### C1: Load cleaned up data
+```{r load_clean_data, results="hide"}
+
+# Daily Survey Data
+daily_dt <- fread("./analysis/daily_survey_data.csv")
+nrow(daily_dt)
+
+# Demographic Survey Data
+demo_dt <- fread("./analysis/demo_survey_data.csv")
+nrow(demo_dt)
+
+# contacts
+contacts_dt <- fread("./analysis/contacts_data.csv")
+nrow(contacts_dt)
+```
+
+#### C2: Task Survey Vs Experiment Group Comparison
+```{r Compare personal profile data for task survey and experiment groups}
+
+# Load PII scrubbed combined survey data
+d <- fread("./analysis/task_survey_0331.csv")
+
+# Summarize and compare distributions of gender identities
+d %>% 
+  group_by(Role) %>%
+  summarise(no_rows = length(Role))
+
+role_gender_tbl <- table(d$Role,d$gender_id)
+role_gender_tbl
+
+# Calculate average age by gender identity for Participants
+# section
+
+## Create (approximate) age variable
+d$age <- 2020 - d$birth_year
+
+## Calculate average age for each gender identity
+aggregate(d[, c('age')], list(d$Role, d$gender_id), mean, na.rm =TRUE, na.action = na.pass)
+
+# Summarize and compare distributions of birth years by generation
+# Source of generational cutoffs:
+# https://www.pewresearch.org/fact-tank/2019/01/17/where-millennials-end-and-generation-z-begins/
+
+role_birth_tbl <- table(d$Role,d$generation)
+role_birth_tbl
+
+role_birth <- chisq.test(x = role_birth_tbl)
+role_birth
+
+# Summarize and compare distributions of races/ethnicities
+role_race_tbl <- table(d$Role,d$race_eth)
+role_race_tbl
+
+role_race <- chisq.test(x = role_race_tbl)
+role_race
+
+# Summarize and compare distributions of nationalities
+role_nat_tbl <- table(d$Role,d$nationality)
+role_nat_tbl
+
+role_nat <- chisq.test(x = role_nat_tbl)
+role_nat
+
+# Summarize and compare distributions of relationship status
+role_rel_tbl <- table(d$Role,d$rel_status)
+role_rel_tbl
+
+role_rel <- chisq.test(x = role_rel_tbl)
+role_rel
+
+# Summarize and compare distributions of living region
+role_reg_tbl <- table(d$Role,d$region)
+role_reg_tbl
+
+role_reg <- chisq.test(x = role_reg_tbl)
+role_reg
+
+# Summarize and compare distributions of size of family
+# of origin
+t.test(d$fam_origin~d$Role)
+
+# Summarize and compare distributions of size of current
+# household
+t.test(d$household~d$Role)
+
+# Summarize and compare distributions of number of languages
+# spoken
+t.test(d$num_lang~d$Role)
+
+# Summarize and compare distributions of Curiosity scores
+t.test(d$curious~d$Role)
+
+# Summarize and compare distributions of Conscientiousness scores
+t.test(d$conscient~d$Role)
+
+# Summarize and compare distributions of Extraversion scores
+t.test(d$extravert~d$Role)
+
+# Summarize and compare distributions of Agreeableness scores
+t.test(d$agreeable~d$Role)
+
+# Summarize and compare distributions of Confidence scores
+t.test(d$confident~d$Role)
+
+```
+
+#### C3: Blocking
+```{r}
+# Create a new data table by merging subject_dt and demo_dt
+subject_demo_dt <- contacts_dt[demo_dt, on=c(sid = "RecipientEmail")]
+
+# Check the count of subjects by their gender and by group
+ggplot(subject_demo_dt,aes(x=group, fill=Gender)) + 
+    geom_bar(width = 0.3) +
+    ggtitle("Gender") +
+    scale_fill_manual(values=wes_palette(n=3, name="GrandBudapest2")) +
+    stat_count(geom="text", aes(label=ifelse(..count.. > 0, ..count.., "")),
+               position=position_stack(vjust=0.5)) +
+    theme(
+          legend.position = c(0.98, 0.98),
+          legend.justification = c("right", "top"),
+          legend.text = element_text(size = 8),
+          legend.direction = "horizontal"
+          )
+
+# Check the count of subjects by their nationality and by group
+ggplot(subject_demo_dt,aes(x=group, fill=Nationality)) + 
+    geom_bar(width = 0.3, alpha=0.7) +
+    ggtitle("Nationality") +
+    stat_count(geom="text", aes(label=ifelse(..count.. > 0, ..count.., "")),
+               position=position_stack(vjust=0.5)) + 
+    scale_fill_brewer(palette = "Set2", direction=-1) +
+    theme(legend.position = "bottom", legend.text = element_text(size = 8))
+ 
+```
+
+#### C4: Task Completion
+```{r}
+# Check the count of completions by group by each task day
+ggplot(daily_dt,aes(x=day, fill=group)) + 
+    geom_histogram(color= "white", alpha=0.8, binwidth = 0.5) +
+    ggtitle("Histogram for Each Task Day") + 
+    stat_bin(binwidth=0.5, geom="text", aes(label=ifelse(..count.. > 0, ..count.., "")),
+             position=position_stack(vjust=0.5)) +
+    scale_fill_manual(values=wes_palette(n=4, name="GrandBudapest2")) 
+
+```
+
+#### C5: Covariate Balance Check
+##### (1). Balanced Covariates
+```{r}
+## Race
+# Check the count of subjects by their race and by group
+ggplot(subject_demo_dt,aes(x=group, fill=Race)) + 
+    geom_bar(width = 0.3, alpha=0.7) +
+    ggtitle("Race") +
+    stat_count(geom="text", aes(label=ifelse(..count.. > 0, ..count.., "")),
+               position=position_stack(vjust=0.5)) + 
+    scale_fill_brewer(palette = "Set2") +
+    theme(legend.position = "bottom", legend.text = element_text(size = 8))
+```
+```{r}
+## childhood household size
+# Check the distribution of subjects' childhood household size by group
+ggplot(subject_demo_dt,aes(x=Childhood_HH_Size, color=group)) +
+      ggtitle("Childhood Household Size") +
+      geom_density() +
+      theme(
+    legend.position = c(.95, .95),
+    legend.justification = c("right", "top"),
+    legend.box.just = "right",
+    legend.margin = margin(6, 6, 6, 6)
+    )
+
+
+## Residential_Area_Type
+# Check the count of subjects by their Residential_Area_Type and by group
+ggplot(subject_demo_dt,aes(x=group, fill=Residential_Area_Type)) + 
+    geom_bar(width = 0.3) +
+    ggtitle("Residential Area Type") +
+    scale_fill_manual(values=wes_palette(n=3, name="GrandBudapest2")) +
+    stat_count(geom="text", aes(label=ifelse(..count.. > 0, ..count.., "")),
+               position=position_stack(vjust=0.5)) +
+    theme(
+          legend.position = c(0.98, 0.98),
+          legend.justification = c("right", "top"),
+          legend.text = element_text(size = 8),
+          legend.direction = "horizontal"
+          )
+
+
+## Relationship
+# Check the count of subjects by their Relationship and by group
+ggplot(subject_demo_dt,aes(x=group, fill=Relationship)) + 
+    geom_bar(width = 0.3) +
+    ggtitle("Relationship") +
+    scale_fill_manual(values=wes_palette(n=4, name="GrandBudapest2")) +
+    stat_count(geom="text", aes(label=ifelse(..count.. > 0, ..count.., "")),
+               position=position_stack(vjust=0.5)) +
+      theme(legend.position = "bottom", legend.text = element_text(size = 8))
+
+```
+##### (2). Imbalanced Covariates
+```{r}
+## Age
+# Check the count of subjects by their age and by group
+# Add a new column with age
+current_year <- 2020
+subject_demo_dt[, age := (current_year - BirthYear)]
+
+# Plot histogram
+ggplot(subject_demo_dt,aes(x=age)) + 
+    geom_histogram(color= "white", alpha=0.8, binwidth = 3, fill="skyblue") +
+    ggtitle("Age") + 
+    stat_bin(binwidth = 3, geom="text", aes(label=ifelse(..count.. > 0, ..count.., "")),
+             position=position_stack(vjust=0.5)) +
+    facet_wrap(~ group, ncol = 2)
+
+## current household size
+# Check the distribution of subjects' current household size by group
+ggplot(subject_demo_dt,aes(x=Current_HH_Size, color=group)) +
+      ggtitle("Current Household Size") +
+      geom_density() +
+      theme(
+            legend.position = c(.95, .95),
+            legend.justification = c("right", "top"),
+            legend.box.just = "right",
+            legend.margin = margin(6, 6, 6, 6)
+            )
+
+## Personality Scores
+# Sanity check on personality scores
+summary(subject_demo_dt)
+
+# There are -99 score for personality, which means no response
+# Remove no response from our EDA
+subject_demo_dt_subset <- subject_demo_dt[Curiosity > 0 & Conscientousness > 0 & Extraversion > 0]
+
+summary(subject_demo_dt_subset)
+
+# Check the distribution of subjects' personality scores by group
+personality_list = c("Curiosity", "Conscientousness", "Extraversion", "Agreeableness", "Confidence")
+sub_dt_long <- subject_demo_dt_subset %>% 
+                pivot_longer(personality_list, names_to = "key", values_to = "value")
+
+ggplot(sub_dt_long, aes(x = value, color= key)) +
+      ggtitle("Personality Scores") +
+      geom_density() + 
+      facet_wrap( ~ group) +
+      theme(legend.position = "bottom", legend.text = element_text(size = 8))
+
+```
+
+#### C6: Task Completion & Outcomes Analysis
+```{r completion_analysis, results="hide"}
+
+# Different Types of Completionists 
+# Full => participated & recorded both before and after responses on all 8 days 
+# Partial => participated & recorded both before and after responses on fewer than 8 days
+# Mixed => recorded both before and after reponses on a few days and only before response on remaining days
+# Attriters => No Shows - signed up but did not participate on any of the days
+
+by_min_mood <- data.table(daily_dt %>% group_by(RecipientEmail) %>%  summarise(min_mood=min(mood_after)))
+by_max_mood <- data.table(daily_dt %>% group_by(RecipientEmail) %>%  summarise(max_mood=max(mood_after)))
+by_num_activities <- data.table(daily_dt %>% group_by(RecipientEmail) %>%  summarise(num_activities=n()))
+
+tmp1 <- merge(by_min_mood, by_max_mood, all=TRUE)
+tmp2 <- merge(tmp1, by_num_activities, all=TRUE)
+
+complete_compliers <- tmp2[num_activities == 8 & min_mood != -99 & max_mood != -99]
+complete_non_compliers <- tmp2[num_activities == 8 & min_mood == -99 & max_mood == -99]
+complete_mixed <- tmp2[num_activities == 8 & min_mood == -99 & max_mood != -99]
+partial_compliers <- tmp2[num_activities < 8 & min_mood != -99 & max_mood != -99]
+partial_non_compliers <- tmp2[num_activities < 8 & min_mood == -99 & max_mood == -99]
+partial_mixed <- tmp2[num_activities < 8 & min_mood == -99 & max_mood != -99]
+complete_attriters <- contacts$sid[!(contacts$sid %in% tmp2$RecipientEmail)]
+
+cat("Total Number of Subjects Recruited:", nrow(contacts))
+
+cat("\n\nFULL COMPLETIONISTS")
+cat("\n\tStrict:", nrow(complete_compliers))
+cat("\n\tMixed:", nrow(complete_mixed))
+
+cat("\n\nATTRITERS")
+cat("\n\tComplete:", length(complete_attriters)+nrow(partial_non_compliers))
+
+cat("\n\nPARTIAL COMPLETIONISTS")
+cat("\n\tStrict:", nrow(partial_compliers))
+cat("\n\tPartial:", nrow(partial_mixed))
+
+cat("\n\nTotal Number of Participants:", nrow(complete_compliers)+nrow(partial_compliers) + 
+                                         length(complete_attriters)+nrow(partial_non_compliers) +
+                                         nrow(complete_mixed)+nrow(partial_mixed) )
+
+```
+
+
+#### SECTION D: PREPARING DATA FOR MODELING
+
+#### D1: Prepare input table for regression
+```{r prepare_input_datasets_for_regression, results="hide"}
+
+# Step 1: Create new data table to hold all the "expected" survey outcomes
+my_dt <- data.table(email = rep(contacts_dt$sid, each=8),
+                    day = rep(1:8, nrow(contacts)),
+                    group = rep(contacts_dt$group, each=8),
+                    tau = 0,
+                    activity_type = 0,
+                    intensity = 0,
+                    beneficiary = 0,
+                    gender = 0,
+                    age = 0,
+                    race = '',
+                    nationality = '',
+                    relationship = 0,
+                    chilhood_hh_size = 0,
+                    current_hh_size = 0,
+                    res_area_type = '',
+                    num_lang = 0,
+                    pf_curi = 0,
+                    pf_cons = 0,
+                    pf_extr = 0,
+                    pf_agre = 0,
+                    pf_conf = 0
+                    )
+
+# Step 2: Merge my_dt with daily survey data and update relevant fields
+temp1 <- merge(my_dt, daily_dt, by.x=c("email","day"), by.y=c("RecipientEmail","day"), all=TRUE)
+temp1[, tau.x := temp1$tau.y]
+temp1[, gender := temp1$Gender]
+
+# Step 3: Merge temp1 with demographic data and update relevant fields
+temp2 <- merge(data.table(temp1), demo_dt, by.x=c("email"), by.y=c("RecipientEmail"), all=TRUE)
+temp2[, age := 2020-temp2$BirthYear]
+temp2[, race := temp2$Race]
+temp2[, nationality := temp2$Nationality]
+temp2[, relationship := temp2$Relationship]
+temp2[, chilhood_hh_size := temp2$Childhood_HH_Size]
+temp2[, current_hh_size := temp2$Current_HH_Size]
+temp2[, res_area_type := temp2$Residential_Area_Type]
+temp2[, num_lang := temp2$Num_lang]
+temp2[, curi := temp2$Curiosity]
+temp2[, cons := temp2$Conscientousness]
+temp2[, extr := temp2$Extraversion]
+temp2[, agre := temp2$Agreeableness]
+temp2[, conf := temp2$Confidence]
+temp2[order(temp2$email,temp2$day),]
+
+
+# Step 4: Select columns of interest
+rak_dt <- temp2[, c("email","day","group.x", "mood_before", "mood_after", "tau.x", "activity_type.y","intensity.y",
+                    "beneficiary.y","gender", "age", "Race","Nationality","Relationship",
+                    "Childhood_HH_Size", "Current_HH_Size", "Residential_Area_Type", "Num_lang",
+                    "Curiosity","Conscientousness","Extraversion","Agreeableness","Confidence")]
+
+names(rak_dt)[names(rak_dt) == "group.x"] <- "group"
+names(rak_dt)[names(rak_dt) == "tau.x"] <- "tau"
+names(rak_dt)[names(rak_dt) == "activity_type.y"] <- "kind_activity"
+names(rak_dt)[names(rak_dt) == "intensity.y"] <- "high_intensity"
+names(rak_dt)[names(rak_dt) == "beneficiary.y"] <- "others_benefit"
+names(rak_dt)[names(rak_dt) == "gender"] <- "gender_male"
+
+rak_dt[day == 1 & group == "1a", kind_activity := 0]
+rak_dt[day == 1 & group == "1a", high_intensity := 0]
+rak_dt[day == 1 & group == "1a", others_benefit := 0]
+
+rak_dt[day == 2 & group == "1a", kind_activity := 0]
+rak_dt[day == 2 & group == "1a", high_intensity := 0]
+rak_dt[day == 2 & group == "1a", others_benefit := 1]
+
+rak_dt[day == 3 & group == "1a", kind_activity := 1]
+rak_dt[day == 3 & group == "1a", high_intensity := 1]
+rak_dt[day == 3 & group == "1a", others_benefit := 1]
+
+rak_dt[day == 4 & group == "1a", kind_activity := 0]
+rak_dt[day == 4 & group == "1a", high_intensity := 1]
+rak_dt[day == 4 & group == "1a", others_benefit := 1]
+
+rak_dt[day == 5 & group == "1a", kind_activity := 1]
+rak_dt[day == 5 & group == "1a", high_intensity := 0]
+rak_dt[day == 5 & group == "1a", others_benefit := 0]
+
+rak_dt[day == 6 & group == "1a", kind_activity := 1]
+rak_dt[day == 6 & group == "1a", high_intensity := 1]
+rak_dt[day == 6 & group == "1a", others_benefit := 0]
+
+rak_dt[day == 7 & group == "1a", kind_activity := 1]
+rak_dt[day == 7 & group == "1a", high_intensity := 0]
+rak_dt[day == 7 & group == "1a", others_benefit := 1]
+
+rak_dt[day == 8 & group == "1a", kind_activity := 0]
+rak_dt[day == 8 & group == "1a", high_intensity := 1]
+rak_dt[day == 8 & group == "1a", others_benefit := 0]
+
+rak_dt[day == 1 & group == "1b", kind_activity := 1]
+rak_dt[day == 1 & group == "1b", high_intensity := 0]
+rak_dt[day == 1 & group == "1b", others_benefit := 1]
+
+rak_dt[day == 2 & group == "1b", kind_activity := 1]
+rak_dt[day == 2 & group == "1b", high_intensity := 1]
+rak_dt[day == 2 & group == "1b", others_benefit := 0]
+
+rak_dt[day == 3 & group == "1b", kind_activity := 1]
+rak_dt[day == 3 & group == "1b", high_intensity := 0]
+rak_dt[day == 3 & group == "1b", others_benefit := 0]
+
+rak_dt[day == 4 & group == "1b", kind_activity := 0]
+rak_dt[day == 4 & group == "1b", high_intensity := 1]
+rak_dt[day == 4 & group == "1b", others_benefit := 0]
+
+rak_dt[day == 5 & group == "1b", kind_activity := 1]
+rak_dt[day == 5 & group == "1b", high_intensity := 1]
+rak_dt[day == 5 & group == "1b", others_benefit := 1]
+
+rak_dt[day == 6 & group == "1b", kind_activity := 0]
+rak_dt[day == 6 & group == "1b", high_intensity := 1]
+rak_dt[day == 6 & group == "1b", others_benefit := 1]
+
+rak_dt[day == 7 & group == "1b", kind_activity := 0]
+rak_dt[day == 7 & group == "1b", high_intensity := 0]
+rak_dt[day == 7 & group == "1b", others_benefit := 0]
+
+rak_dt[day == 8 & group == "1b", kind_activity := 0]
+rak_dt[day == 8 & group == "1b", high_intensity := 0]
+rak_dt[day == 8 & group == "1b", others_benefit := 1]
+
+rak_dt[day == 1 & group == "2a", kind_activity := 0]
+rak_dt[day == 1 & group == "2a", high_intensity := 1]
+rak_dt[day == 1 & group == "2a", others_benefit := 0]
+
+rak_dt[day == 2 & group == "2a", kind_activity := 1]
+rak_dt[day == 2 & group == "2a", high_intensity := 1]
+rak_dt[day == 2 & group == "2a", others_benefit := 0]
+
+rak_dt[day == 3 & group == "2a", kind_activity := 1]
+rak_dt[day == 3 & group == "2a", high_intensity := 0]
+rak_dt[day == 3 & group == "2a", others_benefit := 0]
+
+rak_dt[day == 4 & group == "2a", kind_activity := 1]
+rak_dt[day == 4 & group == "2a", high_intensity := 0]
+rak_dt[day == 4 & group == "2a", others_benefit := 1]
+
+rak_dt[day == 5 & group == "2a", kind_activity := 0]
+rak_dt[day == 5 & group == "2a", high_intensity := 0]
+rak_dt[day == 5 & group == "2a", others_benefit := 0]
+
+rak_dt[day == 6 & group == "2a", kind_activity := 1]
+rak_dt[day == 6 & group == "2a", high_intensity := 1]
+rak_dt[day == 6 & group == "2a", others_benefit := 1]
+
+rak_dt[day == 7 & group == "2a", kind_activity := 0]
+rak_dt[day == 7 & group == "2a", high_intensity := 0]
+rak_dt[day == 7 & group == "2a", others_benefit := 1]
+
+rak_dt[day == 8 & group == "2a", kind_activity := 0]
+rak_dt[day == 8 & group == "2a", high_intensity := 1]
+rak_dt[day == 8 & group == "2a", others_benefit := 1]
+
+rak_dt[day == 1 & group == "2b", kind_activity := 1]
+rak_dt[day == 1 & group == "2b", high_intensity := 0]
+rak_dt[day == 1 & group == "2b", others_benefit := 1]
+
+rak_dt[day == 2 & group == "2b", kind_activity := 0]
+rak_dt[day == 2 & group == "2b", high_intensity := 0]
+rak_dt[day == 2 & group == "2b", others_benefit := 0]
+
+rak_dt[day == 3 & group == "2b", kind_activity := 1]
+rak_dt[day == 3 & group == "2b", high_intensity := 1]
+rak_dt[day == 3 & group == "2b", others_benefit := 1]
+
+rak_dt[day == 4 & group == "2b", kind_activity := 1]
+rak_dt[day == 4 & group == "2b", high_intensity := 0]
+rak_dt[day == 4 & group == "2b", others_benefit := 0]
+
+rak_dt[day == 5 & group == "2b", kind_activity := 0]
+rak_dt[day == 5 & group == "2b", high_intensity := 1]
+rak_dt[day == 5 & group == "2b", others_benefit := 0]
+
+rak_dt[day == 6 & group == "2b", kind_activity := 0]
+rak_dt[day == 6 & group == "2b", high_intensity := 0]
+rak_dt[day == 6 & group == "2b", others_benefit := 1]
+
+rak_dt[day == 7 & group == "2b", kind_activity := 0]
+rak_dt[day == 7 & group == "2b", high_intensity := 1]
+rak_dt[day == 7 & group == "2b", others_benefit := 1]
+
+rak_dt[day == 8 & group == "2b", kind_activity := 1]
+rak_dt[day == 8 & group == "2b", high_intensity := 1]
+rak_dt[day == 8 & group == "2b", others_benefit := 0]
+
+rak_dt[order(rak_dt$email,rak_dt$day),]
+
+```
+
+#### D2: Write out input table for Regression
+```{r write_regression_input_data, results="hide"}
+## check if file exists before writing
+chk <- file.exists("./analysis/rak_data.csv")
+if (chk == TRUE){ 
+  file.remove("./analysis/rak_data.csv")
+  fwrite(rak_dt, "./analysis/rak_data.csv")
+} else { fwrite(rak_dt, "./analysis/rak_data.csv") }
+
+```
+
+#### D3:Prepare data subsets based on completion analysis
+```{r regression_data_sets, results="hide"}
+
+# Case 1: All data - EVB low (set tau <- 0 for NA values)
+case1_dt <- copy(rak_dt)
+case1_dt[is.na(tau), tau := 0]
+case1_dt[order(case1_dt$email,case1_dt$day),]
+
+# Case 2: All data - EVB high ((set tau <- 10 for NA values))
+case2_dt <- copy(rak_dt)
+case2_dt[is.na(tau) | mood_after == -99, tau := 10]
+case2_dt[order(case2_dt$email,case2_dt$day),]
+
+# Case 3: All data - EVB avg ((set tau <- avg of their respective groups for NA values)
+case3_dt <- copy(rak_dt)
+mean_dt <- data.table(case3_dt [tau != 'NA' | mood_after != -99] %>% group_by(group) %>% summarise(ate=round(mean(tau),0)))
+case3_dt[(mood_after == -99 ) & case3_dt$group == '1a', tau := mean_dt$ate[mean_dt$group == '1a']]
+case3_dt[(mood_after == -99 ) & case3_dt$group == '1b', tau := mean_dt$ate[mean_dt$group == '1b']]
+case3_dt[(mood_after == -99 ) & case3_dt$group == '2a', tau := mean_dt$ate[mean_dt$group == '2a']]
+case3_dt[(mood_after == -99 ) & case3_dt$group == '2b', tau := mean_dt$ate[mean_dt$group == '2b']]
+case3_dt[(is.na(tau) ) & case3_dt$group == '1a', tau := mean_dt$ate[mean_dt$group == '1a']]
+case3_dt[(is.na(tau) ) & case3_dt$group == '1b', tau := mean_dt$ate[mean_dt$group == '1b']]
+case3_dt[(is.na(tau) ) & case3_dt$group == '2a', tau := mean_dt$ate[mean_dt$group == '2a']]
+case3_dt[(is.na(tau) ) & case3_dt$group == '2b', tau := mean_dt$ate[mean_dt$group == '2b']]
+case3_dt[order(case3_dt$email,case3_dt$day),]
+
+# Case 4: Non-Attriters 
+case4_dt <- rak_dt[tau != 'NA' & mood_after != -99 & mood_after != 'NA']
+case4_dt[order(case4_dt$email,case4_dt$day),]
+
+# Case 5: Partial Completionists
+case5_dt <- rak_dt[(email %in% partial_compliers$RecipientEmail | email %in% partial_mixed$RecipientEmail | email %in% complete_mixed$RecipientEmail) & mood_after != -99 & mood_after != 'NA']
+case5_dt[order(case5_dt$email,case5_dt$day),]
+
+# Case 6: Full Strict Completionists
+case6_dt <- rak_dt[email %in% complete_compliers$RecipientEmail & tau != 'NA' & mood_after != -99 & mood_after != 'NA']
+case6_dt[order(case6_dt$email,case6_dt$day),]
+
+```
+
+
+#### SECTION E: REGRESSION MODELS
+
+#### E1: Short Models: Effects of Focus
+```{r short_model_focus, results="hide"}
+
+model1 <- case1_dt[ , lm(tau~kind_activity)]
+vcov_cluster1 <- cluster.vcov(model1, case1_dt$group)
+se_cluster1 <- sqrt(diag(vcov_cluster1))
+
+model2 <- case2_dt[ , lm(tau~kind_activity)]
+vcov_cluster2 <- cluster.vcov(model2, case2_dt$group)
+se_cluster2 <- sqrt(diag(vcov_cluster2))
+
+model3 <- case3_dt[ , lm(tau~kind_activity)]
+vcov_cluster3 <- cluster.vcov(model3, case3_dt$group)
+se_cluster3 <- sqrt(diag(vcov_cluster3))
+
+model4 <- case4_dt[ , lm(tau~kind_activity)]
+vcov_cluster4 <- cluster.vcov(model4, case4_dt$group)
+se_cluster4 <- sqrt(diag(vcov_cluster4))
+
+model5 <- case5_dt[ , lm(tau~kind_activity)]
+vcov_cluster5 <- cluster.vcov(model5, case5_dt$group)
+se_cluster5 <- sqrt(diag(vcov_cluster5))
+
+model6 <- case6_dt[ , lm(tau~kind_activity)]
+vcov_cluster6 <- cluster.vcov(model6, case6_dt$group)
+se_cluster6 <- sqrt(diag(vcov_cluster6))
+
+stargazer(model1, model2, model3, model4, model5, model6, se = list(se_cluster1,se_cluster2,se_cluster3,se_cluster4, se_cluster5, se_cluster6), type = "text", title="Effects of Focus", omit.stat = c("ser", "rsq", "adj.rsq"), column.labels=c("All - EVB Low", "All-EVB High", "All-EVB Avg", "Non-Attriters", "Partial/Mixed", "Full Strict"), model.numbers=FALSE, dep.var.caption  = "Change In Mood", dep.var.labels.include = FALSE, add.lines = list(c("#Unique Subjects", "73", "73","73", "61", "30", "31")))
+
+```
+
+#### E2: Short Models: Effects of Intensity
+```{r short_model_intensity, results="hide"}
+
+model1 <- case1_dt[ , lm(tau~high_intensity)]
+vcov_cluster1 <- cluster.vcov(model1, case1_dt$group)
+se_cluster1 <- sqrt(diag(vcov_cluster1))
+
+model2 <- case2_dt[ , lm(tau~high_intensity)]
+vcov_cluster2 <- cluster.vcov(model2, case2_dt$group)
+se_cluster2 <- sqrt(diag(vcov_cluster2))
+
+model3 <- case3_dt[ , lm(tau~high_intensity)]
+vcov_cluster3 <- cluster.vcov(model3, case3_dt$group)
+se_cluster3 <- sqrt(diag(vcov_cluster3))
+
+model4 <- case4_dt[ , lm(tau~high_intensity)]
+vcov_cluster4 <- cluster.vcov(model4, case4_dt$group)
+se_cluster4 <- sqrt(diag(vcov_cluster4))
+
+model5 <- case5_dt[ , lm(tau~high_intensity)]
+vcov_cluster5 <- cluster.vcov(model5, case5_dt$group)
+se_cluster5 <- sqrt(diag(vcov_cluster5))
+
+model6 <- case6_dt[ , lm(tau~high_intensity)]
+vcov_cluster6 <- cluster.vcov(model6, case6_dt$group)
+se_cluster6 <- sqrt(diag(vcov_cluster6))
+
+stargazer(model1, model2, model3, model4, model5, model6, se = list(se_cluster1,se_cluster2,se_cluster3,se_cluster4, se_cluster5, se_cluster6), type = "text", title="Effects of Intensity", omit.stat = c("ser", "rsq", "adj.rsq"), column.labels=c("All - EVB Low", "All-EVB High", "All-EVB Avg", "Non-Attriters", "Partial/Mixed", "Full Strict"), model.numbers=FALSE, dep.var.caption  = "Change In Mood", dep.var.labels.include = FALSE, add.lines = list(c("#Unique Subjects", "73", "73","73", "61", "30", "31")))
+
+```
+
+#### E3: Short Models: Effects of Target
+```{r short_model_target, results="hide"}
+
+model1 <- case1_dt[ , lm(tau~others_benefit)]
+vcov_cluster1 <- cluster.vcov(model1, case1_dt$group)
+se_cluster1 <- sqrt(diag(vcov_cluster1))
+
+model2 <- case2_dt[ , lm(tau~others_benefit)]
+vcov_cluster2 <- cluster.vcov(model2, case2_dt$group)
+se_cluster2 <- sqrt(diag(vcov_cluster2))
+
+model3 <- case3_dt[ , lm(tau~others_benefit)]
+vcov_cluster3 <- cluster.vcov(model3, case3_dt$group)
+se_cluster3 <- sqrt(diag(vcov_cluster3))
+
+model4 <- case4_dt[ , lm(tau~others_benefit)]
+vcov_cluster4 <- cluster.vcov(model4, case4_dt$group)
+se_cluster4 <- sqrt(diag(vcov_cluster4))
+
+model5 <- case5_dt[ , lm(tau~others_benefit)]
+vcov_cluster5 <- cluster.vcov(model5, case5_dt$group)
+se_cluster5 <- sqrt(diag(vcov_cluster5))
+
+model6 <- case6_dt[ , lm(tau~others_benefit)]
+vcov_cluster6 <- cluster.vcov(model6, case6_dt$group)
+se_cluster6 <- sqrt(diag(vcov_cluster6))
+
+stargazer(model1, model2, model3, model4, model5, model6, se = list(se_cluster1,se_cluster2,se_cluster3,se_cluster4, se_cluster5, se_cluster6), type = "text", title="Effects of Target", omit.stat = c("ser", "rsq", "adj.rsq"), column.labels=c("All - EVB Low", "All-EVB High", "All-EVB Avg", "Non-Attriters", "Partial/Mixed", "Full Strict"), model.numbers=FALSE, dep.var.caption  = "Change In Mood", dep.var.labels.include = FALSE, add.lines = list(c("#Unique Subjects", "73", "73","73", "61", "30", "31")))
+
+```
+
+#### E4: Short Models: Combined Effects of Focus, Intensity & Activity Type
+```{r short_model_focus_intensity_activity-type, results="hide"}
+
+model1 <- case1_dt[ , lm(tau~kind_activity + high_intensity + others_benefit)]
+vcov_cluster1 <- cluster.vcov(model1, case1_dt$group)
+se_cluster1 <- sqrt(diag(vcov_cluster1))
+
+model2 <- case2_dt[ , lm(tau~kind_activity + high_intensity + others_benefit)]
+vcov_cluster2 <- cluster.vcov(model2, case2_dt$group)
+se_cluster2 <- sqrt(diag(vcov_cluster2))
+
+model3 <- case3_dt[ , lm(tau~kind_activity + high_intensity + others_benefit)]
+vcov_cluster3 <- cluster.vcov(model3, case3_dt$group)
+se_cluster3 <- sqrt(diag(vcov_cluster3))
+
+model4 <- case4_dt[ , lm(tau~kind_activity + high_intensity + others_benefit)]
+vcov_cluster4 <- cluster.vcov(model4, case4_dt$group)
+se_cluster4 <- sqrt(diag(vcov_cluster4))
+
+model5 <- case5_dt[ , lm(tau~kind_activity + high_intensity + others_benefit)]
+vcov_cluster5 <- cluster.vcov(model5, case5_dt$group)
+se_cluster5 <- sqrt(diag(vcov_cluster5))
+
+model6 <- case6_dt[ , lm(tau~kind_activity + high_intensity + others_benefit)]
+vcov_cluster6 <- cluster.vcov(model6, case6_dt$group)
+se_cluster6 <- sqrt(diag(vcov_cluster6))
+
+stargazer(model1, model2, model3, model4, model5, model6, se = list(se_cluster1,se_cluster2,se_cluster3,se_cluster4, se_cluster5, se_cluster6), type = "text", title="Effects of Focus, Intensity & Target", omit.stat = c("ser", "rsq", "adj.rsq"), column.labels=c("All - EVB Low", "All-EVB High", "All-EVB Avg", "Non-Attriters", "Partial/Mixed", "Full Strict"), model.numbers=FALSE, dep.var.caption  = "Change In Mood", dep.var.labels.include = FALSE, add.lines = list(c("#Unique Subjects", "73", "73","73", "61", "30", "31")))
+
+```
+
+#### E5: Short Models: Effects of Focus, Intensity & Activity Type with interaction terms
+```{r short_model_with_interaction, results="hide"}
+
+model1 <- case1_dt[ , lm(tau~kind_activity + high_intensity + others_benefit + kind_activity*high_intensity*others_benefit)]
+vcov_cluster1 <- cluster.vcov(model1, case1_dt$group)
+se_cluster1 <- sqrt(diag(vcov_cluster1))
+
+model2 <- case2_dt[ , lm(tau~kind_activity + high_intensity + others_benefit + kind_activity*high_intensity*others_benefit)]
+vcov_cluster2 <- cluster.vcov(model2, case2_dt$group)
+se_cluster2 <- sqrt(diag(vcov_cluster2))
+
+model3 <- case3_dt[ , lm(tau~kind_activity + high_intensity + others_benefit + kind_activity*high_intensity*others_benefit)]
+vcov_cluster3 <- cluster.vcov(model3, case3_dt$group)
+se_cluster3 <- sqrt(diag(vcov_cluster3))
+
+model4 <- case4_dt[ , lm(tau~kind_activity + high_intensity + others_benefit + kind_activity*high_intensity*others_benefit)]
+vcov_cluster4 <- cluster.vcov(model4, case4_dt$group)
+se_cluster4 <- sqrt(diag(vcov_cluster4))
+
+model5 <- case5_dt[ , lm(tau~kind_activity + high_intensity + others_benefit + kind_activity*high_intensity*others_benefit)]
+vcov_cluster5 <- cluster.vcov(model5, case5_dt$group)
+se_cluster5 <- sqrt(diag(vcov_cluster5))
+
+model6 <- case6_dt[ , lm(tau~kind_activity + high_intensity + others_benefit + kind_activity*high_intensity*others_benefit)]
+vcov_cluster6 <- cluster.vcov(model6, case6_dt$group)
+se_cluster6 <- sqrt(diag(vcov_cluster6))
+
+stargazer(model1, model2, model3, model4, model5, model6, se = list(se_cluster1,se_cluster2,se_cluster3,se_cluster4, se_cluster5, se_cluster6), type = "text", title="Effects of Focus, Intensity & Activity Type", omit.stat = c("ser", "rsq", "adj.rsq"), column.labels=c("All - EVB Low", "All-EVB High", "All-EVB Avg", "Non-Attriters", "Partial/Mixed", "Full Strict"), model.numbers=FALSE, dep.var.caption  = "Change In Mood", dep.var.labels.include = FALSE, add.lines = list(c("#Unique Subjects", "73", "73","73", "61", "30", "31")))
+
+```
+
+#### E6: Long Model: Effects of Demographic Covariates
+```{r long_model_all_covariates, results="hide", results="hide"}
+
+model4 <- case4_dt[ , lm(tau~kind_activity + high_intensity + others_benefit + gender_male + age + Nationality + Race + Num_lang + Residential_Area_Type + Childhood_HH_Size +
+                           Current_HH_Size + Curiosity + Conscientousness + Extraversion + Agreeableness + Confidence)]
+vcov_cluster4 <- cluster.vcov(model4, case4_dt$group)
+se_cluster4 <- sqrt(diag(vcov_cluster4))
+
+
+model6 <- case6_dt[ , lm(tau~kind_activity + high_intensity + others_benefit + gender_male + age + Nationality + Race + Num_lang + Residential_Area_Type + Childhood_HH_Size +
+                           Current_HH_Size + Curiosity + Conscientousness + Extraversion + Agreeableness + Confidence)]
+vcov_cluster6 <- cluster.vcov(model6, case6_dt$group)
+se_cluster6 <- sqrt(diag(vcov_cluster6))
+
+stargazer(model4, model6, se = list(se_cluster4,  se_cluster6), type = "text", omit.stat = c("ser", "rsq", "adj.rsq"), title="Model 2: with All Possible Covariates", column.labels=c( "Non-Attriters",  "Full Strict"), model.numbers=FALSE, dep.var.caption  = "Change In Mood", dep.var.labels.include = FALSE, add.lines = list(c("#Unique Subjects", "61","31")))
+
+```
+
+#### E7: Examining Partial Completionists
+```{r, fig.height = 8, fig.width = 12, results="hide"}
+
+# Examining tasks of Partial/Mixed Completionists
+tmp_activity <- data.table(case5_dt %>% group_by(kind_activity) %>% summarise(n=n()))
+p1 <- ggplot(tmp_activity, aes(x = kind_activity, y = n)) +
+  geom_bar(stat = "identity", width=0.5, fill='steelblue') +
+  scale_x_discrete(name="Type of Task",limits=c(0,1),
+        labels=c("Mindful", "Kindness")) +
+  scale_y_discrete(name="# Tasks", limits=c(0, 10,20,30,40,50,60,70), expand=expand_scale(mult = c(0, .1))) +
+  geom_text(aes(label=n), position=position_dodge(width=0), vjust=-0.25)
+ 
+tmp_intensity <- data.table(case5_dt %>% group_by(high_intensity) %>% summarise(n=n()))
+p2 <- ggplot(tmp_intensity, aes(x = high_intensity, y = n)) +
+  geom_bar(stat = "identity", width=0.5, fill='steelblue') +
+  scale_x_discrete(name="Intensity",limits=c(0,1),
+        labels=c("Low", "High")) +
+  scale_y_discrete(name="# Tasks", limits=c(0, 10,20,30,40,50,60,70), expand=expand_scale(mult = c(0, .1))) +
+  geom_text(aes(label=n), position=position_dodge(width=0), vjust=-0.25)
+  
+tmp_focus <- data.table(case5_dt %>% group_by(others_benefit) %>% summarise(n=n()))
+p3 <- ggplot(tmp_focus, aes(x = others_benefit, y = n)) +
+  geom_bar(stat = "identity", width=0.5, fill='steelblue') +
+  scale_x_discrete(name="Focus",limits=c(0,1),
+        labels=c("Self", "Others")) +
+  scale_y_discrete(name="# Tasks", limits=c(0, 10,20,30,40,50,60,70), expand=expand_scale(mult = c(0, .1))) +
+  geom_text(aes(label=n), position=position_dodge(width=0), vjust=-0.25)
+ 
+grid.arrange(p1, p2, p3, nrow=2, top=textGrob("Analysis of Partial/Mixed Completionists", gp=gpar(fontface="bold")))
+
+```
+
+#### E6: Examining the differences between Partial/Mixed Completionists and Full Strict Completionists
+```{r}
+# Master data table with daily survey data, demographic data and contact data combined 
+rak_dt <- fread("./analysis/rak_data.csv")
+
+# Total subjects recruited = 73, total attritors = 11
+
+# Condense rak_dt to only include daily activity records that are not NA
+rak_dt_condensed <- rak_dt[! is.na(tau)]
+# rak_dt_condensed
+
+# Summarize the condensed version of rak_dt 
+summary_rak_dt <- data.table(rak_dt_condensed %>% group_by(email) %>%  
+                             summarise(min_mood_before = min(mood_before), 
+                                       max_mood_before = max(mood_before),
+                                       min_mood_after = min(mood_after), 
+                                       max_mood_after = max(mood_after),
+                                       num_activities = n())
+                             )
+
+# summary_rak_dt
+
+# Full Strict Completionists: subjects who completed all 8 days, and entered all mood_before and mood_after
+full_strict <- summary_rak_dt[num_activities == 8 & 
+                              min_mood_before != -99 &
+                              min_mood_after != -99]
+
+# Partial/Mixed Completionists: subjects who 
+# (1) did NOT complete all 8 days, 
+# (2) or, did NOT enter all mood_after in the days they completed
+partial_mixed <- summary_rak_dt[num_activities < 8 | 
+                                min_mood_after == -99]
+
+
+# Create a new data table by merging subject_dt and demo_dt
+subject_demo_dt <- contacts_dt[demo_dt, on=c(sid = "RecipientEmail")]
+
+
+# Add compliance label to subject_demo_dt 
+# in total 62 subjects with demo data; 11 attritors no data
+subject_demo_dt[, compliance := ifelse(sid %in% full_strict$email, 
+                                       "full_strict", 
+                                       ifelse(sid %in% partial_mixed$email, 
+                                              "partial_mixed", "attritor"))]
+
+# subject_demo_dt
+
+# There are only demo records for 28 partial/mixed, and 31 full strict; 
+# but there are 3 partial/mixed who did not provide demo data; 
+# and 3 attritors who provided demo data.
+table(subject_demo_dt$compliance)
+
+# The following subjects who participate in daily tasks but did not provide demo information
+summary_rak_dt[! email %in% subject_demo_dt[compliance != "attritor"]$Email]
+
+# for the purpose of EDA in this section, attritors are filtered out
+subject_demo_dt_filtered <- subject_demo_dt[compliance != "attritor"]
+
+```
+
+##### (1). Gender
+```{r}
+# Check the count of subjects by their gender and by compliance group
+ggplot(subject_demo_dt_filtered, aes(x=compliance, fill=Gender)) + 
+       geom_bar(width = 0.2) +
+       ggtitle("Gender") +
+       scale_fill_manual(values=wes_palette(n=3, name="GrandBudapest2")) +
+       stat_count(geom="text", aes(label=ifelse(..count.. > 0, ..count.., "")),
+                 position=position_stack(vjust=0.5)) +
+       theme(
+            legend.position = c(0.98, 0.98),
+            legend.justification = c("right", "top"),
+            legend.text = element_text(size = 8),
+            legend.direction = "horizontal"
+            )
+
+```
+
+##### (2). Age
+```{r}
+# Check the distribution of subjects' age by compliance group
+# Add a new column with age
+current_year <- 2020
+subject_demo_dt_filtered[, age := (current_year - BirthYear)]
+
+ggplot(subject_demo_dt_filtered, aes(x=age, color=compliance)) +
+       ggtitle("Age") +
+       geom_density() +
+       theme(
+            legend.position = c(0.98, 0.98),
+            legend.justification = c("right", "top"),
+            legend.text = element_text(size = 8),
+            legend.direction = "horizontal"
+            )
+
+```
+
+```{r}
+# Get the exact count of subjects by their age and by compliance group
+# Plot histogram
+ggplot(subject_demo_dt_filtered, aes(x=age)) + 
+       geom_histogram(color= "white", alpha=0.8, binwidth = 3, fill="skyblue") +
+       ggtitle("Histogram for Birth Year by Compliance Group") + 
+       stat_bin(binwidth = 3, geom="text", aes(label=ifelse(..count.. > 0, ..count.., "")),
+                position=position_stack(vjust=0.5)) +
+       facet_wrap(~ compliance)
+
+```
+
+##### (3). Nationality
+```{r}
+# Check the count of subjects by their nationality and by compliance group
+ggplot(subject_demo_dt_filtered, aes(x=Nationality, fill=compliance)) + 
+       geom_bar(width = 0.3) +
+       ggtitle("Histogram for Experiment Subjects' Nationality by Compliance Group") +
+       scale_fill_manual(values=wes_palette(n=2, name="Chevalier1")) +
+       theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+```
+
+```{r}
+# Check the count of subjects by their nationality and by group
+ggplot(subject_demo_dt_filtered, aes(x=compliance, fill=Nationality)) + 
+      geom_bar(width = 0.2, alpha=0.7) +
+      ggtitle("Nationality") +
+      stat_count(geom="text", aes(label=ifelse(..count.. > 0, ..count.., "")),
+                position=position_stack(vjust=0.5)) + 
+      scale_fill_brewer(palette = "Set2", direction=-1) +
+      theme(legend.position = "bottom", legend.text = element_text(size = 8))
+
+```
+
+##### (4). Race
+```{r}
+# Check the count of subjects by their race and by compliance group
+## Helper function to break line for long x tick text
+addline_format <- function(x,...){
+    gsub('\\s','\n',x)
+}
+
+ggplot(subject_demo_dt_filtered, aes(x=Race, fill=compliance)) + 
+       geom_bar(width = 0.3) +
+       ggtitle("Histogram for Experiment Subjects' Race by Compliance Group") +
+       scale_fill_manual(values=wes_palette(n=2, name="Chevalier1")) +
+       theme(axis.text.x = element_text(angle = 45, hjust = 1)) + 
+       scale_x_discrete(labels=c("Asian" = "Asian", "White" = "White", "White,Asian"="White,Asian",
+                                 "Latinx or Hispanic,Black or African American" =
+                                   addline_format("Latinx Hispanic Black African American"), 
+                                 "Other" = "Other", "White,Other" = "White,Other" ))
+
+# unique(subject_demo_dt_filtered$Race)
+
+```
+
+```{r}
+# Check the count of subjects by their nationality and by group
+ggplot(subject_demo_dt_filtered, aes(x=compliance, fill=Race)) + 
+        geom_bar(width = 0.2, alpha=0.7) +
+        ggtitle("Race") +
+        stat_count(geom="text", aes(label=ifelse(..count.. > 0, ..count.., "")),
+                   position=position_stack(vjust=0.5)) + 
+        scale_fill_brewer(palette = "Set2") +
+        theme(legend.position = "bottom", legend.text = element_text(size = 8))
+
+```
+
+##### (5). Childhood household size
+```{r}
+# Check the distribution of subjects' childhood household size by compliance group
+ggplot(subject_demo_dt_filtered, aes(x=Childhood_HH_Size, color=compliance)) +
+       ggtitle("Childhood Household Size") +
+      geom_density() +
+       theme(
+            legend.position = c(0.98, 0.98),
+            legend.justification = c("right", "top"),
+            legend.text = element_text(size = 8),
+            legend.direction = "horizontal"
+            )
+
+```
+
+```{r}
+# Check the exact count of subjects' childhood household size by compliance group
+ggplot(subject_demo_dt_filtered, aes(x=Childhood_HH_Size, fill=compliance)) + 
+       geom_histogram(color= "white", alpha=0.8, binwidth = 0.5) +
+       ggtitle("Histogram of Subjects' Childhood Household Size by Compliance Group") + 
+       stat_bin(binwidth=0.5, geom="text", aes(label=ifelse(..count.. > 0, ..count.., "")),
+                position=position_stack(vjust=0.5)) +
+       scale_fill_manual(values=wes_palette(n=2, name="Chevalier1")) 
+
+```
+
+##### (6). Current household size
+```{r}
+# Check the distribution of subjects' current household size by compliance group
+ggplot(subject_demo_dt_filtered, aes(x=Current_HH_Size, color=compliance)) +
+      ggtitle("Current Household Size") +
+      geom_density() +
+       theme(
+            legend.position = c(0.01, 0.98),
+            legend.justification = c("left", "top"),
+            legend.text = element_text(size = 8),
+            legend.direction = "horizontal"
+            )
+
+```
+
+```{r}
+# Check the exact count of subjects' current household size by compliance group
+ggplot(subject_demo_dt_filtered, aes(x=Current_HH_Size, fill=compliance)) + 
+       geom_histogram(color= "white", alpha=0.8, binwidth = 0.5) +
+       ggtitle("Histogram of Subjects' Current Household Size by Compliance Group") + 
+       stat_bin(binwidth=0.5, geom="text", aes(label=ifelse(..count.. > 0, ..count.., "")),
+                position=position_stack(vjust=0.5)) +
+       scale_fill_manual(values=wes_palette(n=2, name="Chevalier1")) 
+
+```
+
+##### (7). Residential Area Types
+```{r}
+# Check the count of subjects by their Residential Area Types and by compliance group
+ggplot(subject_demo_dt_filtered, aes(x=compliance, fill=Residential_Area_Type)) + 
+       geom_bar(width = 0.2) +
+       ggtitle("Residential Area Types") +
+       scale_fill_manual(values=wes_palette(n=3, name="GrandBudapest2")) +
+       stat_count(geom="text", aes(label=ifelse(..count.. > 0, ..count.., "")),
+                 position=position_stack(vjust=0.5)) +
+       theme(
+            legend.position = c(0.98, 0.98),
+            legend.justification = c("right", "top"),
+            legend.text = element_text(size = 8),
+            legend.direction = "horizontal"
+            )
+
+```
+
+##### (8). Relationship
+```{r}
+# Check the count of subjects by their Relationship Statuses and by compliance group
+ggplot(subject_demo_dt_filtered, aes(x=compliance, fill=Relationship)) + 
+       geom_bar(width = 0.2) +
+       ggtitle("Relationship Status") +
+       scale_fill_manual(values=wes_palette(n=3, name="GrandBudapest2")) +
+       stat_count(geom="text", aes(label=ifelse(..count.. > 0, ..count.., "")),
+                 position=position_stack(vjust=0.5)) +
+        theme(legend.position = "bottom", legend.text = element_text(size = 8))
+
+```
+
+```{r}
+# Check the exact count of subjects' current household size by compliance group
+ggplot(subject_demo_dt_filtered, aes(x=Num_lang, fill=compliance)) + 
+       geom_histogram(color= "white", alpha=0.8, binwidth = 0.5) +
+       ggtitle("Number of languages") + 
+       stat_bin(binwidth=0.5, geom="text", aes(label=ifelse(..count.. > 0, ..count.., "")),
+                position=position_stack(vjust=0.5)) +
+       scale_fill_manual(values=wes_palette(n=2, name="Chevalier1")) +
+       theme(
+            legend.position = c(0.98, 0.98),
+            legend.justification = c("right", "top"),
+            legend.text = element_text(size = 8),
+            legend.direction = "horizontal"
+            )
+
+```
+
+##### (9). Personality scores
+```{r}
+# Check the distribution of subjects' personality scores by compliance group
+
+## There are -99 score for personality, which means no response
+## Remove no response from our EDA
+subject_demo_dt_subset <- subject_demo_dt_filtered[ Curiosity > 0 & 
+                                                    Conscientousness > 0 & 
+                                                    Extraversion > 0]
+
+## Pivot our subject_demo_dt to a long dt
+personality_list = c("Curiosity", "Conscientousness", "Extraversion", "Agreeableness", "Confidence")
+sub_dt_long <- subject_demo_dt_subset %>% 
+                pivot_longer(personality_list, names_to = "key", values_to = "value")
+
+ggplot(sub_dt_long, aes(x = value, color= key)) +
+      ggtitle("Personality Scores") +
+      geom_density() + 
+      facet_wrap( ~ compliance) +
+      theme(legend.position = "bottom", legend.text = element_text(size = 8))
+
+```
+**By eye-balling, it seems that the two groups differ in their Confidence, Conscientousness & Curiosity scores.**
+
+```{r}
+# Zooming into Confidence, Conscientousness & Curiosity
+# Check the distribution of subjects' Confidence score by compliance group
+ggplot(subject_demo_dt_subset, aes(x=Confidence, color=compliance)) +
+      ggtitle("Confidence Scores") +
+      geom_density() +
+       theme(
+            legend.position = c(0.01, 0.98),
+            legend.justification = c("left", "top"),
+            legend.text = element_text(size = 8),
+            legend.direction = "horizontal"
+            )
+
+# Check the distribution of subjects' Conscientousness score by compliance group
+ggplot(subject_demo_dt_subset, aes(x=Conscientousness, color=compliance)) +
+      ggtitle("Conscientousness Scores") +
+      geom_density() +
+       theme(
+            legend.position = c(0.01, 0.98),
+            legend.justification = c("left", "top"),
+            legend.text = element_text(size = 8),
+            legend.direction = "horizontal"
+            )
+
+# Check the distribution of subjects' Curiosity score by compliance group
+ggplot(subject_demo_dt_subset, aes(x=Curiosity, color=compliance)) +
+      ggtitle("Curiosity Scores") +
+      geom_density() +
+       theme(
+            legend.position = c(0.01, 0.98),
+            legend.justification = c("left", "top"),
+            legend.text = element_text(size = 8),
+            legend.direction = "horizontal"
+            )
+
+```
+
+```{r}
+# Check the exact count of subjects' Curiosity Scores by compliance group
+ggplot(subject_demo_dt_subset, aes(x=Curiosity, fill=compliance)) + 
+       geom_histogram(color= "white", alpha=0.8, binwidth = 0.5) +
+       ggtitle("Curiosity") + 
+       stat_bin(binwidth=0.5, geom="text", aes(label=ifelse(..count.. > 0, ..count.., "")),
+                position=position_stack(vjust=0.5)) +
+       scale_fill_manual(values=wes_palette(n=2, name="Chevalier1")) +
+       theme(
+            legend.position = c(0.01, 0.98),
+            legend.justification = c("left", "top"),
+            legend.text = element_text(size = 8),
+            legend.direction = "horizontal"
+            )
+
+# Check the exact count of subjects' Confidence Scores by compliance group
+ggplot(subject_demo_dt_subset, aes(x=Confidence, fill=compliance)) + 
+       geom_histogram(color= "white", alpha=0.8, binwidth = 0.5) +
+       ggtitle("Confidence") + 
+       stat_bin(binwidth=0.5, geom="text", aes(label=ifelse(..count.. > 0, ..count.., "")),
+                position=position_stack(vjust=0.5)) +
+       scale_fill_manual(values=wes_palette(n=2, name="Chevalier1")) +
+       theme(
+            legend.position = c(0.01, 0.98),
+            legend.justification = c("left", "top"),
+            legend.text = element_text(size = 8),
+            legend.direction = "horizontal"
+            )
+```

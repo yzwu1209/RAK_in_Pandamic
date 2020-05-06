@@ -1,0 +1,26 @@
+StartDate,EndDate,Status,IPAddress,Progress,Duration (in seconds),Finished,RecordedDate,ResponseId,RecipientLastName,RecipientFirstName,RecipientEmail,ExternalReference,LocationLatitude,LocationLongitude,DistributionChannel,UserLanguage,Q2_1,Q4_1,Q5
+Start Date,End Date,Response Type,IP Address,Progress,Duration (in seconds),Finished,Recorded Date,Response ID,Recipient Last Name,Recipient First Name,Recipient Email,External Data Reference,Location Latitude,Location Longitude,Distribution Channel,User Language,"Before we give you today's task, indicate your current mood by clicking the appropriate radio button below.
+
+	-5 means extremely negative
+	0 means neutral, and
+	+5 means extremely positive. - Your mood BEFORE","Now that you are done, click on the radio button below to describe your mood immediately after completing the task. 
+
+	-5 means extremely negative
+	0 means neutral, and
+	+5 means extremely positive. - Your mood AFTER",OPTIONAL: Please share any comments about today's mindfulness practice.
+"{""ImportId"":""startDate"",""timeZone"":""America/Denver""}","{""ImportId"":""endDate"",""timeZone"":""America/Denver""}","{""ImportId"":""status""}","{""ImportId"":""ipAddress""}","{""ImportId"":""progress""}","{""ImportId"":""duration""}","{""ImportId"":""finished""}","{""ImportId"":""recordedDate"",""timeZone"":""America/Denver""}","{""ImportId"":""_recordId""}","{""ImportId"":""recipientLastName""}","{""ImportId"":""recipientFirstName""}","{""ImportId"":""recipientEmail""}","{""ImportId"":""externalDataReference""}","{""ImportId"":""locationLatitude""}","{""ImportId"":""locationLongitude""}","{""ImportId"":""distributionChannel""}","{""ImportId"":""userLanguage""}","{""ImportId"":""QID3_1""}","{""ImportId"":""QID5_1""}","{""ImportId"":""QID6_TEXT""}"
+2020-03-19 15:29:24,2020-03-19 15:29:35,IP Address,98.228.64.223,100,11,True,2020-03-19 15:29:36,R_vplz03LKVxUFvDH,Email 5,Rad,radsatapathy@berkeley.edu,sub-3,41.7057037353515625,-88.19460296630859375,email,EN,4,5,-99
+2020-03-20 07:27:04,2020-03-20 07:29:44,IP Address,75.158.111.252,100,160,True,2020-03-20 07:29:45,R_xECrc4jpul7ZNfz,Chutny,Laura,lchutny@berkeley.edu,0,51.045501708984375,-114.19879913330078125,email,EN,-2,0,I was somewhat unclear - was I supposed to just think about listening to the song (that is what I did) or was I actually supposed to be mindful while listening to the song? (I did not do that).
+2020-03-20 10:23:12,2020-03-20 10:25:41,IP Address,72.79.50.86,100,149,True,2020-03-20 10:25:41,R_1MSzRQg5i24jnZJ,Chen,Shaojie,Schen.jhu@gmail.com,1,40.699798583984375,-74.31909942626953125,email,EN,0,0,-99
+2020-03-20 12:29:37,2020-03-20 12:33:12,IP Address,73.223.255.26,100,214,True,2020-03-20 12:33:12,R_eF3Agoh7MHFvxG9,Kumaresan,Dhileeban,dkumares@ischool.berkeley.edu,1,37.554901123046875,-122.2707977294921875,email,EN,1,1,-99
+2020-03-20 13:21:32,2020-03-20 13:23:08,IP Address,73.44.240.98,100,95,True,2020-03-20 13:23:08,R_xaYTAvU0oFnwtUt,Vangur,Padmini,pvangur@gmail.com,0,41.7516937255859375,-88.24140167236328125,email,EN,3,5,"Love music
+It is a natural mood healer"
+2020-03-20 05:03:41,2020-03-20 15:34:22,IP Address,68.191.240.153,100,37841,True,2020-03-20 15:34:23,R_1hBjjMFDpmhsBIh,Nori,Sangeeta,nori.sangeeta@gmail.com,0,34.019500732421875,-84.31060028076171875,email,EN,0,2,-99
+2020-03-20 17:21:07,2020-03-20 17:22:38,IP Address,73.202.19.197,100,90,True,2020-03-20 17:22:38,R_28ZJlXXtFGcPAD5,Nikhil,Smita,gsmitajune@gmail.com,0,37.6873016357421875,-121.89569854736328125,email,EN,0,3,-99
+2020-03-20 14:14:00,2020-03-20 17:23:45,IP Address,73.93.148.68,100,11385,True,2020-03-20 17:23:45,R_1I5V5flwBkNBoEN,Mysore,Priya,ppmysore@yahoo.com,0,37.29949951171875,-121.7577972412109375,email,EN,3,5,-99
+2020-03-20 18:32:29,2020-03-20 18:33:33,IP Address,184.170.166.207,100,63,True,2020-03-20 18:33:33,R_2q955VXjJKKcehr,Sundaramoorthy,Amanda,musicalamanda79@gmail.com,0,41.88470458984375,-88.30280303955078125,email,EN,1,3,-99
+2020-03-20 20:43:57,2020-03-20 20:44:11,IP Address,71.172.149.196,100,13,True,2020-03-20 20:44:11,R_1jxMY9XNR5E66B7,Xie,Sheng,xiesheng428@gmail.com,1,40.7467041015625,-74.057403564453125,email,EN,1,3,-99
+2020-03-20 21:07:20,2020-03-20 21:07:43,IP Address,96.236.190.32,100,23,True,2020-03-20 21:07:44,R_1I4rB6jn1vKkuNM,Vattem,Phani,mvattem@gmail.com,0,40.347198486328125,-80.11530303955078125,email,EN,4,5,-99
+2020-03-20 22:55:42,2020-03-20 22:55:58,IP Address,76.116.172.16,100,15,True,2020-03-20 22:55:58,R_3Dw6gKPWTt8zfEG,Zheng,Kong,kxz4235@gmail.com,1,40.7158050537109375,-74.35900115966796875,email,EN,0,0,-99
+2020-03-21 04:31:40,2020-03-21 04:32:55,IP Address,58.160.99.48,100,75,True,2020-03-21 04:32:57,R_3iseVxWw1Qj4YEu,Mather,Stephanie,stephanie.mather@ischool.berkeley.edu,0,-31.9633026123046875,115.860809326171875,email,EN,1,1,-99
+2020-03-21 15:16:31,2020-03-21 15:42:00,IP Address,73.93.148.68,100,1528,True,2020-03-21 15:42:01,R_3kh16tcxXvijCus,Mysore,Priya,ppmysore@yahoo.com,0,37.29949951171875,-121.7577972412109375,email,EN,4,5,-99

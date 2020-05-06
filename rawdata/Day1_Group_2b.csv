@@ -1,0 +1,29 @@
+StartDate,EndDate,Status,IPAddress,Progress,Duration (in seconds),Finished,RecordedDate,ResponseId,RecipientLastName,RecipientFirstName,RecipientEmail,ExternalReference,LocationLatitude,LocationLongitude,DistributionChannel,UserLanguage,Q2_1,Q4_1,Q5
+Start Date,End Date,Response Type,IP Address,Progress,Duration (in seconds),Finished,Recorded Date,Response ID,Recipient Last Name,Recipient First Name,Recipient Email,External Data Reference,Location Latitude,Location Longitude,Distribution Channel,User Language,"Before we give you today's task, indicate your current mood by clicking the appropriate radio button below.
+
+	-5 means extremely negative
+	0 means neutral, and
+	+5 means extremely positive. - Your mood BEFORE","Now that you are done, click on the radio button below to describe your mood immediately after completing the task. 
+
+	-5 means extremely negative
+	0 means neutral, and
+	+5 means extremely positive. - Your mood AFTER",OPTIONAL: Please share any comments about today's mindfulness practice.
+"{""ImportId"":""startDate"",""timeZone"":""America/Denver""}","{""ImportId"":""endDate"",""timeZone"":""America/Denver""}","{""ImportId"":""status""}","{""ImportId"":""ipAddress""}","{""ImportId"":""progress""}","{""ImportId"":""duration""}","{""ImportId"":""finished""}","{""ImportId"":""recordedDate"",""timeZone"":""America/Denver""}","{""ImportId"":""_recordId""}","{""ImportId"":""recipientLastName""}","{""ImportId"":""recipientFirstName""}","{""ImportId"":""recipientEmail""}","{""ImportId"":""externalDataReference""}","{""ImportId"":""locationLatitude""}","{""ImportId"":""locationLongitude""}","{""ImportId"":""distributionChannel""}","{""ImportId"":""userLanguage""}","{""ImportId"":""QID3_1""}","{""ImportId"":""QID5_1""}","{""ImportId"":""QID6_TEXT""}"
+2020-03-14 17:17:15,2020-03-14 17:17:28,Survey Preview,,100,13,True,2020-03-14 17:17:29,R_3p8Y4jgWnbafzxN,,,,,41.7057037353515625,-88.19460296630859375,preview,EN,-4,-4,-99
+2020-03-15 15:11:08,2020-03-15 15:11:39,IP Address,98.228.64.223,100,30,True,2020-03-15 15:11:39,R_1hy7Af14RVt339p,Email 5,Rad,radsatapathy@berkeley.edu,sub-3,41.7057037353515625,-88.19460296630859375,email,EN,-3,-1,-99
+2020-03-16 02:00:25,2020-03-16 02:09:16,IP Address,73.93.148.68,100,530,True,2020-03-16 02:09:16,R_2YmJmZQ902u4b1r,Mysore,Priya,ppmysore@yahoo.com,0,37.29949951171875,-121.7577972412109375,email,EN,3,4,-99
+2020-03-16 04:45:20,2020-03-16 04:47:44,IP Address,73.44.240.98,100,144,True,2020-03-16 04:47:45,R_1K9bECxLbybM2t5,Vangur,Padmini,pvangur@gmail.com,0,41.7516937255859375,-88.24140167236328125,email,EN,2,-1,I did not want to start my day cleaning but it was a necessity.
+2020-03-16 11:47:47,2020-03-16 15:38:47,IP Address,148.87.23.11,100,13859,True,2020-03-16 15:38:47,R_2DSNRgkcmPvAtGL,Kumaresan,Dhileeban,dkumares@ischool.berkeley.edu,1,37.5135955810546875,-122.291595458984375,email,EN,0,0,-99
+2020-03-16 15:32:21,2020-03-16 16:15:04,IP Address,68.191.240.153,100,2563,True,2020-03-16 16:15:04,R_2ExTeceoPONekUX,Nori,Sangeeta,nori.sangeeta@gmail.com,0,34.0388946533203125,-84.382598876953125,email,EN,0,1,-99
+2020-03-16 18:17:30,2020-03-16 18:27:48,IP Address,72.79.50.86,100,618,True,2020-03-16 18:27:49,R_3jcYOyNeft7GCwU,Chen,Shaojie,Schen.jhu@gmail.com,1,40.699798583984375,-74.31909942626953125,email,EN,1,2,-99
+2020-03-16 17:19:48,2020-03-16 18:40:52,IP Address,14.203.252.65,100,4864,True,2020-03-16 18:40:53,R_31tNGswNyUfn9HX,Mather,Stephanie,stephanie.mather@ischool.berkeley.edu,0,-31.9674072265625,115.862091064453125,email,EN,-1,1,"Hard to do in isolation and already did all the clean up for others yesterday, so the someone was myself :)"
+2020-03-16 19:07:00,2020-03-16 19:11:23,IP Address,71.172.149.196,100,263,True,2020-03-16 19:11:23,R_3FUPP0xLsm7TB6m,Xie,Sheng,xiesheng428@gmail.com,1,40.7467041015625,-74.057403564453125,email,EN,0,2,-99
+2020-03-16 18:32:20,2020-03-16 20:17:03,IP Address,75.158.111.252,100,6283,True,2020-03-16 20:17:04,R_2tb6l5aI4Tj04QX,Chutny,Laura,lchutny@berkeley.edu,0,51.045501708984375,-114.19879913330078125,email,EN,1,2,"I think I actually did a better job of cleaning up than normal, i had more focus on the detail than normally when i'm thinking about something else."
+2020-03-16 07:07:33,2020-03-16 21:12:35,IP Address,184.170.166.207,100,50702,True,2020-03-16 21:12:36,R_cBduU5ftQBeQyfD,Sundaramoorthy,Amanda,musicalamanda79@gmail.com,0,41.88470458984375,-88.30280303955078125,email,EN,0,1,-99
+2020-03-17 05:12:15,2020-03-17 05:13:13,IP Address,172.58.139.202,100,57,True,2020-03-17 05:13:13,R_6A6NcKyHeyV6CA1,Davis,Aruna,arunadavis@yahoo.com,0,41.850006103515625,-87.71649932861328125,email,EN,0,5,"Cleaning always provides a sense of calm and balance in me. Good mindful practice. "
+2020-03-17 06:59:06,2020-03-17 06:59:36,IP Address,76.116.172.16,100,30,True,2020-03-17 06:59:37,R_wTzqksEswOdWP7P,Zheng,Kong,kxz4235@gmail.com,1,40.7158050537109375,-74.35900115966796875,email,EN,-2,-2,-99
+2020-03-18 17:56:21,2020-03-18 18:08:49,IP Address,73.202.19.197,100,748,True,2020-03-18 18:08:50,R_2COEMoYwK3WbZsM,Nikhil,Smita,gsmitajune@gmail.com,0,37.6652069091796875,-121.8733978271484375,email,EN,-2,4,-99
+2020-03-20 07:34:23,2020-03-20 07:35:15,IP Address,137.254.7.166,100,51,True,2020-03-20 07:35:15,R_3Gm3rn2Jir76TRJ,Vattem,Phani,mvattem@gmail.com,0,30.5045013427734375,-97.82089996337890625,email,EN,5,0,-99
+2020-03-15 15:11:53,2020-03-15 15:11:56,Spam,98.228.64.223,40,2,False,2020-03-22 15:12:26,R_11XYwbFwynYWOms,Email 2,Rad,rmsatapathy@yahoo.com,sub-6,,,email,EN,-3,,
+2020-03-16 07:44:54,2020-03-16 07:45:08,IP Address,107.77.232.117,40,14,False,2020-03-23 07:45:32,R_W1EAY8Q1jym2fN7,Guichard,Magda,magda.guichard@gmail.com,0,,,email,EN,2,,
+2020-03-16 19:17:15,2020-03-16 19:17:24,IP Address,75.158.111.252,40,9,False,2020-03-23 19:19:53,R_1CshbrI5J7UHNqz,Chutny,Laura,lchutny@berkeley.edu,0,,,email,EN,1,,

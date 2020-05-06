@@ -1,0 +1,585 @@
+email,day,group,mood_before,mood_after,tau,kind_activity,high_intensity,others_benefit,gender_male,age,Race,Nationality,Relationship,Childhood_HH_Size,Current_HH_Size,Residential_Area_Type,Num_lang,Curiosity,Conscientousness,Extraversion,Agreeableness,Confidence
+1,1,2b,,,,1,0,1,,,,,,,,,,,,,,
+1,2,2b,,,,0,0,0,,,,,,,,,,,,,,
+1,3,2b,,,,1,1,1,,,,,,,,,,,,,,
+1,4,2b,,,,1,0,0,,,,,,,,,,,,,,
+1,5,2b,,,,0,1,0,,,,,,,,,,,,,,
+1,6,2b,,,,0,0,1,,,,,,,,,,,,,,
+1,7,2b,,,,0,1,1,,,,,,,,,,,,,,
+1,8,2b,,,,1,1,0,,,,,,,,,,,,,,
+2,1,1a,0,2,2,0,0,0,1,32,Asian,China,In a relationship more than 1 year,3,2,Urban,2,5,5,4,5,5
+2,2,1a,0,-2,-2,0,0,1,1,32,Asian,China,In a relationship more than 1 year,3,2,Urban,2,5,5,4,5,5
+2,3,1a,0,0,0,1,1,1,1,32,Asian,China,In a relationship more than 1 year,3,2,Urban,2,5,5,4,5,5
+2,4,1a,0,3,3,0,1,1,1,32,Asian,China,In a relationship more than 1 year,3,2,Urban,2,5,5,4,5,5
+2,5,1a,0,3,3,1,0,0,1,32,Asian,China,In a relationship more than 1 year,3,2,Urban,2,5,5,4,5,5
+2,6,1a,0,-99,0,1,1,0,1,32,Asian,China,In a relationship more than 1 year,3,2,Urban,2,5,5,4,5,5
+2,7,1a,-1,-1,0,1,0,1,1,32,Asian,China,In a relationship more than 1 year,3,2,Urban,2,5,5,4,5,5
+2,8,1a,0,0,0,0,1,0,1,32,Asian,China,In a relationship more than 1 year,3,2,Urban,2,5,5,4,5,5
+3,1,2a,1,3,2,0,1,0,0,25,White,Romania,Not in a relationship,4,4,Suburban,3,6,5,4,5,4
+3,2,2a,3,3,0,1,1,0,0,25,White,Romania,Not in a relationship,4,4,Suburban,3,6,5,4,5,4
+3,3,2a,2,2,0,1,0,0,0,25,White,Romania,Not in a relationship,4,4,Suburban,3,6,5,4,5,4
+3,4,2a,2,3,1,1,0,1,0,25,White,Romania,Not in a relationship,4,4,Suburban,3,6,5,4,5,4
+3,5,2a,3,3,0,0,0,0,0,25,White,Romania,Not in a relationship,4,4,Suburban,3,6,5,4,5,4
+3,6,2a,3,4,1,1,1,1,0,25,White,Romania,Not in a relationship,4,4,Suburban,3,6,5,4,5,4
+3,7,2a,2,2,0,0,0,1,0,25,White,Romania,Not in a relationship,4,4,Suburban,3,6,5,4,5,4
+3,8,2a,3,3,0,0,1,1,0,25,White,Romania,Not in a relationship,4,4,Suburban,3,6,5,4,5,4
+4,1,1a,0,2,2,0,0,0,0,31,Asian,China,In a relationship more than 1 year,3,3,Urban,2,5,5,4,6,4
+4,2,1a,3,3,0,0,0,1,0,31,Asian,China,In a relationship more than 1 year,3,3,Urban,2,5,5,4,6,4
+4,3,1a,2,2,0,1,1,1,0,31,Asian,China,In a relationship more than 1 year,3,3,Urban,2,5,5,4,6,4
+4,4,1a,1,-99,0,0,1,1,0,31,Asian,China,In a relationship more than 1 year,3,3,Urban,2,5,5,4,6,4
+4,5,1a,0,0,0,1,0,0,0,31,Asian,China,In a relationship more than 1 year,3,3,Urban,2,5,5,4,6,4
+4,6,1a,0,0,0,1,1,0,0,31,Asian,China,In a relationship more than 1 year,3,3,Urban,2,5,5,4,6,4
+4,7,1a,0,1,1,1,0,1,0,31,Asian,China,In a relationship more than 1 year,3,3,Urban,2,5,5,4,6,4
+4,8,1a,-1,1,2,0,1,0,0,31,Asian,China,In a relationship more than 1 year,3,3,Urban,2,5,5,4,6,4
+5,1,2b,0,5,5,1,0,1,0,46,Asian,United States of America,In a relationship more than 1 year,16,5,Suburban,2,6,6,6,6,5
+5,2,2b,0,5,5,0,0,0,0,46,Asian,United States of America,In a relationship more than 1 year,16,5,Suburban,2,6,6,6,6,5
+5,3,2b,0,-99,0,1,1,1,0,46,Asian,United States of America,In a relationship more than 1 year,16,5,Suburban,2,6,6,6,6,5
+5,4,2b,0,-99,0,1,0,0,0,46,Asian,United States of America,In a relationship more than 1 year,16,5,Suburban,2,6,6,6,6,5
+5,5,2b,,,,0,1,0,,46,Asian,United States of America,In a relationship more than 1 year,16,5,Suburban,2,6,6,6,6,5
+5,6,2b,,,,0,0,1,,46,Asian,United States of America,In a relationship more than 1 year,16,5,Suburban,2,6,6,6,6,5
+5,7,2b,,,,0,1,1,,46,Asian,United States of America,In a relationship more than 1 year,16,5,Suburban,2,6,6,6,6,5
+5,8,2b,,,,1,1,0,,46,Asian,United States of America,In a relationship more than 1 year,16,5,Suburban,2,6,6,6,6,5
+6,1,2b,,,,1,0,1,,,,,,,,,,,,,,
+6,2,2b,,,,0,0,0,,,,,,,,,,,,,,
+6,3,2b,,,,1,1,1,,,,,,,,,,,,,,
+6,4,2b,,,,1,0,0,,,,,,,,,,,,,,
+6,5,2b,,,,0,1,0,,,,,,,,,,,,,,
+6,6,2b,,,,0,0,1,,,,,,,,,,,,,,
+6,7,2b,,,,0,1,1,,,,,,,,,,,,,,
+6,8,2b,,,,1,1,0,,,,,,,,,,,,,,
+7,1,2a,,,,0,1,0,,,,,,,,,,,,,,
+7,2,2a,,,,1,1,0,,,,,,,,,,,,,,
+7,3,2a,,,,1,0,0,,,,,,,,,,,,,,
+7,4,2a,,,,1,0,1,,,,,,,,,,,,,,
+7,5,2a,,,,0,0,0,,,,,,,,,,,,,,
+7,6,2a,,,,1,1,1,,,,,,,,,,,,,,
+7,7,2a,,,,0,0,1,,,,,,,,,,,,,,
+7,8,2a,,,,0,1,1,,,,,,,,,,,,,,
+8,1,1a,3,4,1,0,0,0,1,46,Asian,India,In a relationship more than 1 year,5,4,Urban,2,4,5,3,4,4
+8,2,1a,3,3,0,0,0,1,1,46,Asian,India,In a relationship more than 1 year,5,4,Urban,2,4,5,3,4,4
+8,3,1a,3,0,-3,1,1,1,1,46,Asian,India,In a relationship more than 1 year,5,4,Urban,2,4,5,3,4,4
+8,4,1a,3,2,-1,0,1,1,1,46,Asian,India,In a relationship more than 1 year,5,4,Urban,2,4,5,3,4,4
+8,5,1a,3,4,1,1,0,0,1,46,Asian,India,In a relationship more than 1 year,5,4,Urban,2,4,5,3,4,4
+8,6,1a,3,3,0,1,1,0,1,46,Asian,India,In a relationship more than 1 year,5,4,Urban,2,4,5,3,4,4
+8,7,1a,2,4,2,1,0,1,1,46,Asian,India,In a relationship more than 1 year,5,4,Urban,2,4,5,3,4,4
+8,8,1a,3,3,0,0,1,0,1,46,Asian,India,In a relationship more than 1 year,5,4,Urban,2,4,5,3,4,4
+9,1,2b,-1,1,2,1,0,1,0,32,White,Australia,In a relationship more than 1 year,5,2,Suburban,1,4,6,2,4,4
+9,2,2b,2,2,0,0,0,0,0,32,White,Australia,In a relationship more than 1 year,5,2,Suburban,1,4,6,2,4,4
+9,3,2b,-3,-1,2,1,1,1,0,32,White,Australia,In a relationship more than 1 year,5,2,Suburban,1,4,6,2,4,4
+9,4,2b,-1,-1,0,1,0,0,0,32,White,Australia,In a relationship more than 1 year,5,2,Suburban,1,4,6,2,4,4
+9,5,2b,1,1,0,0,1,0,0,32,White,Australia,In a relationship more than 1 year,5,2,Suburban,1,4,6,2,4,4
+9,6,2b,,,,0,0,1,,32,White,Australia,In a relationship more than 1 year,5,2,Suburban,1,4,6,2,4,4
+9,7,2b,,,,0,1,1,,32,White,Australia,In a relationship more than 1 year,5,2,Suburban,1,4,6,2,4,4
+9,8,2b,,,,1,1,0,,32,White,Australia,In a relationship more than 1 year,5,2,Suburban,1,4,6,2,4,4
+10,1,1a,0,1,1,0,0,0,0,31,Asian,China,In a relationship more than 1 year,3,2,Urban,2,6,6,3,5,5
+10,2,1a,0,-2,-2,0,0,1,0,31,Asian,China,In a relationship more than 1 year,3,2,Urban,2,6,6,3,5,5
+10,3,1a,0,0,0,1,1,1,0,31,Asian,China,In a relationship more than 1 year,3,2,Urban,2,6,6,3,5,5
+10,4,1a,-1,0,1,0,1,1,0,31,Asian,China,In a relationship more than 1 year,3,2,Urban,2,6,6,3,5,5
+10,5,1a,2,4,2,1,0,0,0,31,Asian,China,In a relationship more than 1 year,3,2,Urban,2,6,6,3,5,5
+10,6,1a,1,4,3,1,1,0,0,31,Asian,China,In a relationship more than 1 year,3,2,Urban,2,6,6,3,5,5
+10,7,1a,0,0,0,1,0,1,0,31,Asian,China,In a relationship more than 1 year,3,2,Urban,2,6,6,3,5,5
+10,8,1a,0,0,0,0,1,0,0,31,Asian,China,In a relationship more than 1 year,3,2,Urban,2,6,6,3,5,5
+11,1,2a,,,,0,1,0,,,,,,,,,,,,,,
+11,2,2a,,,,1,1,0,,,,,,,,,,,,,,
+11,3,2a,,,,1,0,0,,,,,,,,,,,,,,
+11,4,2a,,,,1,0,1,,,,,,,,,,,,,,
+11,5,2a,,,,0,0,0,,,,,,,,,,,,,,
+11,6,2a,,,,1,1,1,,,,,,,,,,,,,,
+11,7,2a,,,,0,0,1,,,,,,,,,,,,,,
+11,8,2a,,,,0,1,1,,,,,,,,,,,,,,
+12,1,2a,0,0,0,0,1,0,1,32,Asian,China,In a relationship more than 1 year,4,4,Suburban,3,4,5,2,5,3
+12,2,2a,0,1,1,1,1,0,1,32,Asian,China,In a relationship more than 1 year,4,4,Suburban,3,4,5,2,5,3
+12,3,2a,1,1,0,1,0,0,1,32,Asian,China,In a relationship more than 1 year,4,4,Suburban,3,4,5,2,5,3
+12,4,2a,-1,0,1,1,0,1,1,32,Asian,China,In a relationship more than 1 year,4,4,Suburban,3,4,5,2,5,3
+12,5,2a,0,0,0,0,0,0,1,32,Asian,China,In a relationship more than 1 year,4,4,Suburban,3,4,5,2,5,3
+12,6,2a,0,3,3,1,1,1,1,32,Asian,China,In a relationship more than 1 year,4,4,Suburban,3,4,5,2,5,3
+12,7,2a,0,0,0,0,0,1,1,32,Asian,China,In a relationship more than 1 year,4,4,Suburban,3,4,5,2,5,3
+12,8,2a,0,0,0,0,1,1,1,32,Asian,China,In a relationship more than 1 year,4,4,Suburban,3,4,5,2,5,3
+13,1,2a,0,4,4,0,1,0,0,42,Asian,India,In a relationship more than 1 year,4,4,Suburban,5,6,6,4,4,5
+13,2,2a,3,5,2,1,1,0,0,42,Asian,India,In a relationship more than 1 year,4,4,Suburban,5,6,6,4,4,5
+13,3,2a,3,5,2,1,0,0,0,42,Asian,India,In a relationship more than 1 year,4,4,Suburban,5,6,6,4,4,5
+13,4,2a,3,5,2,1,0,1,0,42,Asian,India,In a relationship more than 1 year,4,4,Suburban,5,6,6,4,4,5
+13,5,2a,,,,0,0,0,,42,Asian,India,In a relationship more than 1 year,4,4,Suburban,5,6,6,4,4,5
+13,6,2a,,,,1,1,1,,42,Asian,India,In a relationship more than 1 year,4,4,Suburban,5,6,6,4,4,5
+13,7,2a,,,,0,0,1,,42,Asian,India,In a relationship more than 1 year,4,4,Suburban,5,6,6,4,4,5
+13,8,2a,,,,0,1,1,,42,Asian,India,In a relationship more than 1 year,4,4,Suburban,5,6,6,4,4,5
+14,1,1a,,,,0,0,0,,,,,,,,,,,,,,
+14,2,1a,,,,0,0,1,,,,,,,,,,,,,,
+14,3,1a,,,,1,1,1,,,,,,,,,,,,,,
+14,4,1a,,,,0,1,1,,,,,,,,,,,,,,
+14,5,1a,,,,1,0,0,,,,,,,,,,,,,,
+14,6,1a,,,,1,1,0,,,,,,,,,,,,,,
+14,7,1a,,,,1,0,1,,,,,,,,,,,,,,
+14,8,1a,,,,0,1,0,,,,,,,,,,,,,,
+15,1,1a,2,3,1,0,0,0,1,32,Asian,China,In a relationship more than 1 year,3,2,Urban,2,5,5,3,3,5
+15,2,1a,2,-99,0,0,0,1,1,32,Asian,China,In a relationship more than 1 year,3,2,Urban,2,5,5,3,3,5
+15,3,1a,1,-99,0,1,1,1,1,32,Asian,China,In a relationship more than 1 year,3,2,Urban,2,5,5,3,3,5
+15,4,1a,2,4,2,0,1,1,1,32,Asian,China,In a relationship more than 1 year,3,2,Urban,2,5,5,3,3,5
+15,5,1a,0,1,1,1,0,0,1,32,Asian,China,In a relationship more than 1 year,3,2,Urban,2,5,5,3,3,5
+15,6,1a,0,-99,0,1,1,0,1,32,Asian,China,In a relationship more than 1 year,3,2,Urban,2,5,5,3,3,5
+15,7,1a,,,,1,0,1,,32,Asian,China,In a relationship more than 1 year,3,2,Urban,2,5,5,3,3,5
+15,8,1a,,,,0,1,0,,32,Asian,China,In a relationship more than 1 year,3,2,Urban,2,5,5,3,3,5
+16,1,1b,,,,1,0,1,,,,,,,,,,,,,,
+16,2,1b,,,,1,1,0,,,,,,,,,,,,,,
+16,3,1b,,,,1,0,0,,,,,,,,,,,,,,
+16,4,1b,,,,0,1,0,,,,,,,,,,,,,,
+16,5,1b,,,,1,1,1,,,,,,,,,,,,,,
+16,6,1b,,,,0,1,1,,,,,,,,,,,,,,
+16,7,1b,,,,0,0,0,,,,,,,,,,,,,,
+16,8,1b,,,,0,0,1,,,,,,,,,,,,,,
+17,1,1a,0,1,1,0,0,0,1,25,Asian,India,Not in a relationship,3,4,Suburban,3,5,2,1,3,1
+17,2,1a,1,0,-1,0,0,1,1,25,Asian,India,Not in a relationship,3,4,Suburban,3,5,2,1,3,1
+17,3,1a,1,3,2,1,1,1,1,25,Asian,India,Not in a relationship,3,4,Suburban,3,5,2,1,3,1
+17,4,1a,1,3,2,0,1,1,1,25,Asian,India,Not in a relationship,3,4,Suburban,3,5,2,1,3,1
+17,5,1a,-1,-1,0,1,0,0,1,25,Asian,India,Not in a relationship,3,4,Suburban,3,5,2,1,3,1
+17,6,1a,0,1,1,1,1,0,1,25,Asian,India,Not in a relationship,3,4,Suburban,3,5,2,1,3,1
+17,7,1a,0,1,1,1,0,1,1,25,Asian,India,Not in a relationship,3,4,Suburban,3,5,2,1,3,1
+17,8,1a,-1,0,1,0,1,0,1,25,Asian,India,Not in a relationship,3,4,Suburban,3,5,2,1,3,1
+18,1,1a,0,1,1,0,0,0,0,40,Asian,India,In a relationship more than 1 year,6,4,Suburban,5,4,4,3,4,4
+18,2,1a,1,3,2,0,0,1,0,40,Asian,India,In a relationship more than 1 year,6,4,Suburban,5,4,4,3,4,4
+18,3,1a,2,3,1,1,1,1,0,40,Asian,India,In a relationship more than 1 year,6,4,Suburban,5,4,4,3,4,4
+18,4,1a,2,3,1,0,1,1,0,40,Asian,India,In a relationship more than 1 year,6,4,Suburban,5,4,4,3,4,4
+18,5,1a,3,4,1,1,0,0,0,40,Asian,India,In a relationship more than 1 year,6,4,Suburban,5,4,4,3,4,4
+18,6,1a,1,4,3,1,1,0,0,40,Asian,India,In a relationship more than 1 year,6,4,Suburban,5,4,4,3,4,4
+18,7,1a,2,3,1,1,0,1,0,40,Asian,India,In a relationship more than 1 year,6,4,Suburban,5,4,4,3,4,4
+18,8,1a,1,2,1,0,1,0,0,40,Asian,India,In a relationship more than 1 year,6,4,Suburban,5,4,4,3,4,4
+19,1,1b,1,-99,0,1,0,1,0,28,White,Greece,In a relationship more than 1 year,5,1,Suburban,2,5,5,2,3,4
+19,2,1b,1,2,1,1,1,0,0,28,White,Greece,In a relationship more than 1 year,5,1,Suburban,2,5,5,2,3,4
+19,3,1b,2,2,0,1,0,0,0,28,White,Greece,In a relationship more than 1 year,5,1,Suburban,2,5,5,2,3,4
+19,4,1b,1,1,0,0,1,0,0,28,White,Greece,In a relationship more than 1 year,5,1,Suburban,2,5,5,2,3,4
+19,5,1b,2,2,0,1,1,1,0,28,White,Greece,In a relationship more than 1 year,5,1,Suburban,2,5,5,2,3,4
+19,6,1b,2,2,0,0,1,1,0,28,White,Greece,In a relationship more than 1 year,5,1,Suburban,2,5,5,2,3,4
+19,7,1b,2,3,1,0,0,0,0,28,White,Greece,In a relationship more than 1 year,5,1,Suburban,2,5,5,2,3,4
+19,8,1b,2,2,0,0,0,1,0,28,White,Greece,In a relationship more than 1 year,5,1,Suburban,2,5,5,2,3,4
+20,1,1b,4,4,0,1,0,1,0,45,Asian,India,In a relationship more than 1 year,4,4,Suburban,4,2,4,2,3,4
+20,2,1b,5,5,0,1,1,0,0,45,Asian,India,In a relationship more than 1 year,4,4,Suburban,4,2,4,2,3,4
+20,3,1b,0,4,4,1,0,0,0,45,Asian,India,In a relationship more than 1 year,4,4,Suburban,4,2,4,2,3,4
+20,4,1b,4,4,0,0,1,0,0,45,Asian,India,In a relationship more than 1 year,4,4,Suburban,4,2,4,2,3,4
+20,5,1b,0,3,3,1,1,1,0,45,Asian,India,In a relationship more than 1 year,4,4,Suburban,4,2,4,2,3,4
+20,6,1b,0,5,5,0,1,1,0,45,Asian,India,In a relationship more than 1 year,4,4,Suburban,4,2,4,2,3,4
+20,7,1b,5,5,0,0,0,0,0,45,Asian,India,In a relationship more than 1 year,4,4,Suburban,4,2,4,2,3,4
+20,8,1b,-1,2,3,0,0,1,0,45,Asian,India,In a relationship more than 1 year,4,4,Suburban,4,2,4,2,3,4
+21,1,2a,-1,3,4,0,1,0,0,45,"White,Other",Greece,In a relationship more than 1 year,4,2,Urban,3,6,5,3,4,2
+21,2,2a,2,2,0,1,1,0,0,45,"White,Other",Greece,In a relationship more than 1 year,4,2,Urban,3,6,5,3,4,2
+21,3,2a,2,2,0,1,0,0,0,45,"White,Other",Greece,In a relationship more than 1 year,4,2,Urban,3,6,5,3,4,2
+21,4,2a,2,3,1,1,0,1,0,45,"White,Other",Greece,In a relationship more than 1 year,4,2,Urban,3,6,5,3,4,2
+21,5,2a,2,2,0,0,0,0,0,45,"White,Other",Greece,In a relationship more than 1 year,4,2,Urban,3,6,5,3,4,2
+21,6,2a,2,3,1,1,1,1,0,45,"White,Other",Greece,In a relationship more than 1 year,4,2,Urban,3,6,5,3,4,2
+21,7,2a,2,3,1,0,0,1,0,45,"White,Other",Greece,In a relationship more than 1 year,4,2,Urban,3,6,5,3,4,2
+21,8,2a,-1,0,1,0,1,1,0,45,"White,Other",Greece,In a relationship more than 1 year,4,2,Urban,3,6,5,3,4,2
+22,1,1a,3,4,1,0,0,0,0,53,Asian,India,In a relationship more than 1 year,4,4,Suburban,3,3,6,2,5,5
+22,2,1a,4,5,1,0,0,1,0,53,Asian,India,In a relationship more than 1 year,4,4,Suburban,3,3,6,2,5,5
+22,3,1a,,,,1,1,1,,53,Asian,India,In a relationship more than 1 year,4,4,Suburban,3,3,6,2,5,5
+22,4,1a,,,,0,1,1,,53,Asian,India,In a relationship more than 1 year,4,4,Suburban,3,3,6,2,5,5
+22,5,1a,,,,1,0,0,,53,Asian,India,In a relationship more than 1 year,4,4,Suburban,3,3,6,2,5,5
+22,6,1a,3,5,2,1,1,0,0,53,Asian,India,In a relationship more than 1 year,4,4,Suburban,3,3,6,2,5,5
+22,7,1a,3,4,1,1,0,1,0,53,Asian,India,In a relationship more than 1 year,4,4,Suburban,3,3,6,2,5,5
+22,8,1a,2,4,2,0,1,0,0,53,Asian,India,In a relationship more than 1 year,4,4,Suburban,3,3,6,2,5,5
+23,1,2a,2,4,2,0,1,0,0,32,"Latinx or Hispanic,Black or African American",United States of America,Not in a relationship,7,4,Suburban,2,5,6,2,5,3
+23,2,2a,2,3,1,1,1,0,0,32,"Latinx or Hispanic,Black or African American",United States of America,Not in a relationship,7,4,Suburban,2,5,6,2,5,3
+23,3,2a,1,3,2,1,0,0,0,32,"Latinx or Hispanic,Black or African American",United States of America,Not in a relationship,7,4,Suburban,2,5,6,2,5,3
+23,4,2a,0,3,3,1,0,1,0,32,"Latinx or Hispanic,Black or African American",United States of America,Not in a relationship,7,4,Suburban,2,5,6,2,5,3
+23,5,2a,1,2,1,0,0,0,0,32,"Latinx or Hispanic,Black or African American",United States of America,Not in a relationship,7,4,Suburban,2,5,6,2,5,3
+23,6,2a,-1,3,4,1,1,1,0,32,"Latinx or Hispanic,Black or African American",United States of America,Not in a relationship,7,4,Suburban,2,5,6,2,5,3
+23,7,2a,1,3,2,0,0,1,0,32,"Latinx or Hispanic,Black or African American",United States of America,Not in a relationship,7,4,Suburban,2,5,6,2,5,3
+23,8,2a,0,2,2,0,1,1,0,32,"Latinx or Hispanic,Black or African American",United States of America,Not in a relationship,7,4,Suburban,2,5,6,2,5,3
+24,1,2a,,,,0,1,0,,41,Asian,India,In a relationship more than 1 year,5,4,Suburban,3,6,5,5,5,5
+24,2,2a,,,,1,1,0,,41,Asian,India,In a relationship more than 1 year,5,4,Suburban,3,6,5,5,5,5
+24,3,2a,,,,1,0,0,,41,Asian,India,In a relationship more than 1 year,5,4,Suburban,3,6,5,5,5,5
+24,4,2a,,,,1,0,1,,41,Asian,India,In a relationship more than 1 year,5,4,Suburban,3,6,5,5,5,5
+24,5,2a,,,,0,0,0,,41,Asian,India,In a relationship more than 1 year,5,4,Suburban,3,6,5,5,5,5
+24,6,2a,,,,1,1,1,,41,Asian,India,In a relationship more than 1 year,5,4,Suburban,3,6,5,5,5,5
+24,7,2a,,,,0,0,1,,41,Asian,India,In a relationship more than 1 year,5,4,Suburban,3,6,5,5,5,5
+24,8,2a,0,0,0,0,1,1,0,41,Asian,India,In a relationship more than 1 year,5,4,Suburban,3,6,5,5,5,5
+25,1,1a,-1,1,2,0,0,0,0,36,White,United States of America,Not in a relationship,5,3,Suburban,1,5,5,6,3,4
+25,2,1a,,,,0,0,1,,36,White,United States of America,Not in a relationship,5,3,Suburban,1,5,5,6,3,4
+25,3,1a,,,,1,1,1,,36,White,United States of America,Not in a relationship,5,3,Suburban,1,5,5,6,3,4
+25,4,1a,,,,0,1,1,,36,White,United States of America,Not in a relationship,5,3,Suburban,1,5,5,6,3,4
+25,5,1a,,,,1,0,0,,36,White,United States of America,Not in a relationship,5,3,Suburban,1,5,5,6,3,4
+25,6,1a,,,,1,1,0,,36,White,United States of America,Not in a relationship,5,3,Suburban,1,5,5,6,3,4
+25,7,1a,,,,1,0,1,,36,White,United States of America,Not in a relationship,5,3,Suburban,1,5,5,6,3,4
+25,8,1a,,,,0,1,0,,36,White,United States of America,Not in a relationship,5,3,Suburban,1,5,5,6,3,4
+26,1,1b,2,3,1,1,0,1,0,32,Asian,China,In a relationship more than 1 year,4,2,Urban,2,4,5,4,4,5
+26,2,1b,0,2,2,1,1,0,0,32,Asian,China,In a relationship more than 1 year,4,2,Urban,2,4,5,4,4,5
+26,3,1b,0,2,2,1,0,0,0,32,Asian,China,In a relationship more than 1 year,4,2,Urban,2,4,5,4,4,5
+26,4,1b,0,-99,0,0,1,0,0,32,Asian,China,In a relationship more than 1 year,4,2,Urban,2,4,5,4,4,5
+26,5,1b,1,2,1,1,1,1,0,32,Asian,China,In a relationship more than 1 year,4,2,Urban,2,4,5,4,4,5
+26,6,1b,2,2,0,0,1,1,0,32,Asian,China,In a relationship more than 1 year,4,2,Urban,2,4,5,4,4,5
+26,7,1b,1,2,1,0,0,0,0,32,Asian,China,In a relationship more than 1 year,4,2,Urban,2,4,5,4,4,5
+26,8,1b,0,2,2,0,0,1,0,32,Asian,China,In a relationship more than 1 year,4,2,Urban,2,4,5,4,4,5
+27,1,1a,0,0,0,0,0,0,0,30,Asian,China,In a relationship more than 1 year,5,3,Urban,3,3,4,3,3,5
+27,2,1a,2,0,-2,0,0,1,0,30,Asian,China,In a relationship more than 1 year,5,3,Urban,3,3,4,3,3,5
+27,3,1a,0,0,0,1,1,1,0,30,Asian,China,In a relationship more than 1 year,5,3,Urban,3,3,4,3,3,5
+27,4,1a,2,3,1,0,1,1,0,30,Asian,China,In a relationship more than 1 year,5,3,Urban,3,3,4,3,3,5
+27,5,1a,1,4,3,1,0,0,0,30,Asian,China,In a relationship more than 1 year,5,3,Urban,3,3,4,3,3,5
+27,6,1a,1,2,1,1,1,0,0,30,Asian,China,In a relationship more than 1 year,5,3,Urban,3,3,4,3,3,5
+27,7,1a,0,2,2,1,0,1,0,30,Asian,China,In a relationship more than 1 year,5,3,Urban,3,3,4,3,3,5
+27,8,1a,-2,-99,0,0,1,0,0,30,Asian,China,In a relationship more than 1 year,5,3,Urban,3,3,4,3,3,5
+28,1,2a,0,2,2,0,1,0,0,32,Asian,China,In a relationship more than 1 year,3,3,Suburban,2,4,5,5,3,6
+28,2,2a,-1,-1,0,1,1,0,0,32,Asian,China,In a relationship more than 1 year,3,3,Suburban,2,4,5,5,3,6
+28,3,2a,-3,-2,1,1,0,0,0,32,Asian,China,In a relationship more than 1 year,3,3,Suburban,2,4,5,5,3,6
+28,4,2a,-3,-2,1,1,0,1,0,32,Asian,China,In a relationship more than 1 year,3,3,Suburban,2,4,5,5,3,6
+28,5,2a,0,2,2,0,0,0,0,32,Asian,China,In a relationship more than 1 year,3,3,Suburban,2,4,5,5,3,6
+28,6,2a,0,2,2,1,1,1,0,32,Asian,China,In a relationship more than 1 year,3,3,Suburban,2,4,5,5,3,6
+28,7,2a,-1,0,1,0,0,1,0,32,Asian,China,In a relationship more than 1 year,3,3,Suburban,2,4,5,5,3,6
+28,8,2a,-1,0,1,0,1,1,0,32,Asian,China,In a relationship more than 1 year,3,3,Suburban,2,4,5,5,3,6
+29,1,1a,,,,0,0,0,,,,,,,,,,,,,,
+29,2,1a,2,3,1,0,0,1,1,,,,,,,,,,,,,
+29,3,1a,-1,0,1,1,1,1,1,,,,,,,,,,,,,
+29,4,1a,,,,0,1,1,,,,,,,,,,,,,,
+29,5,1a,,,,1,0,0,,,,,,,,,,,,,,
+29,6,1a,,,,1,1,0,,,,,,,,,,,,,,
+29,7,1a,,,,1,0,1,,,,,,,,,,,,,,
+29,8,1a,,,,0,1,0,,,,,,,,,,,,,,
+30,1,2b,5,0,-5,1,0,1,0,44,Asian,India,In a relationship more than 1 year,5,4,Urban,3,6,6,6,6,6
+30,2,2b,4,4,0,0,0,0,0,44,Asian,India,In a relationship more than 1 year,5,4,Urban,3,6,6,6,6,6
+30,3,2b,4,5,1,1,1,1,0,44,Asian,India,In a relationship more than 1 year,5,4,Urban,3,6,6,6,6,6
+30,4,2b,5,2,-3,1,0,0,0,44,Asian,India,In a relationship more than 1 year,5,4,Urban,3,6,6,6,6,6
+30,5,2b,4,5,1,0,1,0,0,44,Asian,India,In a relationship more than 1 year,5,4,Urban,3,6,6,6,6,6
+30,6,2b,5,1,-4,0,0,1,0,44,Asian,India,In a relationship more than 1 year,5,4,Urban,3,6,6,6,6,6
+30,7,2b,4,5,1,0,1,1,0,44,Asian,India,In a relationship more than 1 year,5,4,Urban,3,6,6,6,6,6
+30,8,2b,5,5,0,1,1,0,0,44,Asian,India,In a relationship more than 1 year,5,4,Urban,3,6,6,6,6,6
+31,1,2b,2,-1,-3,1,0,1,0,53,Asian,India,In a relationship more than 1 year,4,4,Suburban,3,4,5,3,4,4
+31,2,2b,-2,4,6,0,0,0,0,53,Asian,India,In a relationship more than 1 year,4,4,Suburban,3,4,5,3,4,4
+31,3,2b,0,4,4,1,1,1,0,53,Asian,India,In a relationship more than 1 year,4,4,Suburban,3,4,5,3,4,4
+31,4,2b,,,,1,0,0,,53,Asian,India,In a relationship more than 1 year,4,4,Suburban,3,4,5,3,4,4
+31,5,2b,3,5,2,0,1,0,0,53,Asian,India,In a relationship more than 1 year,4,4,Suburban,3,4,5,3,4,4
+31,6,2b,-2,1,3,0,0,1,0,53,Asian,India,In a relationship more than 1 year,4,4,Suburban,3,4,5,3,4,4
+31,7,2b,0,4,4,0,1,1,0,53,Asian,India,In a relationship more than 1 year,4,4,Suburban,3,4,5,3,4,4
+31,8,2b,-2,3,5,1,1,0,0,53,Asian,India,In a relationship more than 1 year,4,4,Suburban,3,4,5,3,4,4
+32,1,1b,0,1,1,1,0,1,0,49,Asian,United States of America,In a relationship more than 1 year,11,5,Suburban,2,3,6,2,5,3
+32,2,1b,2,4,2,1,1,0,0,49,Asian,United States of America,In a relationship more than 1 year,11,5,Suburban,2,3,6,2,5,3
+32,3,1b,2,3,1,1,0,0,0,49,Asian,United States of America,In a relationship more than 1 year,11,5,Suburban,2,3,6,2,5,3
+32,4,1b,3,2,-1,0,1,0,0,49,Asian,United States of America,In a relationship more than 1 year,11,5,Suburban,2,3,6,2,5,3
+32,5,1b,2,-99,0,1,1,1,0,49,Asian,United States of America,In a relationship more than 1 year,11,5,Suburban,2,3,6,2,5,3
+32,6,1b,2,3,1,0,1,1,0,49,Asian,United States of America,In a relationship more than 1 year,11,5,Suburban,2,3,6,2,5,3
+32,7,1b,3,3,0,0,0,0,0,49,Asian,United States of America,In a relationship more than 1 year,11,5,Suburban,2,3,6,2,5,3
+32,8,1b,1,1,0,0,0,1,0,49,Asian,United States of America,In a relationship more than 1 year,11,5,Suburban,2,3,6,2,5,3
+33,1,2b,,,,1,0,1,,,,,,,,,,,,,,
+33,2,2b,,,,0,0,0,,,,,,,,,,,,,,
+33,3,2b,,,,1,1,1,,,,,,,,,,,,,,
+33,4,2b,,,,1,0,0,,,,,,,,,,,,,,
+33,5,2b,,,,0,1,0,,,,,,,,,,,,,,
+33,6,2b,,,,0,0,1,,,,,,,,,,,,,,
+33,7,2b,,,,0,1,1,,,,,,,,,,,,,,
+33,8,2b,,,,1,1,0,,,,,,,,,,,,,,
+34,1,1b,0,2,2,1,0,1,0,32,Asian,China,In a relationship more than 1 year,5,2,Urban,3,4,5,3,5,4
+34,2,1b,1,2,1,1,1,0,0,32,Asian,China,In a relationship more than 1 year,5,2,Urban,3,4,5,3,5,4
+34,3,1b,2,3,1,1,0,0,0,32,Asian,China,In a relationship more than 1 year,5,2,Urban,3,4,5,3,5,4
+34,4,1b,2,-99,0,0,1,0,0,32,Asian,China,In a relationship more than 1 year,5,2,Urban,3,4,5,3,5,4
+34,5,1b,-1,-1,0,1,1,1,0,32,Asian,China,In a relationship more than 1 year,5,2,Urban,3,4,5,3,5,4
+34,6,1b,1,3,2,0,1,1,0,32,Asian,China,In a relationship more than 1 year,5,2,Urban,3,4,5,3,5,4
+34,7,1b,1,3,2,0,0,0,0,32,Asian,China,In a relationship more than 1 year,5,2,Urban,3,4,5,3,5,4
+34,8,1b,0,3,3,0,0,1,0,32,Asian,China,In a relationship more than 1 year,5,2,Urban,3,4,5,3,5,4
+35,1,1b,0,2,2,1,0,1,0,61,White,United States of America,In a relationship more than 1 year,6,1,Suburban,2,5,6,4,6,5
+35,2,1b,0,-2,-2,1,1,0,0,61,White,United States of America,In a relationship more than 1 year,6,1,Suburban,2,5,6,4,6,5
+35,3,1b,-1,4,5,1,0,0,0,61,White,United States of America,In a relationship more than 1 year,6,1,Suburban,2,5,6,4,6,5
+35,4,1b,0,0,0,0,1,0,0,61,White,United States of America,In a relationship more than 1 year,6,1,Suburban,2,5,6,4,6,5
+35,5,1b,0,1,1,1,1,1,0,61,White,United States of America,In a relationship more than 1 year,6,1,Suburban,2,5,6,4,6,5
+35,6,1b,-2,-1,1,0,1,1,0,61,White,United States of America,In a relationship more than 1 year,6,1,Suburban,2,5,6,4,6,5
+35,7,1b,0,2,2,0,0,0,0,61,White,United States of America,In a relationship more than 1 year,6,1,Suburban,2,5,6,4,6,5
+35,8,1b,0,2,2,0,0,1,0,61,White,United States of America,In a relationship more than 1 year,6,1,Suburban,2,5,6,4,6,5
+36,1,2a,-1,0,1,0,1,0,1,52,Asian,United States of America,In a relationship more than 1 year,6,5,Suburban,4,4,4,1,1,5
+36,2,2a,-2,-1,1,1,1,0,1,52,Asian,United States of America,In a relationship more than 1 year,6,5,Suburban,4,4,4,1,1,5
+36,3,2a,-1,0,1,1,0,0,1,52,Asian,United States of America,In a relationship more than 1 year,6,5,Suburban,4,4,4,1,1,5
+36,4,2a,0,0,0,1,0,1,1,52,Asian,United States of America,In a relationship more than 1 year,6,5,Suburban,4,4,4,1,1,5
+36,5,2a,-1,0,1,0,0,0,1,52,Asian,United States of America,In a relationship more than 1 year,6,5,Suburban,4,4,4,1,1,5
+36,6,2a,,,,1,1,1,,52,Asian,United States of America,In a relationship more than 1 year,6,5,Suburban,4,4,4,1,1,5
+36,7,2a,,,,0,0,1,,52,Asian,United States of America,In a relationship more than 1 year,6,5,Suburban,4,4,4,1,1,5
+36,8,2a,,,,0,1,1,,52,Asian,United States of America,In a relationship more than 1 year,6,5,Suburban,4,4,4,1,1,5
+37,1,2a,-2,4,6,0,1,0,0,30,Asian,United States of America,In a relationship more than 1 year,3,3,Urban,3,6,4,4,4,3
+37,2,2a,-3,-99,0,1,1,0,0,30,Asian,United States of America,In a relationship more than 1 year,3,3,Urban,3,6,4,4,4,3
+37,3,2a,1,-99,0,1,0,0,0,30,Asian,United States of America,In a relationship more than 1 year,3,3,Urban,3,6,4,4,4,3
+37,4,2a,1,3,2,1,0,1,0,30,Asian,United States of America,In a relationship more than 1 year,3,3,Urban,3,6,4,4,4,3
+37,5,2a,,,,0,0,0,,30,Asian,United States of America,In a relationship more than 1 year,3,3,Urban,3,6,4,4,4,3
+37,6,2a,,,,1,1,1,,30,Asian,United States of America,In a relationship more than 1 year,3,3,Urban,3,6,4,4,4,3
+37,7,2a,,,,0,0,1,,30,Asian,United States of America,In a relationship more than 1 year,3,3,Urban,3,6,4,4,4,3
+37,8,2a,,,,0,1,1,,30,Asian,United States of America,In a relationship more than 1 year,3,3,Urban,3,6,4,4,4,3
+38,1,1a,-3,-3,0,0,0,0,0,46,White,United States of America,In a relationship more than 1 year,7,5,Suburban,2,5,5,2,3,3
+38,2,1a,-1,-1,0,0,0,1,0,46,White,United States of America,In a relationship more than 1 year,7,5,Suburban,2,5,5,2,3,3
+38,3,1a,-1,0,1,1,1,1,0,46,White,United States of America,In a relationship more than 1 year,7,5,Suburban,2,5,5,2,3,3
+38,4,1a,1,1,0,0,1,1,0,46,White,United States of America,In a relationship more than 1 year,7,5,Suburban,2,5,5,2,3,3
+38,5,1a,0,0,0,1,0,0,0,46,White,United States of America,In a relationship more than 1 year,7,5,Suburban,2,5,5,2,3,3
+38,6,1a,1,1,0,1,1,0,0,46,White,United States of America,In a relationship more than 1 year,7,5,Suburban,2,5,5,2,3,3
+38,7,1a,1,0,-1,1,0,1,0,46,White,United States of America,In a relationship more than 1 year,7,5,Suburban,2,5,5,2,3,3
+38,8,1a,0,0,0,0,1,0,0,46,White,United States of America,In a relationship more than 1 year,7,5,Suburban,2,5,5,2,3,3
+39,1,1a,0,0,0,0,0,0,1,37,White,United States of America,In a relationship more than 1 year,10,6,Suburban,2,4,4,2,5,4
+39,2,1a,-1,1,2,0,0,1,1,37,White,United States of America,In a relationship more than 1 year,10,6,Suburban,2,4,4,2,5,4
+39,3,1a,0,1,1,1,1,1,1,37,White,United States of America,In a relationship more than 1 year,10,6,Suburban,2,4,4,2,5,4
+39,4,1a,-1,-1,0,0,1,1,1,37,White,United States of America,In a relationship more than 1 year,10,6,Suburban,2,4,4,2,5,4
+39,5,1a,0,0,0,1,0,0,1,37,White,United States of America,In a relationship more than 1 year,10,6,Suburban,2,4,4,2,5,4
+39,6,1a,0,-99,0,1,1,0,1,37,White,United States of America,In a relationship more than 1 year,10,6,Suburban,2,4,4,2,5,4
+39,7,1a,0,-99,0,1,0,1,1,37,White,United States of America,In a relationship more than 1 year,10,6,Suburban,2,4,4,2,5,4
+39,8,1a,0,0,0,0,1,0,1,37,White,United States of America,In a relationship more than 1 year,10,6,Suburban,2,4,4,2,5,4
+40,1,2b,1,2,1,1,0,1,1,31,Asian,China,In a relationship more than 1 year,6,3,Suburban,2,-99,6,3,4,5
+40,2,2b,0,1,1,0,0,0,1,31,Asian,China,In a relationship more than 1 year,6,3,Suburban,2,-99,6,3,4,5
+40,3,2b,-1,0,1,1,1,1,1,31,Asian,China,In a relationship more than 1 year,6,3,Suburban,2,-99,6,3,4,5
+40,4,2b,-1,-1,0,1,0,0,1,31,Asian,China,In a relationship more than 1 year,6,3,Suburban,2,-99,6,3,4,5
+40,5,2b,0,0,0,0,1,0,1,31,Asian,China,In a relationship more than 1 year,6,3,Suburban,2,-99,6,3,4,5
+40,6,2b,0,1,1,0,0,1,1,31,Asian,China,In a relationship more than 1 year,6,3,Suburban,2,-99,6,3,4,5
+40,7,2b,0,0,0,0,1,1,1,31,Asian,China,In a relationship more than 1 year,6,3,Suburban,2,-99,6,3,4,5
+40,8,2b,0,1,1,1,1,0,1,31,Asian,China,In a relationship more than 1 year,6,3,Suburban,2,-99,6,3,4,5
+41,1,1b,3,2,-1,1,0,1,1,50,Asian,United States of America,In a relationship more than 1 year,4,4,Suburban,3,6,5,3,1,4
+41,2,1b,-3,0,3,1,1,0,1,50,Asian,United States of America,In a relationship more than 1 year,4,4,Suburban,3,6,5,3,1,4
+41,3,1b,-5,-5,0,1,0,0,1,50,Asian,United States of America,In a relationship more than 1 year,4,4,Suburban,3,6,5,3,1,4
+41,4,1b,-2,0,2,0,1,0,1,50,Asian,United States of America,In a relationship more than 1 year,4,4,Suburban,3,6,5,3,1,4
+41,5,1b,2,5,3,1,1,1,1,50,Asian,United States of America,In a relationship more than 1 year,4,4,Suburban,3,6,5,3,1,4
+41,6,1b,2,5,3,0,1,1,1,50,Asian,United States of America,In a relationship more than 1 year,4,4,Suburban,3,6,5,3,1,4
+41,7,1b,1,1,0,0,0,0,1,50,Asian,United States of America,In a relationship more than 1 year,4,4,Suburban,3,6,5,3,1,4
+41,8,1b,0,4,4,0,0,1,1,50,Asian,United States of America,In a relationship more than 1 year,4,4,Suburban,3,6,5,3,1,4
+42,1,2a,,,,0,1,0,,33,White,United States of America,In a relationship more than 1 year,9,4,Suburban,1,5,4,4,3,4
+42,2,2a,,,,1,1,0,,33,White,United States of America,In a relationship more than 1 year,9,4,Suburban,1,5,4,4,3,4
+42,3,2a,,,,1,0,0,,33,White,United States of America,In a relationship more than 1 year,9,4,Suburban,1,5,4,4,3,4
+42,4,2a,,,,1,0,1,,33,White,United States of America,In a relationship more than 1 year,9,4,Suburban,1,5,4,4,3,4
+42,5,2a,,,,0,0,0,,33,White,United States of America,In a relationship more than 1 year,9,4,Suburban,1,5,4,4,3,4
+42,6,2a,,,,1,1,1,,33,White,United States of America,In a relationship more than 1 year,9,4,Suburban,1,5,4,4,3,4
+42,7,2a,,,,0,0,1,,33,White,United States of America,In a relationship more than 1 year,9,4,Suburban,1,5,4,4,3,4
+42,8,2a,,,,0,1,1,,33,White,United States of America,In a relationship more than 1 year,9,4,Suburban,1,5,4,4,3,4
+43,1,1a,2,5,3,0,0,0,0,51,Asian,India,In a relationship more than 1 year,5,4,Suburban,3,2,5,4,6,6
+43,2,1a,2,2,0,0,0,1,0,51,Asian,India,In a relationship more than 1 year,5,4,Suburban,3,2,5,4,6,6
+43,3,1a,2,4,2,1,1,1,0,51,Asian,India,In a relationship more than 1 year,5,4,Suburban,3,2,5,4,6,6
+43,4,1a,3,5,2,0,1,1,0,51,Asian,India,In a relationship more than 1 year,5,4,Suburban,3,2,5,4,6,6
+43,5,1a,3,5,2,1,0,0,0,51,Asian,India,In a relationship more than 1 year,5,4,Suburban,3,2,5,4,6,6
+43,6,1a,,,,1,1,0,,51,Asian,India,In a relationship more than 1 year,5,4,Suburban,3,2,5,4,6,6
+43,7,1a,3,4,1,1,0,1,0,51,Asian,India,In a relationship more than 1 year,5,4,Suburban,3,2,5,4,6,6
+43,8,1a,3,3,0,0,1,0,0,51,Asian,India,In a relationship more than 1 year,5,4,Suburban,3,2,5,4,6,6
+44,1,2b,0,0,0,1,0,1,1,36,Asian,India,In a relationship more than 1 year,3,3,Suburban,2,6,5,1,6,4
+44,2,2b,-1,2,3,0,0,0,1,36,Asian,India,In a relationship more than 1 year,3,3,Suburban,2,6,5,1,6,4
+44,3,2b,0,0,0,1,1,1,1,36,Asian,India,In a relationship more than 1 year,3,3,Suburban,2,6,5,1,6,4
+44,4,2b,-3,0,3,1,0,0,1,36,Asian,India,In a relationship more than 1 year,3,3,Suburban,2,6,5,1,6,4
+44,5,2b,1,1,0,0,1,0,1,36,Asian,India,In a relationship more than 1 year,3,3,Suburban,2,6,5,1,6,4
+44,6,2b,0,1,1,0,0,1,1,36,Asian,India,In a relationship more than 1 year,3,3,Suburban,2,6,5,1,6,4
+44,7,2b,0,1,1,0,1,1,1,36,Asian,India,In a relationship more than 1 year,3,3,Suburban,2,6,5,1,6,4
+44,8,2b,0,1,1,1,1,0,1,36,Asian,India,In a relationship more than 1 year,3,3,Suburban,2,6,5,1,6,4
+45,1,1a,2,2,0,0,0,0,0,34,Asian,United States of America,In a relationship more than 1 year,3,3,Suburban,2,4,4,4,4,4
+45,2,1a,0,1,1,0,0,1,0,34,Asian,United States of America,In a relationship more than 1 year,3,3,Suburban,2,4,4,4,4,4
+45,3,1a,1,2,1,1,1,1,0,34,Asian,United States of America,In a relationship more than 1 year,3,3,Suburban,2,4,4,4,4,4
+45,4,1a,1,1,0,0,1,1,0,34,Asian,United States of America,In a relationship more than 1 year,3,3,Suburban,2,4,4,4,4,4
+45,5,1a,1,3,2,1,0,0,0,34,Asian,United States of America,In a relationship more than 1 year,3,3,Suburban,2,4,4,4,4,4
+45,6,1a,0,2,2,1,1,0,0,34,Asian,United States of America,In a relationship more than 1 year,3,3,Suburban,2,4,4,4,4,4
+45,7,1a,1,2,1,1,0,1,0,34,Asian,United States of America,In a relationship more than 1 year,3,3,Suburban,2,4,4,4,4,4
+45,8,1a,1,2,1,0,1,0,0,34,Asian,United States of America,In a relationship more than 1 year,3,3,Suburban,2,4,4,4,4,4
+46,1,1b,2,-99,0,1,0,1,0,41,"White,Asian",United States of America,In a relationship more than 1 year,5,3,Urban,1,6,6,3,4,6
+46,2,1b,3,4,1,1,1,0,0,41,"White,Asian",United States of America,In a relationship more than 1 year,5,3,Urban,1,6,6,3,4,6
+46,3,1b,4,4,0,1,0,0,0,41,"White,Asian",United States of America,In a relationship more than 1 year,5,3,Urban,1,6,6,3,4,6
+46,4,1b,4,-99,0,0,1,0,0,41,"White,Asian",United States of America,In a relationship more than 1 year,5,3,Urban,1,6,6,3,4,6
+46,5,1b,,,,1,1,1,,41,"White,Asian",United States of America,In a relationship more than 1 year,5,3,Urban,1,6,6,3,4,6
+46,6,1b,4,5,1,0,1,1,0,41,"White,Asian",United States of America,In a relationship more than 1 year,5,3,Urban,1,6,6,3,4,6
+46,7,1b,2,-99,0,0,0,0,0,41,"White,Asian",United States of America,In a relationship more than 1 year,5,3,Urban,1,6,6,3,4,6
+46,8,1b,,,,0,0,1,,41,"White,Asian",United States of America,In a relationship more than 1 year,5,3,Urban,1,6,6,3,4,6
+47,1,1b,-2,-2,0,1,0,1,1,36,Asian,United States of America,In a relationship more than 1 year,4,2,Urban,2,6,4,3,5,4
+47,2,1b,-3,-1,2,1,1,0,1,36,Asian,United States of America,In a relationship more than 1 year,4,2,Urban,2,6,4,3,5,4
+47,3,1b,-4,-3,1,1,0,0,1,36,Asian,United States of America,In a relationship more than 1 year,4,2,Urban,2,6,4,3,5,4
+47,4,1b,-3,-3,0,0,1,0,1,36,Asian,United States of America,In a relationship more than 1 year,4,2,Urban,2,6,4,3,5,4
+47,5,1b,-4,-4,0,1,1,1,1,36,Asian,United States of America,In a relationship more than 1 year,4,2,Urban,2,6,4,3,5,4
+47,6,1b,-4,-3,1,0,1,1,1,36,Asian,United States of America,In a relationship more than 1 year,4,2,Urban,2,6,4,3,5,4
+47,7,1b,-4,-4,0,0,0,0,1,36,Asian,United States of America,In a relationship more than 1 year,4,2,Urban,2,6,4,3,5,4
+47,8,1b,-4,-4,0,0,0,1,1,36,Asian,United States of America,In a relationship more than 1 year,4,2,Urban,2,6,4,3,5,4
+48,1,1b,-2,0,2,1,0,1,0,45,Asian,India,I do not want to say,5,4,Suburban,4,4,5,3,5,4
+48,2,1b,1,3,2,1,1,0,0,45,Asian,India,I do not want to say,5,4,Suburban,4,4,5,3,5,4
+48,3,1b,1,3,2,1,0,0,0,45,Asian,India,I do not want to say,5,4,Suburban,4,4,5,3,5,4
+48,4,1b,-2,-99,0,0,1,0,0,45,Asian,India,I do not want to say,5,4,Suburban,4,4,5,3,5,4
+48,5,1b,1,3,2,1,1,1,0,45,Asian,India,I do not want to say,5,4,Suburban,4,4,5,3,5,4
+48,6,1b,-2,2,4,0,1,1,0,45,Asian,India,I do not want to say,5,4,Suburban,4,4,5,3,5,4
+48,7,1b,2,4,2,0,0,0,0,45,Asian,India,I do not want to say,5,4,Suburban,4,4,5,3,5,4
+48,8,1b,0,3,3,0,0,1,0,45,Asian,India,I do not want to say,5,4,Suburban,4,4,5,3,5,4
+49,1,1a,1,2,1,0,0,0,1,30,Asian,United States of America,In a relationship more than 1 year,4,3,Urban,1,5,6,3,5,3
+49,2,1a,3,4,1,0,0,1,1,30,Asian,United States of America,In a relationship more than 1 year,4,3,Urban,1,5,6,3,5,3
+49,3,1a,3,4,1,1,1,1,1,30,Asian,United States of America,In a relationship more than 1 year,4,3,Urban,1,5,6,3,5,3
+49,4,1a,3,3,0,0,1,1,1,30,Asian,United States of America,In a relationship more than 1 year,4,3,Urban,1,5,6,3,5,3
+49,5,1a,3,4,1,1,0,0,1,30,Asian,United States of America,In a relationship more than 1 year,4,3,Urban,1,5,6,3,5,3
+49,6,1a,0,2,2,1,1,0,1,30,Asian,United States of America,In a relationship more than 1 year,4,3,Urban,1,5,6,3,5,3
+49,7,1a,3,3,0,1,0,1,1,30,Asian,United States of America,In a relationship more than 1 year,4,3,Urban,1,5,6,3,5,3
+49,8,1a,,,,0,1,0,,30,Asian,United States of America,In a relationship more than 1 year,4,3,Urban,1,5,6,3,5,3
+50,1,1b,,,,1,0,1,,,,,,,,,,,,,,
+50,2,1b,,,,1,1,0,,,,,,,,,,,,,,
+50,3,1b,,,,1,0,0,,,,,,,,,,,,,,
+50,4,1b,,,,0,1,0,,,,,,,,,,,,,,
+50,5,1b,,,,1,1,1,,,,,,,,,,,,,,
+50,6,1b,,,,0,1,1,,,,,,,,,,,,,,
+50,7,1b,,,,0,0,0,,,,,,,,,,,,,,
+50,8,1b,,,,0,0,1,,,,,,,,,,,,,,
+51,1,1b,0,0,0,1,0,1,1,32,Asian,China,In a relationship more than 1 year,3,3,Suburban,2,5,6,3,3,4
+51,2,1b,2,2,0,1,1,0,1,32,Asian,China,In a relationship more than 1 year,3,3,Suburban,2,5,6,3,3,4
+51,3,1b,3,3,0,1,0,0,1,32,Asian,China,In a relationship more than 1 year,3,3,Suburban,2,5,6,3,3,4
+51,4,1b,1,2,1,0,1,0,1,32,Asian,China,In a relationship more than 1 year,3,3,Suburban,2,5,6,3,3,4
+51,5,1b,2,2,0,1,1,1,1,32,Asian,China,In a relationship more than 1 year,3,3,Suburban,2,5,6,3,3,4
+51,6,1b,3,4,1,0,1,1,1,32,Asian,China,In a relationship more than 1 year,3,3,Suburban,2,5,6,3,3,4
+51,7,1b,-1,0,1,0,0,0,1,32,Asian,China,In a relationship more than 1 year,3,3,Suburban,2,5,6,3,3,4
+51,8,1b,2,2,0,0,0,1,1,32,Asian,China,In a relationship more than 1 year,3,3,Suburban,2,5,6,3,3,4
+52,1,2b,-2,4,6,1,0,1,0,40,Asian,India,In a relationship more than 1 year,4,4,Suburban,2,5,5,5,4,4
+52,2,2b,-2,3,5,0,0,0,0,40,Asian,India,In a relationship more than 1 year,4,4,Suburban,2,5,5,5,4,4
+52,3,2b,0,2,2,1,1,1,0,40,Asian,India,In a relationship more than 1 year,4,4,Suburban,2,5,5,5,4,4
+52,4,2b,0,0,0,1,0,0,0,40,Asian,India,In a relationship more than 1 year,4,4,Suburban,2,5,5,5,4,4
+52,5,2b,0,3,3,0,1,0,0,40,Asian,India,In a relationship more than 1 year,4,4,Suburban,2,5,5,5,4,4
+52,6,2b,-1,0,1,0,0,1,0,40,Asian,India,In a relationship more than 1 year,4,4,Suburban,2,5,5,5,4,4
+52,7,2b,2,2,0,0,1,1,0,40,Asian,India,In a relationship more than 1 year,4,4,Suburban,2,5,5,5,4,4
+52,8,2b,-1,1,2,1,1,0,0,40,Asian,India,In a relationship more than 1 year,4,4,Suburban,2,5,5,5,4,4
+53,1,2b,-2,-2,0,1,0,1,1,,,,,,,,,,,,,
+53,2,2b,0,2,2,0,0,0,1,,,,,,,,,,,,,
+53,3,2b,-2,4,6,1,1,1,1,,,,,,,,,,,,,
+53,4,2b,1,0,-1,1,0,0,1,,,,,,,,,,,,,
+53,5,2b,0,0,0,0,1,0,1,,,,,,,,,,,,,
+53,6,2b,,,,0,0,1,,,,,,,,,,,,,,
+53,7,2b,,,,0,1,1,,,,,,,,,,,,,,
+53,8,2b,,,,1,1,0,,,,,,,,,,,,,,
+54,1,2b,0,1,1,1,0,1,0,44,Asian,India,In a relationship more than 1 year,6,4,Suburban,3,5,5,4,5,5
+54,2,2b,0,2,2,0,0,0,0,44,Asian,India,In a relationship more than 1 year,6,4,Suburban,3,5,5,4,5,5
+54,3,2b,0,2,2,1,1,1,0,44,Asian,India,In a relationship more than 1 year,6,4,Suburban,3,5,5,4,5,5
+54,4,2b,0,0,0,1,0,0,0,44,Asian,India,In a relationship more than 1 year,6,4,Suburban,3,5,5,4,5,5
+54,5,2b,0,2,2,0,1,0,0,44,Asian,India,In a relationship more than 1 year,6,4,Suburban,3,5,5,4,5,5
+54,6,2b,0,0,0,0,0,1,0,44,Asian,India,In a relationship more than 1 year,6,4,Suburban,3,5,5,4,5,5
+54,7,2b,0,2,2,0,1,1,0,44,Asian,India,In a relationship more than 1 year,6,4,Suburban,3,5,5,4,5,5
+54,8,2b,0,2,2,1,1,0,0,44,Asian,India,In a relationship more than 1 year,6,4,Suburban,3,5,5,4,5,5
+55,1,1b,,,,1,0,1,,26,White,United States of America,In a relationship more than 1 year,5,2,Urban,2,5,3,6,3,5
+55,2,1b,2,5,3,1,1,0,0,26,White,United States of America,In a relationship more than 1 year,5,2,Urban,2,5,3,6,3,5
+55,3,1b,,,,1,0,0,,26,White,United States of America,In a relationship more than 1 year,5,2,Urban,2,5,3,6,3,5
+55,4,1b,-2,0,2,0,1,0,0,26,White,United States of America,In a relationship more than 1 year,5,2,Urban,2,5,3,6,3,5
+55,5,1b,0,3,3,1,1,1,0,26,White,United States of America,In a relationship more than 1 year,5,2,Urban,2,5,3,6,3,5
+55,6,1b,2,3,1,0,1,1,0,26,White,United States of America,In a relationship more than 1 year,5,2,Urban,2,5,3,6,3,5
+55,7,1b,,,,0,0,0,,26,White,United States of America,In a relationship more than 1 year,5,2,Urban,2,5,3,6,3,5
+55,8,1b,-1,1,2,0,0,1,0,26,White,United States of America,In a relationship more than 1 year,5,2,Urban,2,5,3,6,3,5
+56,1,2a,0,2,2,0,1,0,0,41,Asian,India,In a relationship more than 1 year,7,4,Suburban,3,3,4,2,3,6
+56,2,2a,0,4,4,1,1,0,0,41,Asian,India,In a relationship more than 1 year,7,4,Suburban,3,3,4,2,3,6
+56,3,2a,1,0,-1,1,0,0,0,41,Asian,India,In a relationship more than 1 year,7,4,Suburban,3,3,4,2,3,6
+56,4,2a,0,4,4,1,0,1,0,41,Asian,India,In a relationship more than 1 year,7,4,Suburban,3,3,4,2,3,6
+56,5,2a,0,2,2,0,0,0,0,41,Asian,India,In a relationship more than 1 year,7,4,Suburban,3,3,4,2,3,6
+56,6,2a,0,5,5,1,1,1,0,41,Asian,India,In a relationship more than 1 year,7,4,Suburban,3,3,4,2,3,6
+56,7,2a,0,3,3,0,0,1,0,41,Asian,India,In a relationship more than 1 year,7,4,Suburban,3,3,4,2,3,6
+56,8,2a,0,0,0,0,1,1,0,41,Asian,India,In a relationship more than 1 year,7,4,Suburban,3,3,4,2,3,6
+57,1,2b,1,2,1,1,0,1,0,53,Other,Canada,In a relationship more than 1 year,4,4,Urban,1,6,6,4,4,5
+57,2,2b,-1,2,3,0,0,0,0,53,Other,Canada,In a relationship more than 1 year,4,4,Urban,1,6,6,4,4,5
+57,3,2b,1,2,1,1,1,1,0,53,Other,Canada,In a relationship more than 1 year,4,4,Urban,1,6,6,4,4,5
+57,4,2b,0,2,2,1,0,0,0,53,Other,Canada,In a relationship more than 1 year,4,4,Urban,1,6,6,4,4,5
+57,5,2b,-2,0,2,0,1,0,0,53,Other,Canada,In a relationship more than 1 year,4,4,Urban,1,6,6,4,4,5
+57,6,2b,1,1,0,0,0,1,0,53,Other,Canada,In a relationship more than 1 year,4,4,Urban,1,6,6,4,4,5
+57,7,2b,2,2,0,0,1,1,0,53,Other,Canada,In a relationship more than 1 year,4,4,Urban,1,6,6,4,4,5
+57,8,2b,1,2,1,1,1,0,0,53,Other,Canada,In a relationship more than 1 year,4,4,Urban,1,6,6,4,4,5
+58,1,2b,0,2,2,1,0,1,1,32,Asian,China,In a relationship more than 1 year,4,2,Suburban,2,6,5,3,4,4
+58,2,2b,-1,0,1,0,0,0,1,32,Asian,China,In a relationship more than 1 year,4,2,Suburban,2,6,5,3,4,4
+58,3,2b,-3,2,5,1,1,1,1,32,Asian,China,In a relationship more than 1 year,4,2,Suburban,2,6,5,3,4,4
+58,4,2b,-3,-1,2,1,0,0,1,32,Asian,China,In a relationship more than 1 year,4,2,Suburban,2,6,5,3,4,4
+58,5,2b,1,3,2,0,1,0,1,32,Asian,China,In a relationship more than 1 year,4,2,Suburban,2,6,5,3,4,4
+58,6,2b,1,1,0,0,0,1,1,32,Asian,China,In a relationship more than 1 year,4,2,Suburban,2,6,5,3,4,4
+58,7,2b,0,0,0,0,1,1,1,32,Asian,China,In a relationship more than 1 year,4,2,Suburban,2,6,5,3,4,4
+58,8,2b,1,-1,-2,1,1,0,1,32,Asian,China,In a relationship more than 1 year,4,2,Suburban,2,6,5,3,4,4
+59,1,2a,,,,0,1,0,,,,,,,,,,,,,,
+59,2,2a,1,4,3,1,1,0,0,,,,,,,,,,,,,
+59,3,2a,-2,1,3,1,0,0,0,,,,,,,,,,,,,
+59,4,2a,-1,3,4,1,0,1,0,,,,,,,,,,,,,
+59,5,2a,,,,0,0,0,,,,,,,,,,,,,,
+59,6,2a,,,,1,1,1,,,,,,,,,,,,,,
+59,7,2a,,,,0,0,1,,,,,,,,,,,,,,
+59,8,2a,,,,0,1,1,,,,,,,,,,,,,,
+60,1,2b,2,-99,0,1,0,1,0,35,White,United States of America,Not in a relationship,3,1,Suburban,2,5,5,3,3,3
+60,2,2b,,,,0,0,0,,35,White,United States of America,Not in a relationship,3,1,Suburban,2,5,5,3,3,3
+60,3,2b,,,,1,1,1,,35,White,United States of America,Not in a relationship,3,1,Suburban,2,5,5,3,3,3
+60,4,2b,,,,1,0,0,,35,White,United States of America,Not in a relationship,3,1,Suburban,2,5,5,3,3,3
+60,5,2b,,,,0,1,0,,35,White,United States of America,Not in a relationship,3,1,Suburban,2,5,5,3,3,3
+60,6,2b,,,,0,0,1,,35,White,United States of America,Not in a relationship,3,1,Suburban,2,5,5,3,3,3
+60,7,2b,,,,0,1,1,,35,White,United States of America,Not in a relationship,3,1,Suburban,2,5,5,3,3,3
+60,8,2b,,,,1,1,0,,35,White,United States of America,Not in a relationship,3,1,Suburban,2,5,5,3,3,3
+61,1,2a,,,,0,1,0,,46,Asian,India,I do not want to say,5,4,Suburban,4,-99,-99,-99,5,6
+61,2,2a,,,,1,1,0,,46,Asian,India,I do not want to say,5,4,Suburban,4,-99,-99,-99,5,6
+61,3,2a,,,,1,0,0,,46,Asian,India,I do not want to say,5,4,Suburban,4,-99,-99,-99,5,6
+61,4,2a,,,,1,0,1,,46,Asian,India,I do not want to say,5,4,Suburban,4,-99,-99,-99,5,6
+61,5,2a,,,,0,0,0,,46,Asian,India,I do not want to say,5,4,Suburban,4,-99,-99,-99,5,6
+61,6,2a,,,,1,1,1,,46,Asian,India,I do not want to say,5,4,Suburban,4,-99,-99,-99,5,6
+61,7,2a,,,,0,0,1,,46,Asian,India,I do not want to say,5,4,Suburban,4,-99,-99,-99,5,6
+61,8,2a,,,,0,1,1,,46,Asian,India,I do not want to say,5,4,Suburban,4,-99,-99,-99,5,6
+62,1,1a,0,3,3,0,0,0,0,42,Asian,United States of America,In a relationship more than 1 year,5,4,Suburban,2,5,6,3,3,5
+62,2,1a,,,,0,0,1,,42,Asian,United States of America,In a relationship more than 1 year,5,4,Suburban,2,5,6,3,3,5
+62,3,1a,,,,1,1,1,,42,Asian,United States of America,In a relationship more than 1 year,5,4,Suburban,2,5,6,3,3,5
+62,4,1a,,,,0,1,1,,42,Asian,United States of America,In a relationship more than 1 year,5,4,Suburban,2,5,6,3,3,5
+62,5,1a,,,,1,0,0,,42,Asian,United States of America,In a relationship more than 1 year,5,4,Suburban,2,5,6,3,3,5
+62,6,1a,,,,1,1,0,,42,Asian,United States of America,In a relationship more than 1 year,5,4,Suburban,2,5,6,3,3,5
+62,7,1a,,,,1,0,1,,42,Asian,United States of America,In a relationship more than 1 year,5,4,Suburban,2,5,6,3,3,5
+62,8,1a,,,,0,1,0,,42,Asian,United States of America,In a relationship more than 1 year,5,4,Suburban,2,5,6,3,3,5
+63,1,2a,-1,0,1,0,1,0,1,43,White,United States of America,Not in a relationship,4,1,Urban,2,5,5,6,6,4
+63,2,2a,0,0,0,1,1,0,1,43,White,United States of America,Not in a relationship,4,1,Urban,2,5,5,6,6,4
+63,3,2a,1,3,2,1,0,0,1,43,White,United States of America,Not in a relationship,4,1,Urban,2,5,5,6,6,4
+63,4,2a,1,2,1,1,0,1,1,43,White,United States of America,Not in a relationship,4,1,Urban,2,5,5,6,6,4
+63,5,2a,,,,0,0,0,,43,White,United States of America,Not in a relationship,4,1,Urban,2,5,5,6,6,4
+63,6,2a,1,2,1,1,1,1,1,43,White,United States of America,Not in a relationship,4,1,Urban,2,5,5,6,6,4
+63,7,2a,,,,0,0,1,,43,White,United States of America,Not in a relationship,4,1,Urban,2,5,5,6,6,4
+63,8,2a,,,,0,1,1,,43,White,United States of America,Not in a relationship,4,1,Urban,2,5,5,6,6,4
+64,1,2b,,,,1,0,1,,39,Asian,India,In a relationship more than 1 year,4,3,Urban,2,2,1,2,5,1
+64,2,2b,-2,-99,0,0,0,0,1,39,Asian,India,In a relationship more than 1 year,4,3,Urban,2,2,1,2,5,1
+64,3,2b,,,,1,1,1,,39,Asian,India,In a relationship more than 1 year,4,3,Urban,2,2,1,2,5,1
+64,4,2b,0,-1,-1,1,0,0,1,39,Asian,India,In a relationship more than 1 year,4,3,Urban,2,2,1,2,5,1
+64,5,2b,,,,0,1,0,,39,Asian,India,In a relationship more than 1 year,4,3,Urban,2,2,1,2,5,1
+64,6,2b,,,,0,0,1,,39,Asian,India,In a relationship more than 1 year,4,3,Urban,2,2,1,2,5,1
+64,7,2b,-1,0,1,0,1,1,1,39,Asian,India,In a relationship more than 1 year,4,3,Urban,2,2,1,2,5,1
+64,8,2b,,,,1,1,0,,39,Asian,India,In a relationship more than 1 year,4,3,Urban,2,2,1,2,5,1
+65,1,1b,3,3,0,1,0,1,0,42,White,United States of America,In a relationship more than 1 year,4,4,Suburban,1,3,6,3,6,3
+65,2,1b,2,4,2,1,1,0,0,42,White,United States of America,In a relationship more than 1 year,4,4,Suburban,1,3,6,3,6,3
+65,3,1b,4,5,1,1,0,0,0,42,White,United States of America,In a relationship more than 1 year,4,4,Suburban,1,3,6,3,6,3
+65,4,1b,2,4,2,0,1,0,0,42,White,United States of America,In a relationship more than 1 year,4,4,Suburban,1,3,6,3,6,3
+65,5,1b,5,5,0,1,1,1,0,42,White,United States of America,In a relationship more than 1 year,4,4,Suburban,1,3,6,3,6,3
+65,6,1b,4,3,-1,0,1,1,0,42,White,United States of America,In a relationship more than 1 year,4,4,Suburban,1,3,6,3,6,3
+65,7,1b,3,4,1,0,0,0,0,42,White,United States of America,In a relationship more than 1 year,4,4,Suburban,1,3,6,3,6,3
+65,8,1b,4,5,1,0,0,1,0,42,White,United States of America,In a relationship more than 1 year,4,4,Suburban,1,3,6,3,6,3
+66,1,2a,0,3,3,0,1,0,0,55,White,United States of America,In a relationship more than 1 year,4,4,Urban,2,6,5,3,5,3
+66,2,2a,-2,2,4,1,1,0,0,55,White,United States of America,In a relationship more than 1 year,4,4,Urban,2,6,5,3,5,3
+66,3,2a,3,4,1,1,0,0,0,55,White,United States of America,In a relationship more than 1 year,4,4,Urban,2,6,5,3,5,3
+66,4,2a,-1,3,4,1,0,1,0,55,White,United States of America,In a relationship more than 1 year,4,4,Urban,2,6,5,3,5,3
+66,5,2a,3,3,0,0,0,0,0,55,White,United States of America,In a relationship more than 1 year,4,4,Urban,2,6,5,3,5,3
+66,6,2a,2,3,1,1,1,1,0,55,White,United States of America,In a relationship more than 1 year,4,4,Urban,2,6,5,3,5,3
+66,7,2a,2,2,0,0,0,1,0,55,White,United States of America,In a relationship more than 1 year,4,4,Urban,2,6,5,3,5,3
+66,8,2a,-1,1,2,0,1,1,0,55,White,United States of America,In a relationship more than 1 year,4,4,Urban,2,6,5,3,5,3
+67,1,2a,-2,-1,1,0,1,0,0,33,Asian,China,In a relationship more than 1 year,4,4,Suburban,2,5,6,2,3,3
+67,2,2a,0,1,1,1,1,0,0,33,Asian,China,In a relationship more than 1 year,4,4,Suburban,2,5,6,2,3,3
+67,3,2a,-1,0,1,1,0,0,0,33,Asian,China,In a relationship more than 1 year,4,4,Suburban,2,5,6,2,3,3
+67,4,2a,0,0,0,1,0,1,0,33,Asian,China,In a relationship more than 1 year,4,4,Suburban,2,5,6,2,3,3
+67,5,2a,0,0,0,0,0,0,0,33,Asian,China,In a relationship more than 1 year,4,4,Suburban,2,5,6,2,3,3
+67,6,2a,-1,0,1,1,1,1,0,33,Asian,China,In a relationship more than 1 year,4,4,Suburban,2,5,6,2,3,3
+67,7,2a,0,1,1,0,0,1,0,33,Asian,China,In a relationship more than 1 year,4,4,Suburban,2,5,6,2,3,3
+67,8,2a,0,0,0,0,1,1,0,33,Asian,China,In a relationship more than 1 year,4,4,Suburban,2,5,6,2,3,3
+68,1,2b,0,1,1,1,0,1,0,41,White,United States of America,In a relationship more than 1 year,4,4,Suburban,1,3,6,4,6,3
+68,2,2b,0,2,2,0,0,0,0,41,White,United States of America,In a relationship more than 1 year,4,4,Suburban,1,3,6,4,6,3
+68,3,2b,0,4,4,1,1,1,0,41,White,United States of America,In a relationship more than 1 year,4,4,Suburban,1,3,6,4,6,3
+68,4,2b,1,4,3,1,0,0,0,41,White,United States of America,In a relationship more than 1 year,4,4,Suburban,1,3,6,4,6,3
+68,5,2b,1,3,2,0,1,0,0,41,White,United States of America,In a relationship more than 1 year,4,4,Suburban,1,3,6,4,6,3
+68,6,2b,1,2,1,0,0,1,0,41,White,United States of America,In a relationship more than 1 year,4,4,Suburban,1,3,6,4,6,3
+68,7,2b,1,1,0,0,1,1,0,41,White,United States of America,In a relationship more than 1 year,4,4,Suburban,1,3,6,4,6,3
+68,8,2b,1,2,1,1,1,0,0,41,White,United States of America,In a relationship more than 1 year,4,4,Suburban,1,3,6,4,6,3
+69,1,2b,3,4,1,1,0,1,0,40,Asian,United States of America,In a relationship more than 1 year,5,3,Suburban,4,6,4,5,3,6
+69,2,2b,5,5,0,0,0,0,0,40,Asian,United States of America,In a relationship more than 1 year,5,3,Suburban,4,6,4,5,3,6
+69,3,2b,3,4,1,1,1,1,0,40,Asian,United States of America,In a relationship more than 1 year,5,3,Suburban,4,6,4,5,3,6
+69,4,2b,4,0,-4,1,0,0,0,40,Asian,United States of America,In a relationship more than 1 year,5,3,Suburban,4,6,4,5,3,6
+69,5,2b,3,5,2,0,1,0,0,40,Asian,United States of America,In a relationship more than 1 year,5,3,Suburban,4,6,4,5,3,6
+69,6,2b,,,,0,0,1,,40,Asian,United States of America,In a relationship more than 1 year,5,3,Suburban,4,6,4,5,3,6
+69,7,2b,3,3,0,0,1,1,0,40,Asian,United States of America,In a relationship more than 1 year,5,3,Suburban,4,6,4,5,3,6
+69,8,2b,,,,1,1,0,,40,Asian,United States of America,In a relationship more than 1 year,5,3,Suburban,4,6,4,5,3,6
+70,1,1b,-5,5,10,1,0,1,1,42,Asian,United States of America,In a relationship more than 1 year,4,2,Suburban,3,6,5,2,4,4
+70,2,1b,0,3,3,1,1,0,1,42,Asian,United States of America,In a relationship more than 1 year,4,2,Suburban,3,6,5,2,4,4
+70,3,1b,0,5,5,1,0,0,1,42,Asian,United States of America,In a relationship more than 1 year,4,2,Suburban,3,6,5,2,4,4
+70,4,1b,0,0,0,0,1,0,1,42,Asian,United States of America,In a relationship more than 1 year,4,2,Suburban,3,6,5,2,4,4
+70,5,1b,0,1,1,1,1,1,1,42,Asian,United States of America,In a relationship more than 1 year,4,2,Suburban,3,6,5,2,4,4
+70,6,1b,0,-1,-1,0,1,1,1,42,Asian,United States of America,In a relationship more than 1 year,4,2,Suburban,3,6,5,2,4,4
+70,7,1b,0,5,5,0,0,0,1,42,Asian,United States of America,In a relationship more than 1 year,4,2,Suburban,3,6,5,2,4,4
+70,8,1b,0,5,5,0,0,1,1,42,Asian,United States of America,In a relationship more than 1 year,4,2,Suburban,3,6,5,2,4,4
+71,1,1a,3,0,-3,0,0,0,0,51,Asian,United States of America,In a relationship more than 1 year,4,3,Suburban,4,5,6,4,4,4
+71,2,1a,0,2,2,0,0,1,0,51,Asian,United States of America,In a relationship more than 1 year,4,3,Suburban,4,5,6,4,4,4
+71,3,1a,1,2,1,1,1,1,0,51,Asian,United States of America,In a relationship more than 1 year,4,3,Suburban,4,5,6,4,4,4
+71,4,1a,2,3,1,0,1,1,0,51,Asian,United States of America,In a relationship more than 1 year,4,3,Suburban,4,5,6,4,4,4
+71,5,1a,0,1,1,1,0,0,0,51,Asian,United States of America,In a relationship more than 1 year,4,3,Suburban,4,5,6,4,4,4
+71,6,1a,1,3,2,1,1,0,0,51,Asian,United States of America,In a relationship more than 1 year,4,3,Suburban,4,5,6,4,4,4
+71,7,1a,2,2,0,1,0,1,0,51,Asian,United States of America,In a relationship more than 1 year,4,3,Suburban,4,5,6,4,4,4
+71,8,1a,2,2,0,0,1,0,0,51,Asian,United States of America,In a relationship more than 1 year,4,3,Suburban,4,5,6,4,4,4
+72,1,1b,,,,1,0,1,,31,Black or African American,United States of America,In a relationship more than 1 year,9,3,Suburban,1,6,5,3,5,5
+72,2,1b,,,,1,1,0,,31,Black or African American,United States of America,In a relationship more than 1 year,9,3,Suburban,1,6,5,3,5,5
+72,3,1b,,,,1,0,0,,31,Black or African American,United States of America,In a relationship more than 1 year,9,3,Suburban,1,6,5,3,5,5
+72,4,1b,,,,0,1,0,,31,Black or African American,United States of America,In a relationship more than 1 year,9,3,Suburban,1,6,5,3,5,5
+72,5,1b,,,,1,1,1,,31,Black or African American,United States of America,In a relationship more than 1 year,9,3,Suburban,1,6,5,3,5,5
+72,6,1b,,,,0,1,1,,31,Black or African American,United States of America,In a relationship more than 1 year,9,3,Suburban,1,6,5,3,5,5
+72,7,1b,,,,0,0,0,,31,Black or African American,United States of America,In a relationship more than 1 year,9,3,Suburban,1,6,5,3,5,5
+72,8,1b,,,,0,0,1,,31,Black or African American,United States of America,In a relationship more than 1 year,9,3,Suburban,1,6,5,3,5,5
+73,1,1b,3,3,0,1,0,1,0,44,Asian,India,In a relationship more than 1 year,5,4,Suburban,3,5,5,3,5,4
+73,2,1b,3,4,1,1,1,0,0,44,Asian,India,In a relationship more than 1 year,5,4,Suburban,3,5,5,3,5,4
+73,3,1b,1,1,0,1,0,0,0,44,Asian,India,In a relationship more than 1 year,5,4,Suburban,3,5,5,3,5,4
+73,4,1b,1,1,0,0,1,0,0,44,Asian,India,In a relationship more than 1 year,5,4,Suburban,3,5,5,3,5,4
+73,5,1b,3,3,0,1,1,1,0,44,Asian,India,In a relationship more than 1 year,5,4,Suburban,3,5,5,3,5,4
+73,6,1b,2,2,0,0,1,1,0,44,Asian,India,In a relationship more than 1 year,5,4,Suburban,3,5,5,3,5,4
+73,7,1b,1,1,0,0,0,0,0,44,Asian,India,In a relationship more than 1 year,5,4,Suburban,3,5,5,3,5,4
+73,8,1b,2,3,1,0,0,1,0,44,Asian,India,In a relationship more than 1 year,5,4,Suburban,3,5,5,3,5,4

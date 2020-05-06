@@ -1,0 +1,20 @@
+StartDate,EndDate,Status,IPAddress,Progress,Duration (in seconds),Finished,RecordedDate,ResponseId,RecipientLastName,RecipientFirstName,RecipientEmail,ExternalReference,LocationLatitude,LocationLongitude,DistributionChannel,UserLanguage,Q2_1,Q4_1,Q5
+Start Date,End Date,Response Type,IP Address,Progress,Duration (in seconds),Finished,Recorded Date,Response ID,Recipient Last Name,Recipient First Name,Recipient Email,External Data Reference,Location Latitude,Location Longitude,Distribution Channel,User Language,"Before we give you today's task, indicate your current mood by clicking the appropriate radio button below.
+
+	-5 means extremely negative
+	0 means neutral, and
+	+5 means extremely positive. - Your mood BEFORE","Now that you are done, click on the radio button below to describe your mood immediately after completing the task. 
+
+	-5 means extremely negative
+	0 means neutral, and
+	+5 means extremely positive. - Your mood AFTER",OPTIONAL: Please share any comments about today's mindfulness practice.
+"{""ImportId"":""startDate"",""timeZone"":""America/Denver""}","{""ImportId"":""endDate"",""timeZone"":""America/Denver""}","{""ImportId"":""status""}","{""ImportId"":""ipAddress""}","{""ImportId"":""progress""}","{""ImportId"":""duration""}","{""ImportId"":""finished""}","{""ImportId"":""recordedDate"",""timeZone"":""America/Denver""}","{""ImportId"":""_recordId""}","{""ImportId"":""recipientLastName""}","{""ImportId"":""recipientFirstName""}","{""ImportId"":""recipientEmail""}","{""ImportId"":""externalDataReference""}","{""ImportId"":""locationLatitude""}","{""ImportId"":""locationLongitude""}","{""ImportId"":""distributionChannel""}","{""ImportId"":""userLanguage""}","{""ImportId"":""QID3_1""}","{""ImportId"":""QID5_1""}","{""ImportId"":""QID6_TEXT""}"
+2020-03-21 12:41:44,2020-03-21 12:44:02,IP Address,73.223.255.26,100,138,True,2020-03-21 12:44:03,R_21zUEdN0PqSt6d5,Kumaresan,Dhileeban,dkumares@ischool.berkeley.edu,1,37.554901123046875,-122.2707977294921875,email,EN,0,1,-99
+2020-03-21 16:56:14,2020-03-21 16:57:29,IP Address,72.79.50.86,100,75,True,2020-03-21 16:57:29,R_3LXgoGgrfNQBa0t,Chen,Shaojie,Schen.jhu@gmail.com,1,40.699798583984375,-74.31909942626953125,email,EN,0,1,-99
+2020-03-21 17:07:12,2020-03-21 17:10:45,IP Address,73.202.19.197,100,213,True,2020-03-21 17:10:46,R_1q3SNbs8zrNWLn3,Nikhil,Smita,gsmitajune@gmail.com,0,37.6652069091796875,-121.8733978271484375,email,EN,-1,0,"Whenever I am focused on the current activity while performing a task , that helps me to distract myself from the worries and lets me focus on the present moment . It definitely uplifts my mood a little bit if not a whole lot ."
+2020-03-21 06:15:02,2020-03-21 18:50:07,IP Address,68.191.240.153,100,45304,True,2020-03-21 18:50:07,R_2EnIjwndOHWlDZo,Nori,Sangeeta,nori.sangeeta@gmail.com,0,34.0388946533203125,-84.382598876953125,email,EN,0,0,-99
+2020-03-21 20:01:49,2020-03-21 20:02:08,IP Address,75.158.111.252,100,18,True,2020-03-21 20:02:08,R_2zZU1N5u5TN58zE,Chutny,Laura,lchutny@berkeley.edu,0,51.045501708984375,-114.19879913330078125,email,EN,1,1,-99
+2020-03-21 23:12:00,2020-03-21 23:13:47,IP Address,71.172.149.196,100,106,True,2020-03-21 23:13:47,R_1YoM0mZ7xIlAZBn,Xie,Sheng,xiesheng428@gmail.com,1,40.7467041015625,-74.057403564453125,email,EN,1,1,-99
+2020-03-22 09:05:41,2020-03-22 09:06:34,IP Address,184.170.166.207,100,53,True,2020-03-22 09:06:35,R_3hrupkCaHmX7jVW,Sundaramoorthy,Amanda,musicalamanda79@gmail.com,0,41.88470458984375,-88.30280303955078125,email,EN,1,2,-99
+2020-03-23 07:13:26,2020-03-23 07:13:49,IP Address,137.254.7.172,100,23,True,2020-03-23 07:13:49,R_3EvhHy3OtvlRQd7,Vattem,Phani,mvattem@gmail.com,0,30.5045013427734375,-97.82089996337890625,email,EN,5,1,-99
+2020-03-25 13:24:08,2020-03-25 13:25:22,IP Address,172.58.141.251,100,74,True,2020-03-25 13:25:23,R_5pONxCVL2z612qB,Vangur,Padmini,pvangur@gmail.com,0,38.8025054931640625,-90.3448028564453125,email,EN,-2,1,Washing dishes more with stay home policy. Hence decrease in mood

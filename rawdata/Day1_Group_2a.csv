@@ -1,0 +1,36 @@
+StartDate,EndDate,Status,IPAddress,Progress,Duration (in seconds),Finished,RecordedDate,ResponseId,RecipientLastName,RecipientFirstName,RecipientEmail,ExternalReference,LocationLatitude,LocationLongitude,DistributionChannel,UserLanguage,Q2_1,Q4_1,Q5
+Start Date,End Date,Response Type,IP Address,Progress,Duration (in seconds),Finished,Recorded Date,Response ID,Recipient Last Name,Recipient First Name,Recipient Email,External Data Reference,Location Latitude,Location Longitude,Distribution Channel,User Language,"Before we give you today's task, indicate your current mood by clicking the appropriate radio button below.
+
+	-5 means extremely negative
+	0 means neutral, and
+	+5 means extremely positive. - Your mood BEFORE","Now that you are done, click on the radio button below to describe your mood immediately after completing the task. 
+
+	-5 means extremely negative
+	0 means neutral, and
+	+5 means extremely positive. - Your mood AFTER",OPTIONAL: Please share any comments about today's mindfulness practice.
+"{""ImportId"":""startDate"",""timeZone"":""America/Denver""}","{""ImportId"":""endDate"",""timeZone"":""America/Denver""}","{""ImportId"":""status""}","{""ImportId"":""ipAddress""}","{""ImportId"":""progress""}","{""ImportId"":""duration""}","{""ImportId"":""finished""}","{""ImportId"":""recordedDate"",""timeZone"":""America/Denver""}","{""ImportId"":""_recordId""}","{""ImportId"":""recipientLastName""}","{""ImportId"":""recipientFirstName""}","{""ImportId"":""recipientEmail""}","{""ImportId"":""externalDataReference""}","{""ImportId"":""locationLatitude""}","{""ImportId"":""locationLongitude""}","{""ImportId"":""distributionChannel""}","{""ImportId"":""userLanguage""}","{""ImportId"":""QID3_1""}","{""ImportId"":""QID5_1""}","{""ImportId"":""QID6_TEXT""}"
+2020-03-14 16:15:01,2020-03-14 16:15:23,Survey Preview,,100,22,True,2020-03-14 16:15:23,R_71a6DxOOU1kjieZ,,,,,41.7057037353515625,-88.19460296630859375,preview,EN,4,3,-99
+2020-03-14 17:03:27,2020-03-14 17:03:38,Survey Preview,,100,11,True,2020-03-14 17:03:39,R_22Y3YxKy3x25yWf,,,,,41.7057037353515625,-88.19460296630859375,preview,EN,4,4,-99
+2020-03-15 14:56:57,2020-03-15 14:57:33,Survey Preview,,100,35,True,2020-03-15 14:57:33,R_29um0Imsvkn3GR4,,,,,41.7057037353515625,-88.19460296630859375,preview,EN,-3,3,-99
+2020-03-15 14:59:21,2020-03-15 14:59:33,Survey Preview,,100,11,True,2020-03-15 14:59:33,R_eCGucOYoIzdjJRf,,,,,41.7057037353515625,-88.19460296630859375,preview,EN,-2,1,-99
+2020-03-15 14:59:36,2020-03-15 14:59:47,Survey Preview,,100,10,True,2020-03-15 14:59:47,R_3Gjs14qSiTEaizc,,,,,41.7057037353515625,-88.19460296630859375,preview,EN,-4,-4,-99
+2020-03-15 15:02:23,2020-03-15 15:02:32,IP Address,98.228.64.223,100,9,True,2020-03-15 15:02:33,R_3LaOyVkbOqTKkq8,Email 3,Rad,studyradhika@gmail.com,sub-5,41.7057037353515625,-88.19460296630859375,email,EN,-4,-4,-99
+2020-03-15 15:08:24,2020-03-15 15:08:32,IP Address,98.228.64.223,100,7,True,2020-03-15 15:08:32,R_4SpqSFqEJj7KNZ7,Email 1,Rad,radhikamunipalle@yahoo.com,sub-7,41.7057037353515625,-88.19460296630859375,email,EN,-3,-3,-99
+2020-03-16 06:50:44,2020-03-16 07:22:28,IP Address,100.34.223.238,100,1904,True,2020-03-16 07:22:28,R_wNbtjYkH60TiWQh,Ying,Allison,Allison.xying@gmail.com,0,40.0442962646484375,-75.6472015380859375,email,EN,-2,-1,"The list of things to pay attention to is long and difficult to remember. As a result, I felt distracted when listening to the song and felt paying more attention to ""I know I'm trying to do this mindfulness practice"" than to the list of things to pay attention to."
+2020-03-16 07:35:28,2020-03-16 07:38:50,IP Address,67.184.45.66,100,201,True,2020-03-16 07:38:51,R_1memYYjJ0iGi7Iv,Davis,Shaju,shajudavis@yahoo.com,1,41.7057037353515625,-88.19460296630859375,email,EN,-1,0,-99
+2020-03-16 09:20:51,2020-03-16 09:22:50,IP Address,108.71.84.88,100,118,True,2020-03-16 09:22:51,R_3RwssM4lhC4U0YH,Desai,Chinmayi,desai.chinmayi@gmail.com,0,41.7516937255859375,-88.24140167236328125,email,EN,0,2,I listened to an encouraging song. The mood was on level 5 while I was listening. But after the song it came to 2
+2020-03-16 10:46:54,2020-03-16 10:49:48,IP Address,71.56.59.235,100,174,True,2020-03-16 10:49:49,R_2YE6JAfNT2HtoKo,La Barrie,Dominique,dominiquelabarrie@gmail.com,0,33.98370361328125,-84.1486968994140625,email,EN,2,4,"Thinking about the song i would listen to quickly put a smile on my face. I've been feeling a bit down recently with the events of covid-19 and i don't know, this exercise just helped put a smile on my face for a few minutes."
+2020-03-16 11:29:26,2020-03-16 11:36:11,IP Address,72.79.50.86,100,404,True,2020-03-16 11:36:11,R_10Vq37pgK3p8pbg,Lu,Yao,yaolu1127@gmail.com,0,40.699798583984375,-74.31909942626953125,email,EN,0,2,-99
+2020-03-16 18:34:29,2020-03-16 18:42:15,IP Address,99.174.93.78,100,465,True,2020-03-16 18:42:15,R_33g4FqPMQnDAu5S,Papavasiliou,Faidra,medeonis@yahoo.com,0,33.7657012939453125,-84.29509735107421875,email,EN,-1,3,"Not sure I did this one right or that it was fair, per se, because
+1. Today was full coronavirus anxiety from everywhere
+2. Lizzo will fix almost anything
+3. It's impossible to listen to Lizzo and not dance, so while that is a full-attention activity, I don't know if it counts for what you guys had in mind.
+If it does though, all the better :)
+"
+2020-03-16 21:38:33,2020-03-16 21:39:04,IP Address,74.101.203.218,100,31,True,2020-03-16 21:39:04,R_3plu1Fr8ZsrPyJT,Li,Michelle,0mingzhuli@gmail.com,0,40.7682952880859375,-73.98020172119140625,email,EN,-2,4,-99
+2020-03-17 01:36:44,2020-03-17 02:14:00,IP Address,172.58.45.41,100,2236,True,2020-03-17 02:14:02,R_2dKM9s8VvBhPUqN,Iftimie,Diana,dianai@ischool.berkeley.edu,0,47.4972991943359375,-122.355499267578125,email,EN,1,3,"I found myself immediately gravitate to a song that I love to salsa dance to, which got me ""head dancing"" along to the song in my head and picturing myself dancing (as I was sitting during this session). I did find myself think about something that bothered me at work at one point, and then thinking about a friend of mine, which distracted me from the ""dancing"" I was doing, although I was able to correct myself once I realized this. "
+2020-03-16 05:22:40,2020-03-17 03:44:33,IP Address,73.82.48.35,100,80512,True,2020-03-17 03:44:33,R_D8dJj0yl6kDLXFv,McCarron,Ceri,ceri.mccarron@gmail.com,0,33.746795654296875,-84.31369781494140625,email,EN,0,3,-99
+2020-03-16 07:50:42,2020-03-17 08:24:17,IP Address,100.8.98.8,100,88414,True,2020-03-17 08:24:17,R_viaJWMC9PVTh0uB,He,Rui,zjuruihe@gmail.com,1,40.7158050537109375,-74.35900115966796875,email,EN,0,0,-99
+2020-03-17 09:46:11,2020-03-17 09:50:17,IP Address,76.198.159.236,100,246,True,2020-03-17 09:50:18,R_1fkGMI9F25pOVVg,Michalski,Grant,grant.michalski@gmail.com,1,33.715301513671875,-84.33119964599609375,email,EN,-1,0,I liked the exercise and the focus it brought to a song I've probably heard a hundred times.
+2020-03-19 22:24:13,2020-03-19 22:25:26,IP Address,172.58.143.87,100,72,True,2020-03-19 22:25:27,R_1FK6lCeWyTqA3J8,Choudhary,Madhu,madhuchoudhary@gmail.com,0,41.850006103515625,-87.71649932861328125,email,EN,0,4,Music does make a difference :)
+2020-03-15 15:07:55,2020-03-15 15:08:00,IP Address,98.228.64.223,40,4,False,2020-03-22 15:08:00,R_2wjdmn4IoRZoKup,Email 2,Rad,rmsatapathy@yahoo.com,sub-6,,,email,EN,-3,,

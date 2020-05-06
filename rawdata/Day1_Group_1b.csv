@@ -1,0 +1,33 @@
+StartDate,EndDate,Status,IPAddress,Progress,Duration (in seconds),Finished,RecordedDate,ResponseId,RecipientLastName,RecipientFirstName,RecipientEmail,ExternalReference,LocationLatitude,LocationLongitude,DistributionChannel,UserLanguage,Q2_1,Q4_1,Q5
+Start Date,End Date,Response Type,IP Address,Progress,Duration (in seconds),Finished,Recorded Date,Response ID,Recipient Last Name,Recipient First Name,Recipient Email,External Data Reference,Location Latitude,Location Longitude,Distribution Channel,User Language,"Before we give you today's task, indicate your current mood by clicking the appropriate radio button below.
+
+	-5 means extremely negative
+	0 means neutral, and
+	+5 means extremely positive. - Your mood BEFORE","Now that you are done, click on the radio button below to describe your mood immediately after completing the task. 
+
+	-5 means extremely negative
+	0 means neutral, and
+	+5 means extremely positive. - Your mood AFTER",OPTIONAL: Please share any comments about today's mindfulness practice.
+"{""ImportId"":""startDate"",""timeZone"":""America/Denver""}","{""ImportId"":""endDate"",""timeZone"":""America/Denver""}","{""ImportId"":""status""}","{""ImportId"":""ipAddress""}","{""ImportId"":""progress""}","{""ImportId"":""duration""}","{""ImportId"":""finished""}","{""ImportId"":""recordedDate"",""timeZone"":""America/Denver""}","{""ImportId"":""_recordId""}","{""ImportId"":""recipientLastName""}","{""ImportId"":""recipientFirstName""}","{""ImportId"":""recipientEmail""}","{""ImportId"":""externalDataReference""}","{""ImportId"":""locationLatitude""}","{""ImportId"":""locationLongitude""}","{""ImportId"":""distributionChannel""}","{""ImportId"":""userLanguage""}","{""ImportId"":""QID16_1""}","{""ImportId"":""QID18_1""}","{""ImportId"":""QID19_TEXT""}"
+2020-03-14 16:13:38,2020-03-14 16:13:57,Survey Preview,,100,19,True,2020-03-14 16:13:58,R_2dXc5RdejhLEl7n,,,,,40.7295989990234375,-74.39009857177734375,preview,EN,3,3,
+2020-03-15 14:48:20,2020-03-15 14:48:36,Survey Preview,,100,15,True,2020-03-15 14:48:36,R_1NCg9w7uTvxiNWb,,,,,40.7295989990234375,-74.39009857177734375,preview,EN,3,3,
+2020-03-16 08:54:38,2020-03-16 12:49:38,IP Address,68.129.153.196,100,14100,True,2020-03-16 12:49:39,R_32LtotJn1U2yWl2,Bhattacharyya,Amit,aabtzu@gmail.com,1,40.9355010986328125,-73.7602996826171875,email,EN,3,2,"i try to do this stuff on a regular basis.  i am glad that it is a more talked about thing in the world.
+
+my favorite daily mindfulness practice is to ""listen"" to the grinding of the coffee beans for 30 sec each morning rather than go off and do something else in that moment.  
+
+"
+2020-03-16 10:05:16,2020-03-16 13:05:16,IP Address,208.87.237.201,100,10800,True,2020-03-16 13:05:17,R_cVkjnYmGMLiYKKR,Kwan,Mathew,mhkwan10@gmail.com,1,41.848297119140625,-87.651702880859375,email,EN,-2,-2,
+2020-03-16 05:41:45,2020-03-16 17:29:50,IP Address,173.68.11.158,100,42484,True,2020-03-16 17:29:50,R_3oI9z6xjpPJVFYr,Zhang,Estella,120082323@qq.com,0,40.6208038330078125,-74.0426025390625,email,EN,0,2,
+2020-03-16 18:29:03,2020-03-16 18:51:23,IP Address,76.121.58.205,100,1339,True,2020-03-16 18:51:23,R_2167EbMy3zXPYdo,Nangalia,Jessica,jnangalia@gmail.com,0,47.626007080078125,-122.0404052734375,email,EN,3,3,"Today, I think I felt more anxious after the mindfulness task, but that was because there were many more dishes to wash, than just one.  And, I was getting distracted by my kids and trying to hurry.
+
+I do think it is good though, bc if I thought of it as washing a dish ‘for’ someone else, then there was more compassion in it."
+2020-03-16 18:51:01,2020-03-16 18:51:55,IP Address,71.172.149.196,100,53,True,2020-03-16 18:51:55,R_1I4tRkJ3Bed7f2B,Sheng,Xia,xiasheng315@gmail.com,0,40.7467041015625,-74.057403564453125,email,EN,2,3,
+2020-03-16 09:19:24,2020-03-16 20:35:57,IP Address,73.44.19.243,100,40592,True,2020-03-16 20:35:57,R_1lcWZreDifVnvxj,Dharwadkar,Vaiju,vdharwadkar@gmail.com,0,42.1112060546875,-88.0438995361328125,email,EN,-2,0,
+2020-03-16 21:04:42,2020-03-16 21:13:38,IP Address,67.212.197.96,100,535,True,2020-03-16 21:13:38,R_3qUn2psSkkVmccT,Darnell,Diana,dianadarnell@me.com,0,32.2447967529296875,-111.02140045166015625,email,EN,0,2,"I love the bowl and the sound the edge makes when I touch it. I like the scrubby thing too I got it because it’s texture makes me happy. "
+2020-03-16 21:15:38,2020-03-16 21:16:40,IP Address,73.184.237.52,100,61,True,2020-03-16 21:16:40,R_24ObCaWcZkK5MQg,Shen,Jiafeng,wowosjf@gmail.com,1,34.0034027099609375,-84.46050262451171875,email,EN,0,0,
+2020-03-16 21:48:56,2020-03-16 21:50:44,IP Address,50.4.46.115,100,108,True,2020-03-16 21:50:45,R_30jlawZSgutlVpH,Gore,Manisha,manishagore003@gmail.com,0,41.7322998046875,-88.12819671630859375,email,EN,4,4,"I like the temperature of the water on my hands and the softness of the soap. "
+2020-03-16 02:11:15,2020-03-16 22:38:20,IP Address,99.105.211.210,100,73625,True,2020-03-16 22:38:21,R_3lPp1MDZBZWZ1Yd,Lin,Curtis,cclin@ischool.berkeley.edu,1,37.385894775390625,-122.08819580078125,email,EN,-5,5,"By washing dish for family, it really put away bad feeling and feel wonderful to be with my family. "
+2020-03-16 08:36:35,2020-03-16 08:36:42,IP Address,208.87.235.180,40,6,False,2020-03-17 08:37:02,R_2ZQ8IAq6lcWqaAC,Jacobson,Anna,annacjacobson@berkeley.edu,0,,,email,EN,2,,
+2020-03-16 22:05:23,2020-03-17 12:14:11,IP Address,70.120.117.39,100,50927,True,2020-03-17 12:14:11,R_SW45LMhsFA8RCKt,Sankar,Anu,anu.k.sankar@berkeley.edu,0,32.96099853515625,-96.984100341796875,email,EN,0,1,"The water was warm and the dish soap scent is something that I am used to.  It is not a feeling of accomplishment or joy.  It is rather that I am ""done with one more task"" for the day as I prefer that the sink is clean.  "
+2020-03-16 17:39:40,2020-03-16 17:40:32,IP Address,146.115.187.205,40,52,False,2020-03-17 17:40:14,R_eCC99HLJmHUDnln,Vasiliadis,Maria,mvasiliadis@berkeley.edu,0,,,email,EN,1,,
+2020-03-17 16:33:14,2020-03-17 18:49:02,IP Address,24.12.60.14,100,8147,True,2020-03-17 18:49:02,R_2VCLxqm68mu7pdI,Thakkar,Rina,rina1217@yahoo.com,0,41.7516937255859375,-88.24140167236328125,email,EN,3,3,"It's nice to be able to pay attention to these details that you never otherwise think about.  Keeping the mind from wandering continues to be a challenge, even if it's just for a split second. "

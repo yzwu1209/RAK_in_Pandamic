@@ -1,0 +1,21 @@
+StartDate,EndDate,Status,IPAddress,Progress,Duration (in seconds),Finished,RecordedDate,ResponseId,RecipientLastName,RecipientFirstName,RecipientEmail,ExternalReference,LocationLatitude,LocationLongitude,DistributionChannel,UserLanguage,Q2_1,Q4_1,Q5
+Start Date,End Date,Response Type,IP Address,Progress,Duration (in seconds),Finished,Recorded Date,Response ID,Recipient Last Name,Recipient First Name,Recipient Email,External Data Reference,Location Latitude,Location Longitude,Distribution Channel,User Language,"Before we give you today's task, indicate your current mood by clicking the appropriate radio button below.
+
+	-5 means extremely negative
+	0 means neutral, and
+	+5 means extremely positive. - Your mood BEFORE","Now that you are done, click on the radio button below to describe your mood immediately after completing the task. 
+
+	-5 means extremely negative
+	0 means neutral, and
+	+5 means extremely positive. - Your mood AFTER",OPTIONAL: Please share any comments about today's mindfulness practice.
+"{""ImportId"":""startDate"",""timeZone"":""America/Denver""}","{""ImportId"":""endDate"",""timeZone"":""America/Denver""}","{""ImportId"":""status""}","{""ImportId"":""ipAddress""}","{""ImportId"":""progress""}","{""ImportId"":""duration""}","{""ImportId"":""finished""}","{""ImportId"":""recordedDate"",""timeZone"":""America/Denver""}","{""ImportId"":""_recordId""}","{""ImportId"":""recipientLastName""}","{""ImportId"":""recipientFirstName""}","{""ImportId"":""recipientEmail""}","{""ImportId"":""externalDataReference""}","{""ImportId"":""locationLatitude""}","{""ImportId"":""locationLongitude""}","{""ImportId"":""distributionChannel""}","{""ImportId"":""userLanguage""}","{""ImportId"":""QID3_1""}","{""ImportId"":""QID5_1""}","{""ImportId"":""QID6_TEXT""}"
+2020-03-23 07:14:50,2020-03-23 07:15:15,IP Address,137.254.7.172,100,25,True,2020-03-23 07:15:16,R_111LSO8Pfqswp7n,Vattem,Phani,mvattem@gmail.com,0,32.7787017822265625,-96.8217010498046875,email,EN,5,5,-99
+2020-03-23 07:52:45,2020-03-23 07:55:20,IP Address,75.158.111.252,100,155,True,2020-03-23 07:55:20,R_2c5zJTlMfWstDEU,Chutny,Laura,lchutny@berkeley.edu,0,51.045501708984375,-114.19879913330078125,email,EN,1,2,-99
+2020-03-23 10:48:36,2020-03-23 10:50:18,IP Address,72.79.50.86,100,101,True,2020-03-23 10:50:18,R_2qgt3wwhkp1CtQc,Chen,Shaojie,Schen.jhu@gmail.com,1,40.699798583984375,-74.31909942626953125,email,EN,0,1,-99
+2020-03-23 13:24:33,2020-03-23 13:29:10,IP Address,160.34.125.64,100,276,True,2020-03-23 13:29:10,R_C9y7ADxh2shhr45,Kumaresan,Dhileeban,dkumares@ischool.berkeley.edu,1,39.048095703125,-77.47280120849609375,email,EN,0,1,-99
+2020-03-23 17:20:22,2020-03-23 17:21:48,IP Address,73.202.19.197,100,86,True,2020-03-23 17:21:49,R_2bUDRAFWKK8AqCg,Nikhil,Smita,gsmitajune@gmail.com,0,37.6652069091796875,-121.8733978271484375,email,EN,-1,1,-99
+2020-03-23 18:49:00,2020-03-23 18:50:58,IP Address,71.172.149.196,100,117,True,2020-03-23 18:50:58,R_Q4vT9k0EcV2TKLf,Xie,Sheng,xiesheng428@gmail.com,1,40.7467041015625,-74.057403564453125,email,EN,1,-1,-99
+2020-03-23 19:03:42,2020-03-23 19:04:05,IP Address,198.208.46.93,100,22,True,2020-03-23 19:04:06,R_1IRYDl1IIY57DnD,Nori,Sangeeta,nori.sangeeta@gmail.com,0,42.7593994140625,-83.408599853515625,email,EN,0,2,-99
+2020-03-24 06:26:05,2020-03-24 06:26:33,IP Address,137.254.7.172,100,27,True,2020-03-24 06:26:34,R_81CoiYNnRkEreOR,Vattem,Phani,mvattem@gmail.com,0,30.5045013427734375,-97.82089996337890625,email,EN,1,4,-99
+2020-03-24 07:00:42,2020-03-24 11:21:01,IP Address,184.170.166.207,100,15618,True,2020-03-24 11:21:01,R_1i9XXtWKygeWeZ4,Sundaramoorthy,Amanda,musicalamanda79@gmail.com,0,41.88470458984375,-88.30280303955078125,email,EN,1,2,-99
+2020-03-25 13:26:15,2020-03-25 13:27:51,IP Address,172.58.141.251,100,95,True,2020-03-25 13:27:51,R_2dmvkxUQWZigeCO,Vangur,Padmini,pvangur@gmail.com,0,38.8025054931640625,-90.3448028564453125,email,EN,-2,3,Started to write more and realizing the interesting cursive that comes to play

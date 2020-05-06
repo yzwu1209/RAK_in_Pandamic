@@ -1,0 +1,21 @@
+StartDate,EndDate,Status,IPAddress,Progress,Duration (in seconds),Finished,RecordedDate,ResponseId,RecipientLastName,RecipientFirstName,RecipientEmail,ExternalReference,LocationLatitude,LocationLongitude,DistributionChannel,UserLanguage,Q2_1,Q4_1,Q5
+Start Date,End Date,Response Type,IP Address,Progress,Duration (in seconds),Finished,Recorded Date,Response ID,Recipient Last Name,Recipient First Name,Recipient Email,External Data Reference,Location Latitude,Location Longitude,Distribution Channel,User Language,"Before we give you today's task, indicate your current mood by clicking the appropriate radio button below.
+
+	-5 means extremely negative
+	0 means neutral, and
+	+5 means extremely positive. - Your mood BEFORE","Now that you are done, click on the radio button below to describe your mood immediately after completing the task. 
+
+	-5 means extremely negative
+	0 means neutral, and
+	+5 means extremely positive. - Your mood AFTER",OPTIONAL: Please share any comments about today's mindfulness practice.
+"{""ImportId"":""startDate"",""timeZone"":""America/Denver""}","{""ImportId"":""endDate"",""timeZone"":""America/Denver""}","{""ImportId"":""status""}","{""ImportId"":""ipAddress""}","{""ImportId"":""progress""}","{""ImportId"":""duration""}","{""ImportId"":""finished""}","{""ImportId"":""recordedDate"",""timeZone"":""America/Denver""}","{""ImportId"":""_recordId""}","{""ImportId"":""recipientLastName""}","{""ImportId"":""recipientFirstName""}","{""ImportId"":""recipientEmail""}","{""ImportId"":""externalDataReference""}","{""ImportId"":""locationLatitude""}","{""ImportId"":""locationLongitude""}","{""ImportId"":""distributionChannel""}","{""ImportId"":""userLanguage""}","{""ImportId"":""QID3_1""}","{""ImportId"":""QID5_1""}","{""ImportId"":""QID6_TEXT""}"
+2020-03-14 17:10:28,2020-03-14 17:11:12,Survey Preview,,100,44,True,2020-03-14 17:11:12,R_2qwUiWUrZRE4eBX,,,,,41.7057037353515625,-88.19460296630859375,preview,EN,4,-3,-99
+2020-03-23 07:05:32,2020-03-23 07:06:39,IP Address,100.34.223.238,100,67,True,2020-03-23 07:06:40,R_274mJqIk1nHiXAQ,Ying,Allison,Allison.xying@gmail.com,0,40.0442962646484375,-75.6472015380859375,email,EN,0,0,-99
+2020-03-23 07:59:30,2020-03-23 08:00:45,IP Address,50.4.54.26,100,75,True,2020-03-23 08:00:46,R_2atBUjIAl3Fy9Vv,Dave,Rachna,rachnagdave@gmail.com,0,41.768798828125,-88.1425018310546875,email,EN,0,0,-99
+2020-03-23 10:21:56,2020-03-23 10:24:06,IP Address,99.174.93.78,100,130,True,2020-03-23 10:24:06,R_3p38MAffzPkFYbo,Papavasiliou,Faidra,medeonis@yahoo.com,0,33.7657012939453125,-84.29509735107421875,email,EN,-1,0,"The ""think about"" activities are weird. Is this about making an imaginary scene WITHIN which you imagine focusing on aspects of objects or tasks WHILE you accomplish the actual task? "
+2020-03-23 10:53:26,2020-03-23 10:54:43,IP Address,71.56.59.235,100,76,True,2020-03-23 10:54:43,R_BzI2chKERg13uIp,La Barrie,Dominique,dominiquelabarrie@gmail.com,0,33.98370361328125,-84.1486968994140625,email,EN,0,2,-99
+2020-03-23 12:12:03,2020-03-23 12:12:24,IP Address,72.79.50.86,100,21,True,2020-03-23 12:12:25,R_3ez3A8OyJWPqLzJ,Lu,Yao,yaolu1127@gmail.com,0,40.699798583984375,-74.31909942626953125,email,EN,-1,0,-99
+2020-03-23 13:27:48,2020-03-23 13:28:54,IP Address,100.8.98.8,100,65,True,2020-03-23 13:28:54,R_1i2Hjca5d4Q9Zq1,He,Rui,zjuruihe@gmail.com,1,40.7295989990234375,-74.39009857177734375,email,EN,0,0,-99
+2020-03-24 01:02:23,2020-03-24 01:05:09,IP Address,73.193.84.32,100,165,True,2020-03-24 01:05:09,R_1EhPDtijKYZOAMd,Iftimie,Diana,dianai@ischool.berkeley.edu,0,47.626007080078125,-122.0404052734375,email,EN,3,3,-99
+2020-03-24 06:20:36,2020-03-24 06:21:07,IP Address,73.82.48.35,100,30,True,2020-03-24 06:21:07,R_3iRaVZ4iQ7yRO28,McCarron,Ceri,ceri.mccarron@gmail.com,0,33.746795654296875,-84.31369781494140625,email,EN,-1,1,-99
+2020-03-23 08:22:21,2020-03-24 07:33:03,IP Address,108.71.84.88,100,83441,True,2020-03-24 07:33:03,R_2BmlGQp28P3loDb,Desai,Chinmayi,desai.chinmayi@gmail.com,0,41.7516937255859375,-88.24140167236328125,email,EN,0,0,-99
